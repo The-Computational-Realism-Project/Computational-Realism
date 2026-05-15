@@ -164,7 +164,7 @@ This geometric constraint indicates that to maintain a closed standing wave orbi
 
 \subsection{The Relationship Between Electric Potential and Light Speed, and Spatial Distribution}
 
-This model assumes that the effective speed of light $v$ in the grid space is modulated by the local scalar electric potential (momentum pressure) $U$. In a low-order approximation, this modulation mechanism is set to follow an algebraic conservation form between the momentum flow energy and the static strain pressure:
+This model assumes that the effective speed of light $v$ in the grid space is modulated by the local scalar electric potential (momentum pressure) $U$.\footnote{Here, the potential refers to the electric potential associated with a specific angular velocity $\omega$ of the soliton; a detailed analysis is provided in Section 11.} In a low-order approximation, this modulation mechanism is set to follow an algebraic conservation form between the momentum flow energy and the static strain pressure:
 
 \begin{equation}
 U(v) = U_{max} - \alpha v^2 
@@ -239,11 +239,11 @@ To maintain the fluid topological closure of the orbital standing wave, the syst
 \begin{equation}
 U(v) = \frac{\omega}{v} \left[ C_1 + C_2 e^{-\frac{\mu v}{\omega}} + C_3 e^{-\frac{v}{a \omega}} + C_4 \left(\frac{v}{\omega}\right) e^{-\frac{\mu v}{\omega}} \right] 
 \end{equation}
+
 This analytical solution represents the full picture of the nonlinear modulation law incorporating localized delay effects. We convert this modulation relationship into a series form:
 \begin{equation}
 U(v) = U_0 - \left(\frac{\kappa}{\omega^2}\right) v^2 + \left(\frac{\beta}{\omega^4}\right) v^4 + O(v^5)
 \end{equation}
-
 
 
 \section{Another Orbital Electron Model: Exact Solution Based on Global Gaussian Even Function Potential}
@@ -474,4 +474,168 @@ i\hbar \frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 \psi
 \subsection{Conclusion}
 
 The Schrödinger equation is essentially the macroscopic linear equivalent form manifested by the ``constrained grid smoothed field'' from Section 9, under the premise of following the Madelung continuity equation. Its essence is that the effective potential field (effective density) is the result of infinite-order diffusion through the underlying grid. This proves that quantum mechanics is not an axiomatic system independent of classical physics, but rather the dynamic emergence of underlying standing wave fluids at a specific scale.
+
+
+
+\section{Covariant Spacetime Dynamics and Non-Local Field Equations}
+
+\subsection{Four-Dimensional Covariant Smoothing Operator and Topological Closure Conditions (The Klein-Gordon Equation)}
+
+In the actual underlying physical grid, information propagation is not only smoothed in three-dimensional space but is also covariant in four-dimensional spacetime. Therefore, we upgrade the static spatial heat kernel convolution operator from Section 9 to an \textbf{infinite-order, Lorentz-covariant smoothing operator in four-dimensional spacetime}:
+
+\begin{equation}
+\hat{K}_{4D} = e^{a^2\Box}
+\end{equation}
+
+Where $\Box = \partial_\mu \partial^\mu = \frac{1}{c^2}\frac{\partial^2}{\partial t^2} - \nabla^2$ is the D'Alembert operator.
+
+According to the core physical hypothesis of this paper, the electron entity is a \textbf{``self-trapped standing wave.''} 
+From the perspective of four-dimensional spacetime, a stably existing ``standing wave entity'' (whose rest mass does not dissipate over time) implies that under the smoothing iterations of the four-dimensional grid, it must reach an \textbf{intrinsic dynamic topological equilibrium state (scale invariance)}. 
+In other words, the macroscopically stable effective fluid field $\psi$ must be an eigenstate of this grid characteristic scale operator:
+
+\begin{equation}
+a^2 \Box \psi = -\psi 
+\end{equation}
+
+Rearranging the above equation yields:
+
+\begin{equation}
+\left(\Box + \frac{1}{a^2}\right)\psi = 0
+\end{equation}
+
+We once again introduce the crucial ``physical constant anchoring'' conclusion from Section 10.3, namely that the intrinsic smoothing scale $a$ of the grid strictly corresponds to the reduced Compton wavelength of the electron: \textbf{$a = \frac{\hbar}{mc}$}. Substituting this into the above equation yields:
+
+\begin{equation}
+\left(\Box + \frac{m^2c^2}{\hbar^2}\right)\psi = 0 \quad \text{or written as} \quad \left(\partial_\mu \partial^\mu + \left(\frac{mc}{\hbar}\right)^2\right)\psi = 0
+\end{equation}
+
+This is the fundamental equation of relativistic quantum mechanics—the Klein-Gordon Equation. 
+It proves that, at the scale of the four-dimensional grid, the rest mass $m$ of matter is essentially the reciprocal of the geometric radius of curvature when the four-dimensional spacetime standing wave achieves dynamic closure.
+
+Meanwhile, according to the premise that two mutually orthogonal, independent precessional cycles actually exist inside the electron, the underlying fluid phase field cannot be described by a simple scalar $\psi$; it must encapsulate an intrinsic orthogonal directionality across four dimensions. 
+
+To mathematically describe this ``orthogonal gear meshing on the four-dimensional grid,'' we perform a geometric manifold decomposition (Clifford Algebra) on the scalar D'Alembert operator $\Box$, and by factoring the equation, we can derive the Dirac Equation.
+
+\subsection{Grid Dynamics and Non-Local Evolution in Four-Dimensional Spacetime}
+
+In the preceding discussions, we established the D'Alembert operator as the spacetime smoothing operator for the four-dimensional electromagnetic potential. Here, we postulate further that the spacetime dynamics of the grid itself are driven by the D'Alembert operator.
+
+\subsubsection{Local Action of the Discrete Grid and Macroscopic Non-Local Emergence}
+
+We propose that the actual underlying vacuum is not a continuous manifold, but rather consists of infinitesimally small, discrete, and finite grids. In this discrete spacetime, the single interaction transfer of information is strictly confined between adjacent grids. Its most fundamental single local evolution operator can be expressed as $(1 + \epsilon^2\Box)$, where $\epsilon$ is the intrinsic characteristic scale of the grid action, and $\Box = \frac{1}{c^2}\partial_t^2 - \nabla^2$ is the D'Alembert operator.
+
+Because macroscopic physical entities are not formed by a single iteration, but are achieved through countless underlying computational operations, we obtain:
+
+\begin{equation}
+\hat{K}_{macro} = \lim_{n\to\infty}  (1 + \epsilon^2 \Box)^n = e^{ n \epsilon^2 \Box} = e^{a^2 \Box} 
+\end{equation}
+
+We calculate a complete evolution, i.e., the number of grid cycles required for the soliton to achieve topological cycle closure, as $n = \left(\frac {2 \pi / \omega} { 2 \pi \epsilon / c}\right)^2$. Substituting this yields the characteristic scale coefficient $a = \frac{c}{\omega}$.
+
+This operator indicates that the spacetime distribution of the electromagnetic potential is subjected to unceasing ``smoothing'' by this operator, which constitutes the fundamental dynamical cause of the \textbf{dispersion} of electric field momentum in spacetime. The non-locality of the exponential operator guarantees the holistic ``particle nature'' of the soliton, and the strong interaction between the soliton and external modes already occurs at the Compton wavelength. It also serves as a cross-scale mapping factor, rendering the shape of the bare entity negligible in the coupling between the bare entity and the effective potential field.
+
+Here, we argue that the D'Alembert operator remains a grid emergence. The underlying discrete grid rules might be a discrete local convolution operator that is equivalent to the D'Alembert operator and preserves momentum and energy conservation.
+
+\subsubsection{Grid Saturation Limit and Extremum Principle}
+
+Because the grid is discrete and its information capacity is finite, there inevitably exists a \textbf{``grid saturation limit.''} This implies an absolute upper bound to the accumulation of electric field momentum (pressure) on the grid. As the density of the electric field momentum on the grid rises, its capacity to transmit electric field momentum decreases, manifesting as a retardation effect.
+
+\subsection{Energy Density Modulation of the Speed of Light}
+
+In the preceding text, we proposed a scalar modulation function for the speed of light. However, it must be clarified that the modulation relationship between the speed of light and the electric potential holds true under the premise of a fixed angular velocity within the soliton. That is, the speed of light is essentially not directly modulated by the absolute value of the electric potential, but rather by the \textbf{energy density} of the underlying grid. Inside the soliton, since the angular velocity $\omega$ is a constant fixed by the topological closure condition, the squared distribution of the effective potential $A^2$ is equivalent to the distribution of energy density. The retardation of the speed of light is a grid information processing ``delay'' effect triggered by high energy density.
+
+Within the framework of ``Computational Realism,'' the electromagnetic potential represents the distribution morphology of information. Only when the potential field circulates at a specific angular velocity $\omega$ (i.e., the self-trapped standing wave state) does it exert a sustained momentum pressure on the grid. To reflect this dynamic feedback, we introduce a scalar mapping of the four-dimensional energy-momentum tensor to represent the energy density:
+
+\begin{equation}
+u_{inv} = T_{\mu\nu} U^\mu U^\nu \approx \epsilon_0 \omega^2 A_\nu A^\nu 
+\end{equation}
+
+Where $U^\mu$ is the four-velocity of the grid's rest frame of reference. 
+The reason we cannot use $u_{inv} = -\frac{1}{4} F_{\mu\nu}F^{\mu\nu}$ to represent energy density here is that, according to our axioms, the grid momentum pressure density is a physical reality; the electric field strength is zero at the geometric center of the grid, yet the momentum pressure density is at its maximum there. 
+This essentially embodies our Lorentz aether worldview: an absolute stationary grid exists, and the fundamental source of gauge variance is the dynamical tolerance of the grid rules towards soliton solutions. Furthermore, measurement, also being a grid solution, is inevitably gauge covariant. However, when studying the interior of a soliton, this inevitably breaks down. Expressed in condensed matter terminology, a ``symmetry breaking'' of this gauge variance of measurement occurs.
+
+\subsection{Nonlinear Field Equation Based on Energy Density Saturation}
+
+Based on the aforementioned grid dynamics, we can reconstruct the field equations. In an absolute vacuum (with zero momentum pressure), the equation degenerates into the classical Maxwell free-field equation $\Box A^\mu = 0$.
+
+When high energy density accumulates, the local grid becomes ``viscous'' due to information overload, causing a drop in the effective speed of light. This nonlinear feedback loop induces self-focusing of the momentum flow. 
+
+Analyzing the saturation characteristics of the discrete grid, we define this retardation effect as a logarithmic function $g(u)$ based on energy density.
+
+\begin{equation}
+g(u_{inv})= \kappa \ln\left(1 + \frac{u_{inv}}{u_{th}}\right)
+\end{equation}
+
+Combining this with the infinite-order evolution operator, we obtain the underlying \textbf{four-dimensional non-local nonlinear field equation}:
+
+\begin{equation}
+e^{a^2 \Box} A^\mu = \left[ 1 + \kappa \ln\left(1 + \frac{\epsilon_0 \omega^2 A_\nu A^\nu}{u_{th}}\right) \right] A^\mu 
+\end{equation}
+
+Where:
+
+\begin{itemize}
+    \item \textbf{$\kappa$}: A dimensionless constant reflecting the coupling strength of the grid.
+    \item \textbf{$u_{th}$}: The \textbf{nonlinear characteristic threshold} of the vacuum energy density (with dimensions of $\text{J/m}^3$). It corresponds to the physical critical point where the underlying computational grid transitions from linear transmission to nonlinear self-trapping, and its order of magnitude is correlated with the Schwinger limit energy density.
+    \item \textbf{$\omega$}: The intrinsic circulation frequency of the entity. For a single photon or an electron, this parameter is adaptively locked by its mass or wavelength.
+    \item \textbf{$A^\mu$}: The four-potential, representing the grid momentum density and vector momentum flux.
+\end{itemize}
+
+\subsection{Electrostatic Field and Photon Solutions of the Field Equation}
+
+To verify the self-consistency of this underlying field equation, we substitute the static electron core and the dynamic photon as test solutions into this nonlinear equation, respectively.
+
+\subsubsection{Electrostatic Field Solution (Self-Shielding Mechanism of Mass Entities)}
+
+For a static electron core, let the angular velocity $\omega$ be its intrinsic rotational frequency. At this point, the D'Alembert operator simplifies to $-\nabla^2$. Substituting into the first-order approximation of the field equation yields:
+
+\begin{equation}
+a^2 \nabla^2 \phi = -g(u) \phi 
+\end{equation}
+
+In the near-field core region, as the energy density $u$ rises sharply, the logarithmic term $g(u)$ activates rapidly. This nonlinear pressure, arising from ``grid saturation,'' acts as a virtual ``negative source,'' forcibly suppressing the infinite divergence of the electric potential. This proves that the finitude of electron mass originates from a \textbf{logarithmic self-shielding effect} of the underlying grid towards energy density, eliminating the point-charge singularity found in classical electrodynamics.
+
+\subsubsection{Photon Solution (Spacetime Resonant Soliton)}
+
+A photon is essentially a field envelope that diffuses laterally while its momentum density propagates forward. We assume the photon is an envelope solution translating along the $x$-axis: $A^\mu = \epsilon^\mu \Psi(x-ct, y, z)$, which is substituted into the operator. Due to the translation at the speed of light, the longitudinal second-order derivatives of time and space cancel out exactly ($\frac{1}{c^2}\partial_t^2 - \partial_x^2 = 0$), leaving the operator with only transverse (in the $y,z$ cross-section) diffusion: $\Box = -\nabla_\perp^2$. \\
+Substituting and expanding the field equation yields:
+
+\begin{equation}
+a^2 \nabla_\perp^2 \Psi + g(\Psi^2) \Psi = 0 
+\end{equation}
+
+\textbf{Verification Result:} This result is exactly the \textbf{``Spatial Soliton Equation''} in nonlinear optics. The first term on the left side of the equation represents the natural tendency for transverse diffusive divergence of the photon caused by the grid, while the second term represents the light-speed retardation and nonlinear self-focusing tendency triggered by local high momentum pressure. The strict cancellation of the two allows the nonlinear feedback mechanism of the non-local grid equation to naturally manifest as a dynamic spacetime standing wave entity.
+
+\subsection{Scale Analysis of the Photon Solution: Logarithmic Scaling Violation and Wavelength Locking}
+
+In this model, the geometric transverse radius $R$ of the photon is dually constrained by the wavelength $\lambda$ and the energy density.
+
+\vspace{0.5em}
+\noindent \textbf{1. Correlation between Energy and Frequency:} \\
+The quantum energy of a single photon is known to be $E = \hbar\omega$. According to the classical volume integral of energy, $W = \int u \, dV \approx (\epsilon_0 \omega^2 \Psi^2) \cdot (R^2 \lambda)$. \\
+To satisfy $W = \hbar\omega$, the vector potential amplitude $\Psi$ of the photon must increase synchronously with the frequency ($\Psi \propto \omega$). This causes the energy density $u$ at the core of the photon to increase with the fourth power of the frequency: $u \propto \omega^4 g$.
+
+\vspace{0.5em}
+\noindent \textbf{2. Modification of the Scale Equation:} \\
+Substituting $u \propto \omega^4$ into the logarithmic function $g$, we obtain the transcendental equation for the soliton equilibrium condition:
+
+\begin{equation}
+g = \kappa \ln(1 + C \omega^4 g) \approx 4\kappa \ln(\omega) 
+\end{equation}
+
+Solving this yields the transverse entity radius $R$ of the photon as:
+
+\begin{equation}
+R = \frac{a}{\sqrt{g}} = \frac{\lambda}{2\pi \sqrt{4\kappa \ln(\omega)}} 
+\end{equation}
+
+\vspace{0.5em}
+\noindent \textbf{Analytical Conclusions:}
+
+\begin{enumerate}
+    \item \textbf{Fundamental Linear Relationship:} On a macroscopic scale, $R \propto \lambda$, which explains the geometric criterion in classical optics where wavelength determines resolution.
+    \item \textbf{Logarithmic Scaling Violation:} Due to the presence of the $\sqrt{\ln \omega}$ term in the denominator, as the frequency increases, the surge in energy density leads to stronger nonlinear suppression by the grid. This means that high-energy photons (such as gamma rays) will be more compact and denser than predicted by a purely linear proportion.
+    \item \textbf{Frequency-Adaptive Equilibrium:} By dynamically adjusting the smoothing scale $a=c/\omega$, the grid ensures that regardless of whether the frequency is high or low, the photon can achieve a balance between transverse diffraction and energy density self-focusing within its intrinsic cycle. This signifies that the photon is a non-collapsing, \textbf{three-dimensional topological soliton} whose scale adaptively adjusts to its frequency.
+\end{enumerate}
+
 \end{document}
