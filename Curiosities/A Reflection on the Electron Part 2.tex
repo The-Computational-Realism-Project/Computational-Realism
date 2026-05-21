@@ -1,0 +1,193 @@
+\documentclass[12pt, a4paper]{article}
+
+% PACKAGES
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{authblk}
+\usepackage{bm}
+\linespread{1.2}
+
+\title{A Reflection on the Electron: The Dynamic Analysis}
+\author{Haifeng Qiu}
+
+\begin{document}
+
+\begin{center}
+    {\uppercase{\Large \textbf{A Reflection on the Electron}}} \\
+    \vspace{0.5em}
+    {\large \textit{Part II: The Dynamic Analysis}} \\
+    \vspace{2em}
+    \textbf{Haifeng Qiu} \\
+    \today
+    \vspace{2em}
+\end{center}
+
+
+
+\begin{abstract}
+As a supplement to our previous work, this paper reconstructs the electron's dynamics as a spatiotemporal topological soliton. We derive the Dirac equation and Zitterbewegung effect from the coupling of massless chiral states and demonstrate that quantum measurement—specifically wave function collapse—is a deterministic nonlinear bifurcation in phase space. This framework establishes quantum mechanics as a macroscopic linear emergence of an underlying, deterministic nonlinear dynamical system.
+\end{abstract}
+
+\vspace{2em}
+
+
+\section{Quantum Description of Electron Structure: Coupling of Mirror States and Emergence of Mass/Spin}
+
+Having established the geometric picture of the electron as a ``topologically self-trapped photon pair,'' in this section, we will reconstruct this underlying physical process entirely within the axiomatic framework of quantum mechanics (Hilbert space, state vectors, self-adjoint operators, and unitary evolution). We will demonstrate that the rest mass and half-integer spin of the electron are \textbf{emergent eigenstates} of massless bosonic basis vectors under specific off-diagonal Hamiltonian coupling.
+
+\subsection{Hilbert Space Truncation and the Construction of Spinor Basis}
+
+Under the first axiom of quantum mechanics, the pure state of a system is represented by a ray in a Hilbert space $\mathcal{H}$. For this system, we define a subspace restricted to longitudinal evolution (temporarily constraining transverse degrees of freedom) and choose the \textbf{Helicity-Momentum Basis} $\left\{ |+\rangle, |-\rangle \right\}$:
+\begin{itemize}
+    \item $|+\rangle$: A right-handed photon state with a momentum eigenvalue of $+p_z$ and a helicity (chirality) of $+1$;
+    \item $|-\rangle$: A left-handed photon state with a momentum eigenvalue of $-p_z$ and a helicity (chirality) of $-1$.
+\end{itemize}
+
+Under this basis, an arbitrary state $|\Psi\rangle$ of the electron can be represented by a two-component Dirac spinor spanned by a complex algebra:
+\begin{equation}
+    |\Psi(z, t)\rangle = \psi_+(z, t)|+\rangle + \psi_-(z, t)|-\rangle \doteq \begin{pmatrix} \psi_+(z, t) \\ \psi_-(z, t) \end{pmatrix}
+\end{equation}
+
+\subsection{Unitary Evolution and Interaction Hamiltonian}
+
+According to the quantum mechanical Schr\"{o}dinger equation $i\hbar \frac{\partial}{\partial t}|\Psi\rangle = \hat{H}|\Psi\rangle$, we must determine the total Hamiltonian operator $\hat{H}$ of the system. 
+In an interaction-free vacuum (the linear limit), these two chiral states are mutually non-orthogonal and completely decoupled. Their free evolution is governed by the massless Weyl Hamiltonian $\hat{H}_0$:
+\begin{equation}
+    \hat{H}_0 = -ic\hbar \sigma_z \partial_z = \begin{pmatrix} -ic\hbar\partial_z & 0 \\ 0 & ic\hbar\partial_z \end{pmatrix}
+\end{equation}
+In this state, the probability current diverges toward both ends at the speed of light, and the system's energy eigenspectrum is continuous, making it impossible to define a ``rest particle.''
+
+According to the ``polarization-phase synchronization'' topological locking condition derived previously, the non-linear response of the underlying grid is quantum-mechanically equivalent to introducing an \textbf{off-diagonal self-adjoint coupling operator $\hat{H}_{int}$}. This operator breaks the original chiral symmetry and induces transitional mapping between the states $|+\rangle$ and $|-\rangle$:
+\begin{equation}
+    \hat{H}_{int} = mc^2 \sigma_x = \begin{pmatrix} 0 & mc^2 \\ mc^2 & 0 \end{pmatrix}
+\end{equation}
+Where the constant $mc^2$ represents the coupling matrix element for mutual conversion (corresponding to the Bragg reflection intensity in the classical picture). The total Hamiltonian is thus strictly equivalent to the $(1+1)$D Dirac Hamiltonian:
+\begin{equation}
+    \hat{H}_{total} = \hat{H}_0 + \hat{H}_{int} = -ic\hbar\sigma_z \partial_z + mc^2\sigma_x
+\end{equation}
+
+\subsection{Non-commutativity of Velocity Operator and Spatial Localization}
+
+To explain why the electron is ``at rest'' (localized) within the quantum framework, we switch to the Heisenberg picture to examine the velocity operator $\hat{v}_z = \frac{d\hat{z}}{dt}$.
+According to the Heisenberg equation of motion:
+\begin{equation}
+    \hat{v}_z = \frac{1}{i\hbar}[\hat{z}, \hat{H}_{total}] = c\sigma_z = \begin{pmatrix} c & 0 \\ 0 & -c \end{pmatrix}
+\end{equation}
+This indicates that the instantaneous velocity eigenvalues of the electron are always $\pm c$ (the speed of light), which perfectly self-consists with the photon ontology. However, because the velocity operator $\hat{v}_z$ (containing $\sigma_z$) and the total Hamiltonian $\hat{H}_{total}$ (containing $\sigma_x$) \textbf{do not commute} ($[\sigma_z, \sigma_x] = 2i\sigma_y \neq 0$), the velocity $\hat{v}_z$ is no longer a conserved quantity.
+
+Taking its second time derivative yields:
+\begin{equation}
+    \frac{d\hat{v}_z}{dt} = \frac{1}{i\hbar}[\hat{v}_z, \hat{H}_{total}] = \frac{2mc^2}{\hbar} (c\sigma_y)
+\end{equation}
+This is precisely the operator origin of the famous \textbf{Zitterbewegung (jitter effect)} in quantum mechanics. 
+Physically, the off-diagonal term $mc^2\sigma_x$ causes extremely high-frequency quantum Rabi oscillations between $|+\rangle$ and $|-\rangle$ (at a frequency $\omega = 2mc^2/\hbar$). The moment the forward probability propagates a Compton wavelength at the speed of light, a coherent population inversion occurs, instantly converting it into backward propagation. \\
+\textbf{Quantum Conclusion}: The expectation value of the macroscopic center-of-mass velocity $\langle\Psi|\hat{v}_z|\Psi\rangle$ strictly approaches $0$ upon time averaging. The originally divergent massless probability wave achieves \textbf{the freezing and localization of probability flow} in space through the quantum coherent interference of off-diagonal interactions. The eigenenergy $mc^2$ required to maintain this high-frequency intrinsic interference is thus established as the macroscopic \textbf{rest mass} of the system.
+
+\subsection{Topological Projection and Emergence of SU(2) Spinor Symmetry}
+
+The greatest quantum statistical paradox faced under this framework is: how does a system composed of underlying bosonic fields (photon momentum flow) give rise to the $1/2$ spin of a fermion?
+
+This theory resolves this issue through the mechanism of \textbf{``fermionization of topological solitons''} in non-linear topological field theory. In the biorthogonal standing wave structure with polarization-phase locking, the topological morphology of the system is no longer a simple linear tensor product expansion, but rather forms a topological kink (Topological Soliton/Defect) containing a non-trivial topological charge (similar to a Hopf invariant) in three-dimensional space.
+
+Under this strong non-linear topological constraint, the collective excited state space of the global system is forced into a \textbf{topological dimensional reduction constraint}. The rigid locking of internal phases causes the state vector, when acted upon by external spatial rotation operators, to exhibit the geometric characteristics of a Dirac Belt or a scissor model: a spatial rotation of $2\pi$ introduces a geometric phase factor of $e^{-i\pi} = -1$ onto the internal spatiotemporal manifold. It requires a rotation of $4\pi$ to simultaneously untangle and restore the topological connection between the standing wave envelope and the internal polarization carrier wave. \\
+\textbf{Quantum Conclusion}: The mass coupling term not only traps momentum but, through its self-induced topological configuration, forcibly maps (emerges) the underlying $SO(3)$ bosonic fluid algebra into the spinor space of the fundamental representation group $SU(2)$. The $1/2$ spin of the electron is not an intrinsic label of an elementary particle, but rather an inevitable geometric consequence that the macroscopic coherent evolution of the underlying bosonic field must obey when forming specific non-trivial topological solitons.
+
+\subsection{Summary}
+
+Through rigorous quantum mechanical operator formulations, we have proven that: \textbf{Mass is not an innate axiomatic property of a particle, but a dynamical eigenvalue generated by the coupling of massless eigenstates via off-diagonal operators; spin $1/2$ is also not an intrinsic label of elementary particles, but a topological group representation that the coupled-state wave function must obey to maintain coherent evolution on the spatiotemporal manifold.} The model in this paper is not opposed to the first principles of quantum mechanics; rather, it provides an underlying physical ontological picture for the various abstract mathematical symbols (spinors, mass terms, matrix algebra) in the Dirac equation.
+
+
+
+\section{The Dynamical Essence of Forces and Nonlinear Collapse of Quantum Measurement}
+
+In the preceding sections, we established the static and spin structures of the free electron as a four-dimensional spatiotemporal topological soliton (biorthogonal phase-locked standing wave). This section will extend the theory to the dynamic interactions between the soliton and external environmental fields. We will prove that classical electromagnetic force (Lorentz force) and minimal coupling in quantum mechanics are perfectly isomorphic in terms of underlying fluid geometry. Furthermore, we will thoroughly deconstruct the mechanical physical origin of ``wave function collapse'' and ``spin quantization'' in the Stern-Gerlach experiment from a purely classical deterministic perspective, utilizing non-linear dynamical phase space attractors.
+
+\subsection{Soliton Kinematics: De Broglie Coherent Envelope and Interaction Energy}
+
+Under the framework of ``Computational Realism,'' the electron entity is a self-consistent four-dimensional potential field soliton $A^\mu_s$. When the soliton translates as a whole across the underlying grid at a macroscopic velocity $\mathbf{v}$, due to the finiteness of the information propagation speed $c$ between grid nodes, various points inside the soliton will experience a \textbf{directional information update latency} when participating in recursive synchronization. To maintain the topological closure and global synchronization of the standing wave structure, the grid nodes at the front and rear of the soliton must adjust their local oscillation phases to compensate for the information feedback lag caused by displacement. This \textbf{spatiotemporal synchronization compensation}, based on the grid's recursive mechanism, causes the original high-frequency rotational phase inside the soliton to accumulate a linear phase along the direction of motion, thereby giving rise to a \textbf{De Broglie Coherent Envelope}:
+\begin{equation}
+    A^\mu_s(\mathbf{x}, t) \approx A^\mu_{static}(\mathbf{x}-\mathbf{v}t) e^{i(\mathbf{k}_{dB} \cdot \mathbf{x} - \omega t)}
+\end{equation}
+At this point, the soliton and the external background field $A^\mu_{ext}$ interfere through the scalar product of their four-potentials, constituting an additional \textbf{Interaction Energy Density} for the system:
+\begin{equation}
+    u_{int} = 2 \epsilon_0 \omega^2 A^\mu_s A_{\mu,ext}
+\end{equation}
+From the perspective of relativistic wave dynamics, the De Broglie wave is not an independent objective entity, but the projection of the particle's intrinsic frequency $\omega_0 = m_0 c^2 / \hbar$ onto the observer's spatiotemporal coordinates. The complex phase $S = \int p_\mu dx^\mu$, defined by the action integral, physically represents the phase-alignment envelope of the particle's internal clock. The phase gradient $\nabla S$ of this envelope directly determines the superposition interference pattern of the interaction energy in space.
+
+\subsection{Fluid Topological Isomorphism between Classical Electromagnetic Force and Quantum Minimal Coupling}
+
+The so-called ``force'' in macroscopic mechanics is essentially a \textbf{macroscopic fluid dynamical emergence} driven by the underlying grid to eliminate the local phase space imbalance caused by the interaction energy $u_{int}$, forcing the soliton's center of mass to continuously move toward paths with lower phase potential energy.
+
+\subsubsection{Electric Force: Scalar Pressure Relaxation Thrust and Wavefront Expansion/Contraction}
+
+The external electric field is composed of a scalar potential $A^0_{ext}$. Here, the interaction energy term manifests as the coupling between the soliton's De Broglie envelope and the background scalar pressure: $u_{int} = 2 \epsilon_0 \omega^2 A^0_s A^0_{ext}$.
+
+\begin{itemize}
+    \item \textbf{Grid Fluid Picture}: The external potential gradient $\nabla A^0_{ext}$ breaks the energy density balance within the De Broglie envelope, creating a slight difference in the vacuum grid saturation pressure between the front and rear of the soliton. This pure scalar pressure difference acts on the coherent envelope, generating a ``relaxation thrust'' directed toward the low-pressure region. Its macroscopic resultant force is equivalent to the variation of the interaction energy with respect to the center-of-mass coordinates: $\mathbf{F}_E = - \frac{\partial}{\partial \mathbf{x}_0} \int u_{int} d^3x = q \mathbf{E}$.
+    \item \textbf{Phase Dynamics Isomorphism}: In quantum mechanics, this is equivalent to the minimal coupling rule $\partial_t \to \partial_t + i \frac{q}{\hbar} A^0_{ext}$. The potential gradient alters the local spatial phase evolution frequency (the rate of time flow), forcing the wavefront of the De Broglie wave to compress or stretch in space. To maintain the phase continuity of the wavefront, the macroscopic momentum must evolve over time, and the force emerges as the explicit time derivative of the action phase gradient: $\mathbf{F}_E = \frac{d}{dt}(\nabla S) = - \nabla (q A^0_{ext})$.
+\end{itemize}
+
+\subsubsection{Magnetic Force: Topological Magnus Effect and Waveguide Deflection}
+
+The external magnetic field is composed of a vector potential $\mathbf{A}_{ext}$, and the interaction energy term becomes $u_{int} = - 2 \epsilon_0 \omega^2 \mathbf{A}_s \cdot \mathbf{A}_{ext}$.
+
+\begin{itemize}
+    \item \textbf{Grid Fluid Picture}: Due to motion, the De Broglie envelope already contains translational vector information, which participates in the coupling alongside the soliton's internal spin chiral vortex potential $A_s^{vortex}$. Under this asymmetric superposition, the momentum flow on one side of the soliton vortex ring is strengthened, while the other side is canceled out, leading to a deviation in grid saturation across the transverse plane. This \textbf{Topological Magnus Effect} in fluid mechanics forces the entire standing wave structure to deflect. The convective derivative directly yields the Lorentz force form: $\mathbf{F}_B = \int (\mathbf{J}_s \times \nabla \times \mathbf{A}_{ext}) d^3x = q (\mathbf{v} \times \mathbf{B})$.
+    \item \textbf{Phase Dynamics Isomorphism}: In quantum mechanics, this manifests as the minimal coupling of the Aharonov-Bohm (A-B) effect $\nabla \to \nabla - i \frac{q}{\hbar} \mathbf{A}_{ext}$. The background vector potential forcibly superimposes a chiral bias onto the moving phase gradient, altering the equiphase surface curvature of the wavefront in transverse space, causing the particle's waveguide direction to be topologically steered during movement: $\mathbf{F}_B = q \mathbf{v} \times (\nabla \times \mathbf{A}_{ext})$.
+\end{itemize}
+
+\subsection{Dynamical Reduction of the Stern-Gerlach Experiment: Coherence Breaking and Nonlinear Collapse}
+
+In the mainstream Copenhagen interpretation, the discrete splitting of electron spin in the Stern-Gerlach (S-G) experiment is attributed to a ``measurement-induced wave function collapse'' that transcends classical physics. This section will discard any quantization postulates. Relying solely on ``standing wave coherence'' and ``non-linear phase space attractors'' from non-linear wave dynamics, we will deconstruct the pure fluid topological origin of ``wave function collapse'' through a dual-picture comparison.
+
+\subsubsection{Environmental Coupling and Phase Mismatch in Gradient Fields}
+
+When an electron with a continuous, random initial spin angle $\alpha$ enters the extreme gradient magnetic field $\nabla B_z$ of the S-G experiment, spatial translational symmetry is broken, and the particle's internal state begins to couple strongly with the asymmetric external environment.
+
+\begin{itemize}
+    \item \textbf{Grid Fluid Picture (Topological Phase Mismatch)}: In the underlying grid, the electron is a topological standing wave vortex with a transverse scale of $\lambda_c$ (Compton wavelength). The two sides of the vortex cross-section experience objective differences in the background vector potential. Due to the Aharonov-Bohm (A-B) effect, this asymmetric environment forcibly introduces a \textbf{Differential Phase Shift} inside the standing wave cavity. Geometric projection shows that this phase mismatch is proportional to the effective span of the vortex ring along the gradient direction: $\Delta \Phi \propto |\nabla B_z| \lambda_c \sin\alpha$.
+    \item \textbf{Quantum Physics Isomorphism (Spin-Orbit Entanglement)}: In quantum mechanics, this is equivalent to substituting the Hamiltonian $H = -\boldsymbol{\mu} \cdot \mathbf{B}(\mathbf{z})$ into the Schr\"{o}dinger equation. Because the magnetic field is a function of the spatial coordinate $z$, the particle's internal spin degrees of freedom become inseparably entangled with its external spatial translational degrees of freedom, causing the wave function to begin dispersing in phase space.
+\end{itemize}
+
+\subsubsection{Loss of Standing Wave Stability and Vulnerability of Intermediate States}
+
+Any non-parallel polarization state ($\alpha \neq 0, \pi$) faces a breakdown of coherence in the gradient field.
+
+\begin{itemize}
+    \item \textbf{Grid Fluid Picture (Momentum Flow Escape)}: The prerequisite for the electron's stable existence is the perfect interference closure (Bragg reflection) of the forward and backward waves. In wave interference theory, the resonance overlap efficiency caused by a phase mismatch is proportional to $\cos(\Delta \Phi) \approx 1 - \frac{1}{2}(\Delta \Phi)^2$. This implies that the \textbf{loss of stability (i.e., the rate $\Gamma_{escape}$ at which internal momentum flow escapes outward)} due to phase misalignment is strictly proportional to the square of the phase difference:
+    \begin{equation}
+        \Gamma_{escape}(\alpha) \propto (\Delta \Phi)^2 = \beta |\nabla B_z|^2 \sin^2\alpha
+    \end{equation}
+    This demonstrates that all tilted intermediate states will cause the standing wave cavity to ``leak,'' posing a threat of disintegration to the momentum flow.
+    \item \textbf{Quantum Physics Isomorphism (Uncertainty of Superposition States)}: In quantum mechanics, this manifests as the intrinsic uncertainty of a superposition state. A pure state at an arbitrary angle $\alpha$, $|\psi\rangle = \cos(\alpha/2)|\uparrow\rangle + \sin(\alpha/2)|\downarrow\rangle$, has a variance (uncertainty) under the measurement operator $S_z$ that is exactly proportional to $\sin^2\alpha$. The statistical properties described by ``probability variance'' in QM correspond to the ``actual physical rate of momentum flow escape'' in the underlying fluid.
+\end{itemize}
+
+\subsubsection{Nonlinear Bifurcation and Deterministic Collapse of the Wave Function}
+
+To prevent the disintegration of the momentum flow, the system's internal non-linear feedback mechanism is activated, forcing a topological reorganization of the phase space.
+
+\begin{itemize}
+    \item \textbf{Grid Fluid Picture (Bistable Attractor Roll-down)}: The escaping momentum flow generates a self-feedback correction on the soliton body, driving the principal spin axis $\alpha$ to spontaneously evolve toward a state that \textbf{minimizes the escape rate}. Its dynamical equation is $\frac{d\alpha}{dt} \propto - \frac{\partial \Gamma_{escape}}{\partial \alpha}$. 
+    Differentiating $\sin^2\alpha$ derives the non-linear bistable bifurcation equation:
+    \begin{equation}
+        \frac{d\alpha}{dt} = - \lambda \sin(2\alpha)
+    \end{equation}
+    (where $\lambda$ is a reorganization rate correlated with the gradient field strength). \\
+    Within an extremely short relaxation time, the massive $-\lambda \sin(2\alpha)$ feedback makes $\alpha = \pi/2$ a highly unstable saddle point. Any intermediate state deviating from the absolute polar axes will undergo an \textbf{Avalanche-like Roll-down}, being forcibly twisted and plummeting into one of two \textbf{Stable Attractors} ($\alpha = 0$ or $\alpha = \pi$) where no momentum escape occurs.
+    \item \textbf{Quantum Physics Isomorphism (Measurement Collapse Axiom)}: This is precisely the \textbf{``Wave Function Collapse''} or ``von Neumann projection'' in quantum mechanics.
+\end{itemize}
+
+\subsubsection{Macroscopic Trajectory Splitting and Emergence of Quantization}
+
+After completing the collapse and reorganization on a microscopic time scale, the system enters the macroscopic observation phase.
+
+\begin{itemize}
+    \item \textbf{Grid Fluid Picture (Macroscopic Lorentz Force Diversion)}: Once all continuously distributed solitons have instantly completed their ``non-linear bifurcation archiving'' and entirely differentiated into the two topological steady states of absolutely upward ($\alpha=0$) or absolutely downward ($\alpha=\pi$), they begin to be governed purely by the macroscopic translational force $\mathbf{F}_z = \nabla (\boldsymbol{\mu} \cdot \mathbf{B})$. Because $\boldsymbol{\mu}$ now possesses only two discrete absolute directions, the particle flow forms two sharply fractured trace lines on the macroscopic screen.
+    \item \textbf{Quantum Physics Isomorphism (Discretization of Eigenvalues)}: The experiment ultimately observes the phenomenon of ``spatial quantization'' of spin—measurement results can only yield discrete eigenvalues of $\pm \hbar/2$, with no transitional intermediate states existing.
+\end{itemize}
+
+\textbf{Summary of this Section}: Through a one-to-one mapping between the grid fluid picture and the quantum picture, we have proven that: ``quantum measurement collapse'' and ``discrete quantization'' are \textbf{spontaneous non-linear bistable bifurcations and deterministic topological phase transitions initiated by underlying finite-volume continuous standing wave fluids when subjected to extreme constraints in order to maintain interference stability.} Quantum mechanics is merely a macroscopic linear statistical summary of this ultra-fast, underlying non-linear dynamical process. \textbf{The quantum discreteness of spin is not an inexplicable a priori axiom, but rather the topological symmetry breaking and macroscopic emergence that must occur in the phase space attractors of underlying continuous fluid matter waves when encountering extreme boundary conditions.}
+
+\end{document}

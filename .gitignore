@@ -1,2 +1,5 @@
 /drafts
 /build
+*.aux
+*.log
+*.gz
