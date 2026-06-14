@@ -1,0 +1,527 @@
+\documentclass[12pt, a4paper]{article}
+
+% PACKAGES
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{authblk}
+\usepackage{bm}
+\newcommand{\lambdabar}{{\mkern0.75mu\mathchar '26\mkern -9.75mu\lambda}}
+\linespread{1.2}
+
+\title{A REFLECTION ON HADRONS Part II}
+\author{Haifeng Qiu}
+
+\begin{document}
+
+\begin{center}
+    {\uppercase{\Large \textbf{A REFLECTION ON HADRONS}}} \\
+    \vspace{0.5em}
+    {\large \textit{Part II:  Charge Interactions and Multibody Fluid Topology}} \\
+    \vspace{2em}
+    \textbf{Haifeng Qiu} \\
+    \today
+    \vspace{2em}
+\end{center}
+\begin{abstract}
+This paper extends the framework of Computational Realism to address charge interactions and multibody hadronic structures.
+\end{abstract}
+
+
+
+
+
+\section{Nonlinear Field Equations in Dynamical Derivative Form and Charge Interactions}
+
+To study charge interactions, this section reconstructs the non-local nonlinear field equation in the absolute rest frame of the computational grid by utilizing the Euclidean dot product of the temporal derivatives of the complex potential. Through this reconstruction, we clarify the physical equivalence of the single-charge standing wave state and naturally derive the algebraic sign of positive and negative charges from the rate of change of the Clifford temporal phase.
+
+\subsection{Definition of the Non-Local Nonlinear Field Equation in Derivative Form}
+
+According to Computational Realism, the vacuum is an absolutely stationary computational grid, where the rate of information update corresponds to physical energy. We define the four-dimensional complex potential in the intrinsic rest frame of the grid as $A = (A^0, A^1, A^2, A^3)$. Its rate of change with respect to intrinsic time (the temporal derivative) represents the dynamic flow of local grid information:
+\begin{equation}
+\dot{A} = \frac{\partial A}{\partial t} = \left( \frac{\partial A^0}{\partial t}, \frac{\partial A^1}{\partial t}, \frac{\partial A^2}{\partial t}, \frac{\partial A^3}{\partial t} \right)
+\end{equation}
+The grid scalar energy density (momentum pressure) $u$ is defined as the standard Euclidean dot product of this rate-of-change vector and its complex conjugate:
+\begin{equation}
+u = \epsilon_0 \frac{\partial A}{\partial t} \cdot \left( \frac{\partial A}{\partial t} \right)^* = \epsilon_0 \sum_{\nu=0}^{3} \left| \frac{\partial A^\nu}{\partial t} \right|^2
+\end{equation}
+The underlying four-dimensional non-local nonlinear field equation can then be written in a unified and compact derivative form:
+\begin{equation}
+e^{a^2 \square} A^\mu = \left[ 1 + \kappa \, \ln \left( 1 + \frac{\epsilon_0 \frac{\partial A}{\partial t} \cdot \left( \frac{\partial A}{\partial t} \right)^*}{u_{\mathrm{th}}} \right) \right] A^\mu
+\end{equation}
+
+\subsection{Mathematical Equivalence under the Standing Wave State of a Single Charge}
+
+To demonstrate the mathematical equivalence between this derivative formulation and the original model under a single-particle ground state, we examine a single-charge system in a stationary eigenstate (a monochromatic resonant soliton).
+
+The potential field of a single stable electron (or positron) possesses a definite intrinsic angular frequency $\omega_0 = \frac{mc^2}{\hbar}$, and its spatiotemporal function can be expressed as:
+\begin{equation}
+A^\nu(\vec{x}, t) = \Phi^\nu(\vec{x}) e^{\mp i \omega_0 t}
+\end{equation}
+Taking the temporal derivative yields:
+\begin{equation}
+\frac{\partial A^\nu}{\partial t} = \mp i \omega_0 A^\nu
+\end{equation}
+Substituting this derivative into the Euclidean dot product formula gives:
+\begin{equation}
+\frac{\partial A}{\partial t} \cdot \left( \frac{\partial A}{\partial t} \right)^* = \sum_{\nu=0}^{3} \left( \mp i \omega_0 A^\nu \right) \left( \pm i \omega_0 A^{\nu*} \right) = \omega_0^2 \sum_{\nu=0}^{3} |A^\nu|^2
+\end{equation}
+This result indicates that under single-particle resonant conditions, the derivative dot-product form is strictly equivalent to the energy density defined as a positive-definite scalar sum.
+
+In the original model, due to the direct use of the Minkowski metric contraction, a pure transverse wave state ($A^0 = 0$) would yield a negative inner product $A_\nu A^\nu = -|\vec{A}|^2$. This necessitated taking the absolute value to strip away the spatial negative sign of the Minkowski metric to obtain a positive-definite energy flux density. In contrast, the derivative dot-product form algebraically strips away the interference of metric signs naturally, matching the physical intent of the positive-definite energy flux density in the original model.
+
+\subsection{Deriving the Essence of Charge Signs via Temporal Derivatives and Sequence Reversal}
+
+In quantum mechanics, charge symmetry represents time reversal. In this model, it represents the phase sequence of the bilayer grid. The ``sign'' of a charge is the algebraic projection of the interlayer temporal flow direction when acted upon by the temporal derivative within the covariant differential operator.
+
+According to the replication sequence between the grid layers ($b_0, b_1$), the physical flow of information determines the rotation direction of the complex temporal phase:
+\begin{itemize}
+    \item \textbf{Electron ($b_1 \to b_0$ sequence):} The reversed temporal sequence causes the complex phase to rotate clockwise: $\Psi_{\mathrm{elec}} \propto e^{-i\omega t}$
+    \item \textbf{Positron ($b_0 \to b_1$ sequence):} The forward temporal sequence causes the complex phase to rotate counter-clockwise: $\Psi_{\mathrm{posi}} \propto e^{i\omega t}$
+\end{itemize}
+When the temporal derivative operator $\partial_t$ acts on these two matter wavepackets with opposing temporal directions, it extracts opposing eigenvalues:
+\begin{itemize}
+    \item \textbf{For the electron:} $\partial_t \Psi_{\mathrm{elec}} = -i\omega \Psi_{\mathrm{elec}}$
+    \item \textbf{For the positron:} $\partial_t \Psi_{\mathrm{posi}} = +i\omega \Psi_{\mathrm{posi}}$
+\end{itemize}
+In Minkowski space, the minimal coupling between the matter wavepacket and the external positive scalar potential $V$ of the environment occurs through the first-order covariant temporal derivative $D_0 = \frac{1}{c} \left( \partial_t + i \frac{q}{\hbar} V \right)$. Since the imaginary unit $i$ serves as the grid interlayer copy latency operator, it constitutes an intrinsic property of the vacuum medium.
+
+For a charge situated within a potential field, the algebraic structure of the covariant differential operator must satisfy the following physical alignments:
+\begin{itemize}
+    \item \textbf{For the electron} (substituting $\partial_t \to -i\omega$ and $q_{\mathrm{elec}} = -e$):
+    \begin{equation}
+    D_0 \Psi_{\mathrm{elec}} = \frac{i}{c} \left( -\omega - \frac{e}{\hbar} V \right) \Psi_{\mathrm{elec}} = -\frac{i}{c} \left( \omega + \frac{e}{\hbar} V \right) \Psi_{\mathrm{elec}}
+    \end{equation}
+    Requiring its physical effect to align with the free state (i.e., equivalent to $-\frac{i}{c}\omega_0 \Psi_{\mathrm{elec}}$), we directly solve for the intrinsic frequency of the electron in the potential field:
+    \begin{equation}
+    \omega = \omega_0 - \frac{e}{\hbar} V
+    \end{equation}
+    The physical frequency shift (binding energy) is:
+    \begin{equation}
+    \Delta\omega_{\mathrm{elec}} = \omega - \omega_0 = -\frac{e}{\hbar} V < 0
+    \end{equation}
+    A decrease in frequency corresponds to a \textbf{redshift} ($\Delta\omega < 0$), which indicates that the system releases positive binding energy, manifesting physically as an \textbf{attractive bound state}.
+    
+    \item \textbf{For the positron} (substituting $\partial_t \to +i\omega$ and $q_{\mathrm{posi}} = +e$):
+    \begin{equation}
+    D_0 \Psi_{\mathrm{posi}} = \frac{i}{c} \left( \omega + \frac{e}{\hbar} V \right) \Psi_{\mathrm{posi}}
+    \end{equation}
+    Similarly requiring alignment with the free state (i.e., equivalent to $\frac{i}{c}\omega_0 \Psi_{\mathrm{posi}}$), we find the clock frequency to be $\omega = \omega_0 - \frac{e}{\hbar}V$. Because the temporal spin direction of the positron is reversed (temporal sequence inversion $\Psi_{\mathrm{posi}} \propto e^{i\omega t}$), the sign of its physical energy change is governed by time-reversal symmetry, yielding the actual physical frequency shift (energy change):
+    \begin{equation}
+    \Delta\omega_{\mathrm{posi}} = -(\omega - \omega_0) = +\frac{e}{\hbar} V > 0
+    \end{equation}
+    An increase in frequency corresponds to a \textbf{blueshift} ($\Delta\omega > 0$), indicating that the system requires an input of energy, manifesting physically as a \textbf{repulsive unbound state}.
+\end{itemize}
+Thus, the positive and negative signs of the charge $q$ are algebraic manifestations of the emergence of these two opposing physical effects—redshift and blueshift—when temporal rotation directions ($-i\omega$ and $+i\omega$) are projected onto the same covariant temporal operator $D_0$.
+
+\subsection{Physical Attraction in the Static Limit}
+
+We provide a conceptual proof of physical attraction between positive and negative charges in the static limit. In this limit, the electrostatic scalar potentials of the two charges projected onto three-dimensional space manifest as singularity-free Gaussian distributions smoothed by non-local operators. Due to their opposite charge signs, their scalar potentials carry opposite algebraic signs:
+\begin{itemize}
+    \item \textbf{Potential field of negative charge 1:} $U_1(\vec{x}) = - U_0 e^{-\alpha |\vec{x} - \vec{x}_1|^2}$
+    \item \textbf{Potential field of positive charge 2:} $U_2(\vec{x}) = + U_0 e^{-\alpha |\vec{x} - \vec{x}_2|^2}$
+\end{itemize}
+When these opposite charges approach each other (with a central distance $d$), the total potential field in space is $U_{\mathrm{total}} = U_1 + U_2$. The local scalar momentum pressure of the grid satisfies a quadratic distribution:
+\begin{equation}
+u(\vec{x}) \propto [U_1(\vec{x}) + U_2(\vec{x})]^2 = U_1^2(\vec{x}) + U_2^2(\vec{x}) + 2 U_1(\vec{x})U_2(\vec{x})
+\end{equation}
+The cross-term representing the two-body interaction is:
+\begin{equation}
+u_{\mathrm{int}}(\vec{x}) = 2 U_1(\vec{x})U_2(\vec{x}) = - 2 U_0^2 e^{-\alpha \left( |\vec{x} - \vec{x}_1|^2 + |\vec{x} - \vec{x}_2|^2 \right)}
+\end{equation}
+Because the algebraic signs of the potential fields are opposite, \textbf{the interaction term $u_{\mathrm{int}}(\vec{x})$ remains strictly negative across all space}. This indicates that in the region between the two charges, the momentum pressure of the grid experiences a significant drop due to ``phase neutralization,'' thereby releasing local vacuum tension.
+
+\subsection{Dynamic Attraction of Opposite Charges Guided by Local Action and Phase-Locking Mechanisms}
+
+We continue to analyze how local actions and phase-locking mechanisms guide the attraction of positive and negative charges in a dynamic setting. On the underlying computational grid, the energy density response is local and instantaneous, acting on a given node based on the local derivative waveform at that specific spatial and temporal coordinate.
+
+Based on the temporal rotation definitions of the complex potential fields of opposite charges, we present a conceptual proof of a ``parametric phase-locking'' mechanism that automatically emerges on the grid, demonstrating the dynamical effect whereby opposite charges spontaneously enter a low-energy state and attract each other. We note that this proof is not yet fully complete, and a more detailed model remains an open question.
+
+\subsubsection{Local Instantaneous Superposition and the Emergence of $2\omega_0$ Dynamic Beats}
+
+Consider an arbitrary local grid node $\vec{x}$ in space, where the potential fields from both a negative charge (electron) and a positive charge (positron) arrive simultaneously. According to the Clifford temporal rotation directions, their local instantaneous waveforms are defined as:
+\begin{itemize}
+    \item \textbf{Negative charge field (clockwise):} $A_-(t) = \phi_1 e^{-i\omega_0 t}$
+    \item \textbf{Positive charge field (counter-clockwise):} $A_+(t) = \phi_2 e^{+i\omega_0 t}$
+\end{itemize}
+Although the intrinsic temporal rotation direction is absolutely locked by the charge polarity, the solitons are allowed to possess localized spatial phase shifts at different positions in space due to grid transmission latency and spatial separation.
+
+Temporarily neglecting these spatial phase shifts, we calculate the local linear superposition at position $\vec{x}$:
+\begin{equation}
+A_{\mathrm{loc}}(t) = \phi_1 e^{-i\omega_0 t} + \phi_2 e^{+i\omega_0 t}
+\end{equation}
+Without performing any time averaging, we directly calculate the \textbf{instantaneous temporal derivative} at this node:
+\begin{equation}
+\dot{A}_{\mathrm{loc}}(t) = -i\omega_0 \phi_1 e^{-i\omega_0 t} + i\omega_0 \phi_2 e^{+i\omega_0 t}
+\end{equation}
+We substitute this into the positive-definite grid energy density formula $u(t) = \epsilon_0 \dot{A}_{\mathrm{loc}} \cdot \dot{A}_{\mathrm{loc}}^*$ and expand it instantaneously:
+\begin{align}
+u(t) &= \epsilon_0 \left( -i\omega_0 \phi_1 e^{-i\omega_0 t} + i\omega_0 \phi_2 e^{i\omega_0 t} \right) \left( +i\omega_0 \phi_1 e^{i\omega_0 t} - i\omega_0 \phi_2 e^{-i\omega_0 t} \right) \nonumber \\
+&= \epsilon_0 \omega_0^2 \left( \phi_1 e^{-i\omega_0 t} - \phi_2 e^{i\omega_0 t} \right) \left( \phi_1 e^{i\omega_0 t} - \phi_2 e^{-i\omega_0 t} \right) \nonumber \\
+&= \epsilon_0 \omega_0^2 \left[ \phi_1^2 + \phi_2^2 - \phi_1 \phi_2 \left( e^{2i\omega_0 t} + e^{-2i\omega_0 t} \right) \right]
+\end{align}
+Using Euler's formula to simplify, we obtain the evolution of the instantaneous energy density at this local node:
+\begin{equation}
+u(t) = \epsilon_0 \omega_0^2 \left[ \phi_1^2 + \phi_2^2 - 2\phi_1 \phi_2 \cos(2\omega_0 t) \right]
+\end{equation}
+\textbf{Underlying Physical Picture:} The energy density is not a static scalar $\phi_1^2 + \phi_2^2$. When opposing temporal phases of positive and negative charges meet on the local grid, they generate a \textbf{high-frequency $2\omega_0$ dynamic beat}. This means that on the local node where opposite charges overlap, the ``momentum pressure'' of the grid pulsates violently at twice the intrinsic frequency.
+
+\subsubsection{Grid Nonlinear Response and Time-Domain Parametric Pumping}
+
+The fields on the grid must satisfy nonlinear feedback constraints. Substituting the instantaneous energy density $u(t)$ into the grid's logarithmic response function $g(u)$, under a perturbative expansion ($g(u) \approx \kappa u$), the local effective refractive index (or restoring force coefficient) of the grid gains a dynamically oscillating term:
+\begin{equation}
+\delta g(t) \propto - 2\kappa \epsilon_0 \omega_0^2 \phi_1 \phi_2 \cos(2\omega_0 t) \equiv - \gamma \cos(2\omega_0 t)
+\end{equation}
+Here, the grid itself acts as a dynamic medium that periodically ``softens and hardens'' at a frequency of $2\omega_0$. Dynamically, this is equivalent to introducing a \textbf{parametric pump} that directly acts on the evolution of the independent potential field at the current position.
+
+\subsubsection{Parametric Quadrature Splitting and Spontaneous Phase-Locking}
+
+As an independent evolving entity, the potential field $A_{\mathrm{loc}}$, though driven by its source, must satisfy the wave equation of the local grid:
+\begin{equation}
+\frac{\partial^2 A_{\mathrm{loc}}}{\partial t^2} + \omega_0^2 A_{\mathrm{loc}} = - \delta g(t) A_{\mathrm{loc}}
+\end{equation}
+Let the independent potential field assume a slowly-varying envelope form: $A_{\mathrm{loc}}(t) = c_-(t) e^{-i\omega_0 t} + c_+(t) e^{+i\omega_0 t}$. Substituting the pump term $\delta g(t) = -\frac{\gamma}{2}(e^{2i\omega_0 t} + e^{-2i\omega_0 t})$ into the right-hand side and extracting terms resonant with $e^{\pm i\omega_0 t}$, and applying the slowly-varying envelope approximation (neglecting the $\ddot{c}$ term), the wave equation transforms to:
+\begin{equation}
+-2i\omega_0 \dot{c}_- e^{-i\omega_0 t} + 2i\omega_0 \dot{c}_+ e^{i\omega_0 t} = \frac{\gamma}{2} \left( c_+ e^{-i\omega_0 t} + c_- e^{i\omega_0 t} \right)
+\end{equation}
+Comparing coefficients yields a set of rigorous \textbf{parametric coupled-mode equations (CMEs)}:
+\begin{align}
+\dot{c}_- &= i \Omega c_+ \\
+\dot{c}_+ &= -i \Omega c_-
+\end{align}
+where the coupling strength is $\Omega = \frac{\gamma}{4\omega_0} \propto \phi_1 \phi_2$.
+
+Taking the second derivative of the above equations yields:
+\begin{equation}
+\ddot{c}_- = i \Omega \dot{c}_+ = i \Omega (-i \Omega c_-) = +\Omega^2 c_-
+\end{equation}
+The positive sign ($+\Omega^2$) appearing in the equation signifies a \textbf{parametric instability}. In a grid pumped at $2\omega_0$, the spin of the potential field is forcibly demodulated into two orthogonal quadratures: one quadrature is continuously amplified, while the other orthogonal quadrature is strongly \textbf{damped}. Under this action, the potential field $A_{\mathrm{loc}}$ as an independent fluid undergoes a dynamic ``phase slip,'' \textbf{spontaneously locking its phase into the low-energy channel compressed by the grid}.
+
+This spontaneous phase-locking causes the local effective frequency of the potential field to deviate from the rigid drive frequency $\omega_0$ of the source, resulting in a redshift (resonant alignment frequency reduction):
+\begin{equation}
+\omega_{\mathrm{new}} = \omega_0 - \Omega
+\end{equation}
+
+\subsubsection{Underlying Emergence of Macroscopic Attraction}
+
+This decrease in frequency is equivalent to a reduction in the system's energy density (i.e., the release of binding energy): $\Delta E = -\hbar \Omega \propto -\phi_1 \phi_2$. The negative sign of the interaction energy is a direct consequence of the frequency reduction arising from the \textbf{spontaneous parametric phase-locking} of the local potential field to accommodate the $2\omega_0$ grid beat.
+
+In the spatial region where the opposite charges overlap, every local grid point undergoes this process of ``parametric pumping $\to$ phase-locking $\to$ frequency redshift.'' This shapes a physical \textbf{low-energy-density, low-frequency spatiotemporal relaxation pathway} between the two charges.
+
+As macroscopic standing-wave solitons maintained by grid nonlinear self-focusing, the charges naturally slip geometrically along this softened gradient channel to minimize the total energy of their topological structure. Under macroscopic observation, this manifests as electromagnetic attraction.
+
+\section{Grid Fluid Topological Model of Strong Interactions and Binucleon Convective Self-Locking Mechanism}
+
+Within the fluid topological framework, the neutron is no longer treated as an independent elementary baryonic field, but rather as a localized nonlinear composite state formed by a proton and a $\pi^-$ meson in the strong coupling region ($N \approx [P + \pi^-]$). In a dibaryon system, the total vector potential $A^\mu_{\mathrm{total}}$ is a coherent superposition of the two spatially separated proton cores and the shared $\pi^-$ meson field convecting at high frequency between them: $A^\mu_{\mathrm{total}} = A_{\mathrm{P1}} + A_{\mathrm{P2}} + A_\pi$.
+
+\subsection{Determinism of Charge Phase Directions and Spatially Variable Phase Offsets}
+
+In grid phase dynamics, the topological charge $q$ of a soliton is mapped to its intrinsic phase rotation direction in time. For the physical field of any given system, the sign preceding the temporal independent variable (the phase rotation direction) represents the intrinsic polarity of the charge:
+\begin{itemize}
+    \item \textbf{Positive charge sequence (proton):} The temporal phase term always carries a positive sign, expressed as $+\omega_p t$, where the ground-state carrier wave exhibits a forward temporal sequence (corresponding to the $b_0 \to b_1$ copy sequence in Section 1.3):
+    \begin{equation}
+    A_{\mathrm{P}} \propto e^{i\omega_p t}
+    \end{equation}
+    \item \textbf{Negative charge sequence ($\pi^-$ meson):} The temporal phase term always carries a negative sign, expressed as $-\omega_\pi t$, where the ground-state carrier wave exhibits a reversed temporal sequence (corresponding to the $b_1 \to b_0$ copy sequence in Section 1.3):
+    \begin{equation}
+    A_{\pi} \propto e^{-i\omega_\pi t}
+    \end{equation}
+\end{itemize}
+Although the intrinsic temporal rotation direction is locked by the charge polarity, spatial separation and propagation latencies allow solitons to possess local spatial phase offsets ($\theta$) at different positions in space. For a system of two protons separated in space at $z_1 = -D/2$ and $z_2 = +D/2$, their dynamic trial solutions on the complex rotating polarization plane $A_+ \equiv A_x + i A_y$ are expressed as:
+\begin{align}
+A_{\mathrm{P1}}(t) &= F_1(\rho) e^{i(\omega_p t + \theta_1)} \\
+A_{\mathrm{P2}}(t) &= F_2(\rho) e^{i(\omega_p t + \theta_2)}
+\end{align}
+Between the two proton cores, the shared $\pi^-$ meson field acts as a high-frequency convective wavepacket whose phase is governed by the negative charge intrinsic direction, spontaneously accumulating a spatial phase gradient $e^{i k_\pi z}$ along the propagation axis:
+\begin{equation}
+A_\pi(z, t) = F_\pi(\rho, z) e^{-i(\omega_\pi t - k_\pi z + \phi_0)}
+\end{equation}
+where $\theta_1$ and $\theta_2$ are the local spatial phase offsets of the two nucleons, $\phi_0$ is the initial emission phase of the convective meson field, and $k_\pi$ is the intrinsic wavenumber of the bound meson.
+
+\subsection{Spatiotemporal Phase Opposition and the Physical Emergence of Bilateral Exchange Symmetry}
+
+Projecting the convective meson field onto the spatial boundaries of the left and right proton cores, we calculate the local interaction energy term $A_{\mathrm{P}}^* A_\pi$ at both boundaries:
+\begin{itemize}
+    \item At the left boundary ($z_1 = -D/2$):
+    \begin{equation}
+    A_{\mathrm{P1}}^*(t) A_\pi\left(-\frac{D}{2}, t\right) = F_1 F_\pi e^{-i(\omega_p t + \theta_1)} e^{-i\left(\omega_\pi t + k_\pi \frac{D}{2} + \phi_0\right)} = F_1 F_\pi e^{-i(\omega_p + \omega_\pi)t} e^{-i\left(\theta_1 + k_\pi \frac{D}{2} + \phi_0\right)}
+    \end{equation}
+    \item At the right boundary ($z_2 = +D/2$):
+    \begin{equation}
+    A_{\mathrm{P2}}^*(t) A_\pi\left(+\frac{D}{2}, t\right) = F_2 F_\pi e^{-i(\omega_p t + \theta_2)} e^{-i\left(\omega_\pi t - k_\pi \frac{D}{2} + \phi_0\right)} = F_2 F_\pi e^{-i(\omega_p + \omega_\pi)t} e^{-i\left(\theta_2 - k_\pi \frac{D}{2} + \phi_0\right)}
+    \end{equation}
+\end{itemize}
+For the shared meson field to symmetrically release local binding energy to both proton cores, precise impedance matching must be achieved at both boundaries, meaning the coherent accumulated phase angles on the left and right ends must satisfy:
+\begin{equation}
+\theta_1 + k_\pi \frac{D}{2} + \phi_0 \equiv \theta_2 - k_\pi \frac{D}{2} + \phi_0 \pmod{2\pi}
+\end{equation}
+Expanding this identity directly yields the \textbf{binucleon spatial phase-opposition mechanism}:
+\begin{equation}
+\theta_2 - \theta_1 \equiv k_\pi D \pmod{2\pi}
+\end{equation}
+This matching condition demonstrates that the temporal phase difference $\theta_2 - \theta_1$ on the complex plane arising from cross-layer latency can be algebraically offset by the spatial phase gradient $k_\pi D$ accumulated by the convective meson propagating across distance $D$.
+
+According to the underlying grid copy sequence rules, if the information exchange between the two protons generates a $\pi/2$ phase difference due to temporal latency (i.e., the temporal shift operator $\mathbf{i}$, corresponding to $\theta_2 - \theta_1 = -\pi/2$), substituting this into the matching condition yields:
+\begin{equation}
+-k_\pi D = -\frac{\pi}{2} \implies D = \frac{\pi}{2 k_\pi} = \frac{\lambda_\pi}{4}
+\end{equation}
+This reveals a geometric relation at the hadronic scale: \textbf{the binucleon spacing $D$ is locked at a quarter of the convective meson's intrinsic wavelength (quarter-wavelength impedance matching)}. At this distance, the phase gradient accumulated by the meson in space compensates for the grid temporal latency of the protons, causing the phase angles of the bilateral boundaries to align.
+
+\subsection{Potential Energy Density Cancellation and Algebraic Settlement of Cross-Momentum Flow Elimination}
+
+In calculating the total energy density $u_{\mathrm{total}}$ under two-body interactions, since the proton (positive temporal sequence, $e^{i\omega_p t}$) and the $\pi^-$ meson (negative temporal sequence, $e^{-i\omega_\pi t}$) carry opposite interlayer temporal directions, they undergo phase neutralization when converging in the shared resonant cavity, as described by the charge cancellation mechanics in Section 1. Consequently, the cross-interaction term in the overlapping region manifests as a stable, constant negative energy density:
+\begin{equation}
+u_{\mathrm{int}} \approx - 2 \epsilon_0 \omega_p \omega_\pi F_p F_\pi
+\end{equation}
+Substituting this into the expanded temporal derivative energy density formula, the total energy density decreases to:
+\begin{equation}
+u_{\mathrm{total}} = u_{\mathrm{self}} + u_{\mathrm{int}} \approx u_{\mathrm{self}} - 2 \epsilon_0 \omega_p \omega_\pi F_p F_\pi
+\end{equation}
+Since this term remains strictly negative across all space, it represents a direct reduction of local binding energy, releasing the shear strain energy of the vacuum. This non-fluctuating stationary attractive potential well stabilizes and locks the binucleon system at the impedance matching point $D = \lambda_\pi/4$.
+
+Concurrently, we evaluate the cross-momentum flow at both boundaries. Based on the grid fluid mapping, the directional momentum density flow is defined as:
+\begin{equation}
+\vec{p}_{\mathrm{cross}} = \mathrm{Im}\left( A_{\mathrm{P}}^* \nabla A_\pi + A_\pi^* \nabla A_{\mathrm{P}} \right)
+\end{equation}
+Because the spatial gradients of the convective meson are symmetric but opposite at the two boundaries (satisfying $\nabla A_\pi = i \vec{k}_\pi A_\pi$ and $\nabla A_\pi = -i \vec{k}_\pi A_\pi$, respectively), substituting the phase-opposition condition simplifies the cross-shear terms algebraically into a purely real vector:
+\begin{equation}
+A_{\mathrm{P}}^* \nabla A_\pi + A_\pi^* \nabla A_{\mathrm{P}} \propto -2 \vec{k}_\pi \sin((\omega_p + \omega_\pi)t)
+\end{equation}
+Extracting the imaginary part yields, at any instantaneous time $t$:
+\begin{equation}
+\vec{p}_{\mathrm{cross}} \equiv \mathbf{0}
+\end{equation}
+The spatiotemporal phase opposition not only eliminates the time-dependent instability of the potential energy density, but also cancels the cross-shear momentum flows within the stationary cavity. The system retains only the subtraction of net momentum flows, lowering the grid scalar pressure and preserving the stability of the self-locked state.
+
+\subsection{Order Collapse of the D'Alembert Operator and the Explicit Emergence of Meson Rest Mass}
+
+The total physical potential of the shared meson in the stationary cavity carries a definite intrinsic clock rotation term: $A_{\pi, \mathrm{total}} = A_\pi(z) e^{-i\omega_\pi t}$. Acting the four-dimensional covariant D'Alembert operator $\square = \frac{1}{c^2}\partial_t^2 - \partial_z^2 - \nabla_\perp^2$ on this field yields:
+\begin{equation}
+\square A_{\pi, \mathrm{total}} = \left[ -\frac{\omega_\pi^2}{c^2} - \partial_z^2 - \nabla_\perp^2 \right] A_\pi(z) e^{-i\omega_\pi t}
+\end{equation}
+Applying the slowly-varying envelope approximation (SVEA), the second-order spatial derivative of the meson field envelope along the $z$-axis is extremely weak and its perturbative term can be neglected ($\partial_z^2 F_\pi \approx 0$). At this point, the first-order spatial derivative couples with the spatial gradient of the carrier wave:
+\begin{equation}
+\partial_z^2 A_\pi \approx \left[ -k_\pi^2 + 2i k_\pi \frac{\partial}{\partial z} \right] A_\pi
+\end{equation}
+Since the high-frequency carrier wave of the meson on the grid strictly obeys the vacuum speed-of-light dispersion relation $k_\pi^2 = \omega_\pi^2 / c^2$, the second-order temporal derivative term and the second-order spatial carrier propagation term cancel each other:
+\begin{equation}
+-\frac{\omega_\pi^2}{c^2} + k_\pi^2 \equiv 0
+\end{equation}
+The algebraic disappearance of this second-order characteristic term forces a \textbf{first-order collapse} of the D'Alembert operator. The operator's response to the physical envelope simplifies to:
+\begin{equation}
+\square A_{\pi} \approx \left[ -2i k_\pi \frac{\partial}{\partial z} - \nabla_\perp^2 \right] A_{\pi}
+\end{equation}
+Substituting this collapsed first-order operator back into the non-local nonlinear field equation, it achieves self-consistency with the nonlinear self-trapping energy term under local constraints. Here, the meson wavepacket releases its self-confinement tension under strong interactions, causing a redshift in its clock frequency: $\omega_\pi = \omega_{\pi, 0} - \Delta \omega_\pi$. Aligning this first-order gradient and redshift term with the energy scale yields:
+\begin{equation}
+\Delta E_\pi = \hbar \Delta \omega_\pi = \frac{\hbar^2}{2m_\pi} \left[ k_{\pi, 0}^2 - \left( k_{\pi, \mathrm{bound}}^2 + k_\perp^2 \right) \right]
+\end{equation}
+This demonstrates that the rest mass $m_\pi$ of the meson is an effective fluid inertia that explicitly emerges from the first-order collapse of the second-order D'Alembert operator.
+
+\subsection{Time-Dependent Coupled-Mode Equations and Nonlinear Emergence of Multibody Nuclear Forces}
+
+Having established the charge intrinsic temporal sequence directions and eliminated the AC shear flow fluctuations using the phase neutralization described in Section 1.4, the overall dynamic evolution of the diproton system can be modeled as the periodic flow (i.e., Rabi oscillation) of a shared meson between the two proton cores:
+\begin{equation}
+P_1 + [\pi^- + P_2] \rightleftharpoons [P_1 + \pi^-] + P_2
+\end{equation}
+Since the convective frequency of the meson between the two cores (the transfer frequency $\Omega$) is much slower than the baryon clock ($\Omega \ll \omega_p$), we construct complex Rabi amplitudes $C_1(t)$ and $C_2(t)$ to describe the continuous transformation between the two topological composite states. The time-dependent evolution of the system is governed by a symmetric set of time-dependent coupled-mode equations (CMEs):
+\begin{equation}
+\begin{cases} 
+i \hbar \frac{\partial C_1(t)}{\partial t} = E_{\mathrm{self}} C_1(t) + \mathcal{V}_{\mathrm{int}} C_2(t) \\ 
+i \hbar \frac{\partial C_2(t)}{\partial t} = E_{\mathrm{self}} C_2(t) + \mathcal{V}_{\mathrm{int}} C_1(t) 
+\end{cases}
+\end{equation}
+As proven in Section 2.3, the AC time-varying terms are eliminated by the direct neutralization of the interlayer phases of the bilayer grid. Consequently, the two-body interaction energy manifests as a stationary spatial potential well, and the coupling matrix element $\mathcal{V}_{\mathrm{int}}$ can be expressed as a completely time-independent, stationary real constant.
+
+Combining this with the derivative-form energy density definition, we reconstruct the mathematical form of the spatial overlap integral of the coupling matrix element $\mathcal{V}_{\mathrm{int}}$ as:
+\begin{equation}
+\mathcal{V}_{\mathrm{int}} = -\int d^3r \left( 4\epsilon_0 \omega_p \omega_\pi F_1(\rho) F_2(\rho) \left[ \kappa \, \ln \left( 1 + \frac{|u_{\mathrm{int}}|}{u_{\mathrm{th}}} \right) \right] \right)
+\end{equation}
+where $F_1(\rho)$ and $F_2(\rho)$ are the three-dimensional spatial envelopes of the two proton potentials on the polar plane. The algebraic term $4\epsilon_0 \omega_p \omega_\pi F_1 F_2$ carries the dimensions of fluid energy density ($\text{J/m}^3$). Integrating over the spatial volume element $d^3r$ with the dimensionless grid nonlinear logarithmic saturation factor $\kappa \ln \left( 1 + |u_{\mathrm{int}}|/u_{\mathrm{th}} \right)$, the coupling constant $\mathcal{V}_{\mathrm{int}}$ physically yields dimensions of energy.
+
+Because the neutralization of opposing temporal phases causes the interaction energy term to be strictly negative ($u_{\mathrm{int}} < 0$) across all space, the overlap integral represents a stationary attractive energy under the nonlinear self-trapping effect of the field equation. Macroscopically, this manifests as a symmetric, stationary attractive nuclear force, whose dynamic self-locking mechanism anchors the binucleon system at the impedance-matched spacing $D = \lambda_\pi / 4$.
+
+\section{Bessel Trial Solution for Centripetal Convergence of Trinucleon Nuclear Forces and Emergence of Central Topological Vortex}
+
+In the two-body (proton-neutron) model, the strong interaction manifests as stationary wave reflection of the meson flow along a one-dimensional convective axis, achieving ``cog-and-slot engagement'' through a $\pi/3$ polarization rotation. When the system evolves into a trinucleon bound state (such as triton ${}^3\text{H}$ or helium-3 ${}^3\text{He}$), the fluid topology of the strong interaction undergoes dimensional expansion. Under multibody symmetry, the principal radiation axes of all nucleons spontaneously point toward the geometric center, and the centripetal chiral meson flows cannot form a static superposition at the center, exciting a \textbf{macroscopic Bessel quantum vortex of the first kind} under the evolution of the D'Alembert operator.
+
+\subsection{Geometric Boundary Settings for Trinucleon Centripetal Polarization}
+
+To describe the fluid dynamics of the trinucleon system, we establish a global cylindrical coordinate system $(r, \phi, z)$ centered at the trinucleon geometric center $O(0,0,0)$. Three nucleon wavepackets $N_1, N_2, N_3$ lie in the $z=0$ plane, uniformly distributed along a circle of radius $R_0$. Their azimuthal positions are symmetric: $\phi_j = \frac{2\pi}{3}(j-1)$.
+
+\textbf{Centripetal Polarization Setting:} Unlike the parallel $z$-axis in the two-body case, in multibody fields, the local polarized radiation principal axes ($z'_j$) of the three nucleons spontaneously point toward the geometric center ($\hat{z}'_j = -\hat{r}_j$) to minimize the overall grid energy density. Consequently, three meson streams carrying local chiral polarization converge simultaneously toward the center $r \to 0$.
+
+\subsection{Angular Deflection of Trinucleon Polarization Trial Solution and Phase Neutralization in Central and Temporal Dimensions}
+
+When the three nucleon wavepackets with three-lobed envelopes ($C_3$ symmetry, $3\theta'$ modulation) converge toward the center, their transverse polarization planes overlap in the common central region. To eliminate the nonlinear grid shear stress caused by multipole fluctuations, the system undergoes spontaneous topological symmetry breaking in phase space.
+
+We calculate the \textbf{spontaneous twisting} of the local polarization orientation angles ($\alpha_j$) within the three nucleons:
+\begin{equation}
+\alpha_j = (j-1)\frac{2\pi}{9}
+\end{equation}
+indicating that the internal spin polarization planes of the three nucleons exhibit topological canting angles of $0^\circ, 40^\circ,$ and $80^\circ$, respectively.
+
+Let the azimuthal angle of the observation point around the common central axis be $\gamma$. The high-frequency multipole interference term in the central overlap region is the algebraic sum of the three envelope modulations:
+\begin{equation}
+\mathrm{Fluctuation} \propto \sum_{j=1}^3 \varepsilon \cos\left(3(\gamma - \alpha_j)\right) = \varepsilon \left[ \cos(3\gamma) + \cos\left(3\gamma - \frac{2\pi}{3}\right) + \cos\left(3\gamma - \frac{4\pi}{3}\right) \right] \equiv 0
+\end{equation}
+In space, this ``irons out'' the central overlap region into an absolutely smooth, purely scalar vacuum substrate, explaining the phenomena of \textbf{spin frustration} and the \textbf{non-central character of the tensor nuclear force} in multibody nuclear systems.
+
+Temporally, according to the phase neutralization of opposite charges detailed in Section 1.4, the positively charged proton (positive temporal rotation term, $e^{i\omega_p t}$) and the negatively charged central meson vortex (negative temporal rotation term, $e^{-i\omega_\pi t}$) meet in the overlap region. Their interlayer timings spontaneously complement each other on the bilayer grid, eliminating the high-frequency temporal cosine fluctuations (AC terms) on the time axis and generating a \textbf{stationary, constant, non-fluctuating negative interaction energy density $u_{\mathrm{int}} < 0$}. This establishes the foundation for the energetic self-locking of the trinucleon system.
+
+\subsection{Bessel Self-Locking of Meson Circulation and Nucleon Phase Deficit Alignment}
+
+On the smoothed scalar substrate, the three centripetal meson waves interfere. In cylindrical coordinates, the transverse portion of the D'Alembert operator $\nabla_\perp^2 A = -k^2 A$ yields solutions that expand from one-dimensional standing waves $\sin(kz)$ into \textbf{Bessel functions of the first kind $J_m(kr)$}.
+
+To adhere to the fluid topological definition of the neutron as a proton-meson composite state ($N \approx [P + \pi^-]$) while avoiding double-counting of the bilayer grid timing, we do not introduce independent neutron timing terms. Instead, we unify the trinucleon system (using triton ${}^3\text{H} \approx 3P + 2\pi^-$ as an example) as a coherent superposition of \textbf{three positive-temporal proton-type cores} and a \textbf{shared negative-temporal meson vortex field}. The global vector potential trial solution is expressed as:
+\begin{equation}
+A_{\mathrm{total}}(\vec{r}, t) = \sum_{j=1}^3 F_j(\vec{r}) e^{i(\omega_p t + \theta_j)} + A_{\pi, \mathrm{vortex}}(r, \phi, z, t)
+\end{equation}
+where a global composite convective meson field $A_{\pi, \mathrm{vortex}}$ with a \textbf{topological charge of $m=1$} is spontaneously excited at the center:
+\begin{equation}
+A_{\pi, \mathrm{vortex}}(r, \phi, z, t) = i F_\pi(z) J_1(k_{\pi, \mathrm{bound}} r) e^{i(\phi - \omega_{\pi, \mathrm{bound}} t + \delta_{\pi})}
+\end{equation}
+
+\paragraph{Topological Phase-Deficit Alignment Mechanism:}
+According to phase-locking rules at the hadronic scale, a free proton possesses an intrinsic clock phase of $2\pi$ (zero phase deficit), whereas a free neutron possesses an intrinsic clock phase of $1.5\pi$ (a grid phase deficit of $0.5\pi$ or $90^\circ$). For the triton (${}^3\text{H}$, consisting of one proton and two neutrons), the nucleon system exhibits a cumulative phase deficit of $\pi$ ($180^\circ$) at the underlying grid limit.
+
+To achieve global closure and timing alignment in the multibody system, the central meson vortex field provides a continuous spatial helical phase gradient $e^{i\phi}$. The three nucleons are distributed uniformly at azimuthal angles of $\phi_j = \frac{2\pi}{3}(j-1)$:
+\begin{itemize}
+    \item The proton-type core located at $\phi_1 = 0^\circ$ (corresponding to $2\pi$ closure) is unaffected by additional phase interference.
+    \item The two proton-type cores located at $\phi_2 = 120^\circ$ and $\phi_3 = 240^\circ$ overlap spatially with the convective meson field carrying $e^{i\phi}$, converting the spatial phase difference ($\Delta \phi = 2\pi/3$) generated by the meson's motion directly into dynamic temporal phase compensation.
+\end{itemize}
+This space-to-time phase conversion mechanism dynamically fills the cumulative phase deficit of the multibody system at the grid limit, acting as a ``global phase distributor'' to unify the closure timing of the three nucleons.
+
+\subsection{Physical Emergence and Proof of Topological Self-Consistency of the Trial Solution}
+
+This Bessel vortex trial solution addresses several key questions regarding trinucleon nuclear forces:
+
+\paragraph{1. Central Centrifugal Low-Pressure Zone (the ``Hollow Core'' of Strong Force):}
+In the analytical trial solution, as $r \to 0$, $J_1(0) = 0$. This indicates that the vector sum of the meson energy flows is zero at the exact geometric center. Since the fluid carries global angular momentum ($e^{i\phi}$), the energy is pushed outward by centrifugal forces, \textbf{forming a zero-pressure topological hollow core at the center}. Consequently, the trinucleon nuclear force does not undergo an energy divergence at the center, but instead forms a stable, unidirectional circulation loop along the peak of $J_1(kr)$.
+
+\paragraph{2. Far-Field Chiral Cancellation (Macro-Scalar Nature of Strong Interactions):}
+Although the central meson circulation is a unidirectional vortex carrying substantial local polarization angular momentum, a multipole expansion in the far field ($r \gg R_0$) reveals:
+\begin{equation}
+A_{\mathrm{total}}(r \to \infty) \propto \int_{0}^{2\pi} J_1(kr) e^{i\phi} d\phi \equiv 0
+\end{equation}
+Due to the geometric symmetry of the fluid along the circle, its spatial phase integration cancels. The far-field grid experiences no residual shear curl, presenting macroscopic spatial isotropy (reproducing the behavior of a classical scalar Yukawa meson field).
+
+\paragraph{3. Analytical Derivation of the Trinucleon Equilibrium Distance $R_0$:}
+Similar to the two-body model where the spacing is determined by the stationary half-wavelength, the equilibrium radius $R_0$ of the trinucleon circulation is governed by the impedance-matching conditions between the meson cavity and the nucleons.
+
+For the meson flow to achieve lossless wavefront transfer at the nucleon positions $r = R_0$, the extremum point of the first derivative of the Bessel function $J_1(x)$ (where centripetal momentum is entirely converted to azimuthal momentum) must align with the nucleon radius.
+
+The first positive root of $J_1'(x) = 0$ is located at $x_1 \approx 1.841$. Given the wavevector $k = 1/\bar{\lambda}$, this strictly locks the geometry:
+\begin{equation}
+k_{\pi, \mathrm{bound}} R_0 = 1.841 \implies R_0 = 1.841 \bar{\lambda}_{\pi, \mathrm{bound}}
+\end{equation}
+This establishes the binding radius of the trinucleon system, revealing the unified origin of strong force ``saturation'' and nuclear ``geometric rigidity.''
+
+\paragraph{4. Phenomenological Model of the Triton Radius and Intranuclear Meson Mixed Reduced Wavelength:}
+If the reduced wavelength of a free meson is substituted into the above equation, the resulting radius deviates significantly from experimental observations. Under the confinement of the nucleon field, the reduced wavelengths of the meson and proton inside the nucleus undergo mixing according to the characteristic grid decay constant $\kappa = 1/e$:
+\begin{equation}
+\bar{\lambda}_{\mathrm{mixed}} = \left(1 - \frac{1}{e}\right) \bar{\lambda}_\pi + \frac{1}{e} \bar{\lambda}_p
+\end{equation}
+Substituting the values for the meson ($\bar{\lambda}_\pi \approx 1.414\text{ fm}$) and the proton ($\bar{\lambda}_p \approx 0.210\text{ fm}$), we calculate:
+\begin{equation}
+\bar{\lambda}_{\mathrm{mixed}} \approx 0.632 \times 1.414\text{ fm} + 0.368 \times 0.210\text{ fm} \approx 0.971\text{ fm}
+\end{equation}
+\begin{equation}
+R_0 = 1.84118 \times \bar{\lambda}_{\mathrm{mixed}} \approx 1.788\text{ fm}
+\end{equation}
+Compared with the CODATA-recommended experimental value of the triton root-mean-square charge radius $R_{\mathrm{exp}} \approx 1.759 \pm 0.036\text{ fm}$, the calculated value of $1.788\text{ fm}$ yields a relative error of only \textbf{$1.64\%$}, showing high consistency.
+
+\section{Tetrahedron Polarization Trial Solution for Tetranucleon Nuclear Forces and Self-Locking of the Alpha Particle}
+
+While the trinucleon model utilizes angular deflections to achieve ``gear-and-slot engagement'' of three nucleons in a two-dimensional plane alongside a central Bessel vortex, the geometric properties of centripetal polarization in a four-body system (such as the $\alpha$-particle ${}^4\text{He}$, composed of two protons and two neutrons) align with the spatial symmetry of a tetrahedron.
+
+\subsection{Tetrahedron Spatial Setting for Tetranucleon Centripetal Polarization}
+
+We establish a global spherical coordinate system $(r, \theta, \phi)$ centered at the geometric center of a regular tetrahedron $O(0,0,0)$. Four nucleons $N_1, N_2, N_3, N_4$ are situated on a sphere of radius $R_0$, with their position vectors $\vec{R}_j = R_0 \hat{u}_j$ corresponding to the four vertices of the tetrahedron:
+\begin{align}
+\hat{u}_1 &= \frac{1}{\sqrt{3}} (1, 1, 1), \quad \hat{u}_2 = \frac{1}{\sqrt{3}} (1, -1, -1) \\
+\hat{u}_3 &= \frac{1}{\sqrt{3}} (-1, 1, -1), \quad \hat{u}_4 = \frac{1}{\sqrt{3}} (-1, -1, 1)
+\end{align}
+The local principal radiation axis ($z'_j$-axis) of each nucleon points toward the centroid, i.e., $\hat{z}'_j = -\hat{u}_j$. This requires the transverse polarization plane of each nucleon to be tangent to the circumscribed sphere.
+
+\subsection{Perfect Geometric Alignment: Nucleon $C_3$ Symmetry and Seamless Cogging of Tetrahedral Edges}
+
+For vertex $N_1 = \frac{1}{\sqrt{3}}(1,1,1)$, the normal vector pointing toward the centroid is $\hat{u}_1$. Its local polarization plane corresponds to the hyperplane $x+y+z=0$. The vectors connecting $N_1$ to the adjacent three vertices are:
+\begin{equation}
+\vec{E}_{12} = \frac{2}{\sqrt{3}}(0, -1, -1), \quad \vec{E}_{13} = \frac{2}{\sqrt{3}}(-1, 0, -1), \quad \vec{E}_{14} = \frac{2}{\sqrt{3}}(-1, -1, 0)
+\end{equation}
+Projecting these three vectors onto the polarization plane perpendicular to $\hat{u}_1$ (using the projection operator $P = I - \hat{u}_1\hat{u}_1^T$), we obtain the projection vectors:
+\begin{equation}
+\vec{p}_{12} = \frac{2}{3\sqrt{3}}(2, -1, -1), \quad \vec{p}_{13} = \frac{2}{3\sqrt{3}}(-1, 2, -1), \quad \vec{p}_{14} = \frac{2}{3\sqrt{3}}(-1, -1, 2)
+\end{equation}
+The angle $\alpha$ between the projection vectors $\vec{p}_{12}$ and $\vec{p}_{13}$ is evaluated as:
+\begin{equation}
+\cos\alpha = \frac{\vec{p}_{12} \cdot \vec{p}_{13}}{|\vec{p}_{12}||\vec{p}_{13}|} = \frac{2(-1) + (-1)2 + (-1)(-1)}{\sqrt{6}\sqrt{6}} = -\frac{1}{2} \implies \alpha \equiv 120^\circ
+\end{equation}
+The angles between any two of the three projection vectors are strictly $120^\circ$, establishing perfect geometric alignment with the intrinsic three-lobed ($C_3$) symmetry of the nucleon.
+
+Consequently, a topological self-locking configuration emerges: the three energy peaks (cogs) of each nucleon spontaneously point along the three connected edges of the tetrahedron. Because of this complete alignment with the outer domain of the regular tetrahedron, the superposition of their multipole fluctuations at the centroid cancels:
+\begin{equation}
+\mathrm{Overlap}_{\mathrm{center}} = \sum_{j=1}^4 \varepsilon \Psi_{3\theta'_j}(\theta, \phi) \equiv 0
+\end{equation}
+This spontaneously reconstructs the centroid region into a symmetric scalar potential well free of pressure fluctuations, without requiring additional twisting angles.
+
+
+
+
+
+\subsection{Spherical Bessel Trial Solution and 3D Centroid Cavity with Timing Alignment}
+
+Under the symmetry of the tetrahedral group, the transverse part of the three-dimensional D'Alembert operator is described by spherical harmonics $Y_l^m(\theta, \phi)$ and spherical Bessel functions $j_l(kr)$. The lowest-order non-trivial symmetric combination corresponds to the $A_1$ representation of the full tetrahedral group $T_d$ (the $l=3$ order).
+
+To adhere to the fluid topological definition of the neutron as a proton-meson composite state ($N \approx [P + \pi^-]$), we represent the tetranucleon system (the $\alpha$-particle $^4\mathrm{He} \approx 4P + 2\pi^-$) as a coherent superposition of four positive-temporal proton-type cores and a shared negative-temporal meson field:
+\begin{equation}
+A_{\mathrm{total}}(\vec{r}, t) = \sum_{j = 1}^4 F_j(\vec{r}) e^{i(\omega_p t + \theta_j)} + A_{\pi, \mathrm{3D}}(r, \theta, \phi, t)
+\end{equation}
+where the spherical solution of the central meson field $A_{\pi, \mathrm{3D}}$ is expressed as:
+\begin{equation}
+A_{\pi, \mathrm{3D}}(r, \theta, \phi, t) = i F_\pi j_3(k_{\pi, \mathrm{bound}} r) T_3(\theta, \phi) e^{-i\omega_{\pi, \mathrm{bound}} t}
+\end{equation}
+Here, $j_3(x)$ is the third-order spherical Bessel function:
+\begin{equation}
+j_3(x) = \left( \frac{15}{x^4} - \frac{6}{x^2} \right) \sin x - \left( \frac{15}{x^3} - \frac{1}{x} \right) \cos x
+\end{equation}
+and $T_3(\theta, \phi)$ is the tetrahedral harmonic, which in Cartesian coordinates is proportional to $\frac{xyz}{r^3}$.
+
+Since the spherical Bessel function satisfies $j_3(x) \propto x^3 \to 0$ as $x \to 0$, a three-dimensional mesonic cavity emerges at the exact center of the system. Upon centripetal collision, the energy flow is uniformly distributed along the maximum sphere of $j_3(kr)$ under centrifugal resistance, converting into convection along the surface of the regular tetrahedron.
+
+
+
+
+\subsection{“Opposing-Flow Elimination” on the 6 Edges and the Ultimate Self-Locking of the Alpha Particle}
+
+After being blocked at the centroid, the centripetal meson flow spontaneously spreads along the four faces of the regular tetrahedron, evolving into four closed convective loops ($J_1, J_2, J_3, J_4$).
+
+We orient the four faces according to their outward normals:
+\begin{equation}
+F_1 = [2, 3, 4], \quad F_2 = [1, 4, 3], \quad F_3 = [1, 2, 4], \quad F_4 = [1, 3, 2]
+\end{equation}
+According to the boundary operator $\partial$ of the chain complex in homological algebra, the algebraic sum of all face-boundary convective loops on a one-dimensional closed complex is zero:
+\begin{equation}
+\sum_{a=1}^4 \partial F_a \equiv 0
+\end{equation}
+For any edge $E_{ab}$ of the tetrahedron (such as the $[1,2]$ edge), it carries only the boundary term $[1,2]$ from face $F_3$ and the boundary term $[2,1]$ from face $F_4$. Since the flow directions are opposite under the boundary operator:
+\begin{equation}
+I_{[1,2]} = I_{F_3} - I_{F_4} \equiv 0
+\end{equation}
+indicating that on the six edges of the regular tetrahedron, the meson energy flows from adjacent faces are opposite.
+
+To describe the state at the grid limit, we analyze this cancellation physically:
+\begin{enumerate}
+    \item \textbf{Cancellation of Vector Momentum Flows (Zero Shear):} On the six edges, the two opposing convective vector momentum flows are equal in magnitude and opposite in direction. Algebraically, their imaginary cross-terms cancel coherently, yielding a \textbf{net momentum flow velocity field $\vec{v} \equiv \mathbf{0}$}. This eliminates the relative flow velocity at the interfaces, releasing the shear stress of the fluid on the grid boundary and eliminating shear dissipation caused by momentum drift.
+    \item \textbf{Constructive Superposition of Scalar Momentum Pressures (Hard-Core Boundary):} While the vector flows cancel, the complex potentials of the two opposing convective flows constructively interfere (modulus squared addition) along the edges. This establishes a \textbf{stationary standing-wave wall of high energy density (high-pressure skeleton)} along the six edges.
+\end{enumerate}
+
+\paragraph{Conclusion:}
+The geometric boundary composed of the six high-pressure standing-wave edges and the central three-dimensional zero-pressure cavity physically reshapes the highly rigid ``hard-core'' outer domain of the $\alpha$-particle. This provides an elegant explanation for why the $\alpha$-particle (helium-4) has zero spin, zero magnetic moment, and possesses exceptionally high binding energy and structural rigidity—its essence is that of an ultimate self-locking polyhedron with zero shear defects and zero external energy leakage on the grid.
+
+
+
+
+
+\end{document}
