@@ -1,0 +1,1468 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath} % For equation environments like align, gather, etc.
+\usepackage{amssymb} % For mathematical symbols
+\usepackage{hyperref}       
+\usepackage{amsthm}  % For theorems and definitions environments
+\usepackage{geometry} % For page layout
+\geometry{a4paper, margin=1in} % Set margins
+
+% Define theorem-like environments
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{conjecture}{Conjecture}[section] % For Hypothesis M2
+\newtheorem{principle}{Principle}[section]  % For M1 Principles
+\newtheorem{assumption}{Assumption}[section] % For M1
+\newtheorem{corollary}{Corollary}[section]
+
+\title{\textbf{Computational Realism: An Emergent Reality}}
+\author{Haifeng Qiu}
+\date{} % Omit date
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper presents ``Computational Realism,'' a theoretical framework aiming to unify all physical reality as \textbf{An Emergent Reality}. We propose that the universe is ontologically isomorphic to a \textbf{fully deterministic, self-contained computational system} (a computational field) \cite{Wolfram2002}, whose entire dynamics are governed by a single, universal, and reversible rule, Rule. The core tenet of this theory is that all apparent physical ``randomness'' and ``uncertainty'' intrinsically arise from the \textbf{incomputability} \cite{Turing1936} that this deterministic system must present to any ``internal observer.'' This provides a unique, principled bridge connecting an objectively deterministic universe with its subjectively probabilistic emergence.
+
+Within this framework, the entire physical world we experience is systematically reconstructed as \textbf{dynamical phenomena} of this computational field at different scales. \textbf{Physical laws} are no longer externally prescribed but are the mathematical manifestations of the universe's own \textbf{``compressibility.''} \textbf{Matter} is modeled as stable, self-sustaining \textbf{``information solitons''} \cite{DrazinJohnson1989, Skyrme1961}. Its \textbf{rest mass} is shown to be a measure of the \textbf{structural complexity} a soliton must build to counteract the \textbf{``multi-scale disharmony''} of the computational hardware. Its \textbf{relativistic effects}—mass increase, length contraction, and time dilation—are uniformly proven to be the \textbf{dynamical adaptations}, precisely described by the Lorentz factor $\gamma$, that a soliton must undergo to maintain its \textbf{``computational self-consistency''} while moving through a medium with a fixed information propagation speed \cite{Einstein1905}. The \textbf{four fundamental forces} are unified as four different levels of dynamical interaction between these ``information solitons'' and the computational field.
+
+The theory further interprets core cosmological puzzles as emergent phenomena on a macroscopic scale. The evolution of the universe is an eternal \textbf{information feedback loop}, requiring no ``first cause'' or ``cosmic inflation.'' \textbf{Dark energy} is identified as the macroscopic manifestation of the intrinsic ``computational entropy'' of the cosmic computational field, essentially a universal tendency for ``information diffusion.'' \textbf{Gravity} is then the \textbf{``shielding effect''} of matter (low-entropy solitons) against this universal ``vacuum repulsion,'' thereby profoundly unifying the two. \textbf{Dark matter} is identified as ``hyper-dimensional solitons'' that logically and necessarily emerge on higher ``computational dimensions,'' parallel to our visible matter.
+
+Finally, this theory proposes a series of falsifiable predictions derived from its unique emergent mechanism. The most central of these is the \textbf{``gravity-environment dependence'' of the statistical correlation of quantum entanglement} \cite{Bell1964, Bohm1952}. We argue that the apparent randomness of quantum measurements stems from the deterministic decoding of a common, unknowable ``information bit stream'' provided by the macroscopic gravitational field. This mechanism establishes an unprecedented connection between the foundations of quantum information and precision gravitational measurements. Other key predictions include: the impossibility of unifying gravity with other forces via (quantum field theory); a strict inverse relationship between the gravitational constant G and the dark energy density (cosmological constant $\Lambda$) ($G \propto 1/\Lambda$); the ``mathematical harmonic'' properties of elementary particle mass ratios; and the possibility of detecting dark matter by observing the ultra-high-energy cosmic ray spectrum produced by the ``cross-dimensional de-excitation'' of black holes.
+
+In summary, ``Computational Realism'' depicts an impersonal, intrinsically driven \textbf{``structure solver.''} It not only aims to solve specific problems in physics but also seeks to reveal how ``reality'' as we know it ``crystallizes,'' step by step, from the simplest computational rules into a magnificent and self-consistent \textbf{dynamical structure}.
+\end{abstract}
+
+\section{Information Realism - The Metaphysical Foundation}
+\textit{This layer of axioms constitutes the metaphysical, self-evident logical cornerstones that define the most fundamental rules of the game of ``reality.''}
+
+\begin{axiom}[\textbf{First Axiom - Axiom of Computational Entropy}]
+Computational entropy is the sole measure of reality.
+The ultimate measure of reality is \textbf{Computational Entropy (Kolmogorov Complexity, K-Complexity)} \cite{Kolmogorov1965}, which measures the \textbf{incompressibility} of a pattern. The computational entropy $S(P)$ of a pattern $P$ is the length of the shortest program capable of generating that pattern. From a ``God's-eye view,'' the total computational entropy of the entire universe is constant, equal to the length of the program describing its unique transformation rule, Rule, and its initial state $C(0)$, i.e., $S_{\text{Universe}} = K(\text{Rule}, C(0)) = \text{const}$.
+\end{axiom}
+
+\begin{axiom}[\textbf{Axiom of Internal Incomputability}]
+Any ``internal observer'' constituted by the patterns of the universe itself has, in principle, access to information that is \textbf{incomplete}. An observer can never obtain the \textbf{complete information} required to describe the current state of the universe. For any internal observer, the complete Rule and the precise current state of the universe are \textbf{unknowable} \cite{Turing1936}.
+\end{axiom}
+
+\begin{axiom}[\textbf{Axiom of Subadditivity of Computational Entropy}]
+For any two existences $A$ and $B$, the computational entropy describing their combined existence $AB$ is never greater than the sum of the computational entropies describing $A$ and $B$ separately. Its mathematical form is: $S(AB) \le S(A) + S(B)$.
+\end{axiom}
+
+\subsection*{Core Theorems}
+
+\begin{theorem}[\textbf{The Combination/Partition Paradox Theorem of Computational Entropy}]
+A whole of low computational entropy can be partitioned into two independent parts of high computational entropy, and vice versa. This is a direct consequence of Axiom 1.3 \cite{Kolmogorov1965}.
+\end{theorem}
+\begin{itemize}
+    \item \textbf{Physical Meaning:} Assume our universe is directly determined by a Rule and an initial state $C(0)$, with a very low total computational entropy. However, for an internal observer who can only see a part of the universe's reality, the observed local computational entropy can be very large.
+    \begin{itemize}
+        \item \textbf{Combination (Formation of Order):} Two or more seemingly random (high computational entropy) parts $A$ and $B$, if there exists a deep, hidden \textbf{``complementary relationship''} or \textbf{``correlation''} between them (e.g., $B = \text{NOT}(A)$), then their combination $C$ can form a structure that is extremely simple and orderly (low computational entropy) as a whole.
+        \item \textbf{Partition (Dissolution of Order):} Breaking apart an orderly, low-computational-entropy whole $C$ can release the hidden correlations compressed by its structure, causing its constituent parts $A$ and $B$ to each exhibit a highly complex and random (high computational entropy) state.
+    \end{itemize}
+    \item \textbf{A Simple Proof (Proof by Construction):}
+    \begin{enumerate}
+        \item \textbf{Define two high computational entropy parts $A$ and $B$:}
+            \begin{itemize}
+                \item Let $A$ be an incompressible \textbf{pseudo-random bit sequence} of length $N$. By definition, its computational entropy $S(A) = K(A) \approx N$, which is extremely high.
+                \item Let $B$ be the \textbf{bit-wise inverted sequence} of $A$ ($B = \text{NOT}(A)$). Since $B$ has the same complexity as $A$, $B$ is also an incompressible pseudo-random sequence, and its computational entropy $S(B) = K(B) \approx N$ is also extremely high.
+            \end{itemize}
+        \item \textbf{Define a whole $C$ composed of $A$ and $B$:}
+            \begin{itemize}
+                \item Let $C$ be the result of a \textbf{bit-wise XOR (Exclusive OR)} operation between $A$ and $B$: $C = A \oplus B$.
+                \item Since $A \oplus \text{NOT}(A)$ equals a sequence of all 1s, $C = 111...1$.
+            \end{itemize}
+        \item \textbf{Calculate the computational entropy of the whole $C$:}
+            \begin{itemize}
+                \item $C$ is an extremely simple, completely regular sequence. The shortest program to describe it is: ``Print $N$ ones.'' Therefore, its computational entropy $S(C) = K(C) \approx 1$, which is \textbf{extremely low}.
+            \end{itemize}
+        \item \textbf{Conclusion:} We have constructed a concrete example where $S(A) \approx N$, $S(B) \approx N$, but $S(C) \approx 1$. Clearly, when $N$ is sufficiently large, $S(A) + S(B) \gg S(C)$.
+            \textbf{Q.E.D.}
+    \end{enumerate}
+\end{itemize}
+
+\begin{theorem}[\textbf{The Law of Describability}]
+The compression rate of computational entropy is the physical law.
+\end{theorem}
+\begin{itemize}
+    \item \textbf{Defining ``Describability'':} The describability of a physical existence $P$ refers to the ability of an observer to predict or reconstruct the pattern $P$ using a concise set of ``physical laws'' (an effective, computable approximate model of the Rule, Rule\_eff) and a set of ``initial/boundary conditions $I$''.
+    \item \textbf{Defining ``Compression Rate'' ($C_R$):} The computational entropy compression rate of a pattern $P$ is defined as:
+    \[
+    C_R(P) = \frac{S(\text{Rule}_{\text{eff}}) + S(I)}{S(P)}
+    \]
+    It measures the ratio of the information content of the \textbf{indirect, compressible} description (``law + initial conditions'') to that of the \textbf{direct, incompressible} description of the pattern $P$ itself.
+    \item \textbf{The Law:} The degree to which a physical pattern $P$ can be described by physical laws is precisely equal to its computational entropy compression rate $C_R(P)$.
+    \begin{itemize}
+        \item \textbf{$C_R \to 0$}: Implies the pattern is \textbf{highly describable, highly ordered}. Its behavior is almost entirely determined by concise laws, with very little ``individual'' information of its own. For example, an ideal planetary orbit.
+        \item \textbf{$C_R \to 1$}: Implies the pattern is \textbf{completely indescribable, completely unpredictable}. Its behavior is pure, incompressible chaos. To describe it, one can only ``record'' its entire process; no concise law exists.
+    \end{itemize}
+    \item \textbf{Physical Meaning:} ``Science'' is possible precisely because the material world we inhabit, with its ``intermediate computational entropy'' structures, possesses \textbf{extremely high compressibility} ($C_R \ll 1$). \textbf{Physical laws are the mathematical proof of our universe's ``compressibility.''}
+\end{itemize}
+
+\begin{theorem}[\textbf{The Equivalence Theorem of Description}]
+For \textbf{any} state or evolutionary process of the universe, there exist \textbf{infinitely many} different combinations of ``rule + initial conditions'' (Rule' + C'(0)) that can \textbf{perfectly and equivalently} generate and describe the \textbf{same} reality. Any specific description (including our proposed cellular automaton model) is merely one of these infinitely many equivalent descriptions and does not possess ontological uniqueness.
+\end{theorem}
+\begin{corollary}
+As a direct logical consequence of Axioms 1.1, 1.2, and 1.3, for any internal observer, there must exist \textbf{infinitely many} different ``theoretical models'' (combinations of Rule' + C'(0)) that are observationally indistinguishable, all of which can perfectly and equivalently generate and describe the same reality we observe.
+\end{corollary}
+\begin{itemize}
+    \item \textbf{Status:} Any specific physical model we propose (such as the cellular automaton in the second layer) is just one member of this infinite set of equivalent descriptions. It possesses ``effectiveness'' but not ontological ``uniqueness.''
+\end{itemize}
+
+\subsection*{Definition of Thermodynamic Entropy}
+We have established \textbf{Computational Entropy ($S_C$)} as the sole, universal measure of reality, quantifying the algorithmic information of a ``pattern'' or ``object.'' However, physics is a science of \textbf{``Process''} and \textbf{``Evolution.''} We must define a quantity that can describe the \textbf{dynamic trends} of a system. This quantity we call \textbf{Thermodynamic Entropy ($S_T$)}.
+
+\begin{definition}[\textbf{Thermodynamic Entropy}]
+In a spacetime region governed by a deterministic rule, Rule, and an initial state $C(\tau_0)$, continuously interacting with a boundary $V$ and receiving ``new information injection,'' the \textbf{Thermodynamic Entropy $S_T(P, V)$} of a physical system $P$ at time $\tau_0$ is \textbf{precisely defined as}: the \textbf{length of the shortest program (i.e., the computational entropy $S_C$)} that can \textbf{generate} the \textbf{complete and exact ``spacetime evolution history''} of that system from $\tau_0$ to a future time $\tau_0+\Delta\tau$.
+\[
+S_T(P, V) \equiv S_C( \text{Spacetime\_History\_of\_P} \mid \text{from } \tau_0 \text{ to } \tau_0+\Delta\tau \text{ in } V )
+\]
+$S_T(P, V)$ is always defined within a bounded region, interacting informationally with its boundary. This boundary can be spatial or procedural. A physical system cannot exist independently of its boundary; it constantly exchanges information with the boundary, from which it derives its unpredictability.
+\end{definition}
+
+\begin{definition}[\textbf{Environmental Entropy}]
+\[
+S_E(V) \equiv S_C( \text{Spacetime\_History\_of\_V} \mid \text{from } \tau_0 \text{ to } \tau_0+\Delta\tau \text{ in } V )
+\]
+The \textbf{Environmental Entropy $S_E(V)$} of a local background environment $V$ is defined as the \textbf{computational entropy of the environment's future spacetime evolution history}. It measures the \textbf{richness} and \textbf{unpredictability} of the environment as an ``information source.''
+\end{definition}
+
+\begin{definition}[\textbf{Intrinsic Entropy}]
+$S_I(P) \equiv S_T(P, V_0)$ (where $V_0$ is the absolute vacuum environment)
+It measures the \textbf{``resistance''} of the process $P$'s \textbf{own} internal structure to external informational shocks. A process with low $S_I$ (like matter) has strong resistance, while a process with high $S_I$ (like a vacuum) has weak resistance.
+\end{definition}
+
+\subsection*{Inferences}
+From the interplay of the three axioms, we deduce that the dynamics of the universe is an eternal, dynamic cycle, not a linear journey.
+
+\begin{enumerate}
+    \item \textbf{Creating Structure from ``Nothingness'':}
+    According to \textbf{Theorem T1 (The Partition Paradox Theorem of Computational Entropy)}, a universe-operating rule of extremely low computational entropy can give rise to multiple components of high computational entropy. After its birth, our universe, starting from a meta-rule (source program) of extremely low computational entropy, was gradually partitioned into multiple high-entropy parts. The formation of all ordered structures in the universe, from galaxies to life, follows this principle.
+
+    \item \textbf{Acquiring Knowledge from Structure:}
+    Stable particle patterns, atoms, molecules, life, etc., because they follow certain patterns, allow us to induce their laws after acquiring sufficient information, which are the physical laws in \textbf{Theorem T2 (The Law of Describability)}.
+    ``Physical laws'' are the mathematical manifestation of the \textbf{``high compressibility''} possessed by the ``structural'' states in the universe, as discovered by us internal observers. Science is possible because we live in a region of the universe filled with ``intermediate computational entropy'' that is describable.
+    According to \textbf{Theorem T3 (The Equivalence Theorem of Description)}, any physical model we propose is merely \textbf{one possible, effective description} of the known information of our informational universe. It is an \textbf{epistemological} phenomenon, not an ontological reality. They are the necessary and effective tools we, as informationally incomplete observers, must adopt to describe an objectively deterministic system.
+
+    \item \textbf{The Origin of Randomness and Entanglement:}
+    According to \textbf{Theorem T1} and \textbf{Axiom 1.2}, we must predict that all physical ``randomness,'' ``probability,'' and quantum entanglement are a form of deep, hidden \textbf{``informational correlation.''} Two entangled particles are the high-computational-entropy, seemingly random parts of the same low-computational-entropy whole.
+\end{enumerate}
+
+\subsection*{Final Conclusion}
+``Information Realism'' shifts the ontology of the universe from matter and energy to information and computation. It asserts that everything we experience—from the motion of stars to the spark of consciousness—is but a magnificent and self-consistent ``effective reality,'' which inevitably emerges from an eternal, information-conserving, objectively deterministic computational system, due to our unavoidable ``ignorance'' as ``internal observers.''
+
+
+
+
+
+
+
+
+
+
+
+\section{Computational Realism - The Physical Foundation}
+\textit{This layer of axioms provides a concrete physical carrier for the abstract principles of the first layer, representing the physical laws followed by this specific ``game'' of our universe.}
+
+The \textbf{``cellular automaton''} model we propose below \cite{Wolfram2002}, including all its details such as layering, XOR rules, history vectors, etc., is \textbf{not} an \textbf{ontologically uniquely correct} description of the universe, but merely \textbf{one} of the \textbf{infinitely many possible equivalent descriptions}. We choose and construct it because, for us \textbf{human observers} who live on a ``classical scale'' and are accustomed to ``discrete logic'' and ``computational thinking,'' it is one of the \textbf{most concise, most intuitive, easiest to understand, and most illuminating} \textbf{``effective models.''} Other beings might, starting from a completely different axiomatic system based on ``continuous wave equations'' or ``topological geometry,'' describe our very same universe \textbf{perfectly equivalently}. Our theory is just one beautiful and self-consistent ``projection'' that can be drawn from the infinitely-faceted crystal named ``Reality.''
+
+\begin{axiom}[\textbf{The Hardware}]
+Layered Computational Core and History Memory
+\end{axiom}
+The ultimate physical substrate of the universe is a binary computational grid that is topologically a three-dimensional torus but possesses a finite number of computational layers $[b_0, b_1, \dots, b_N]$ in the ``computational dimension.'' Its most fundamental characteristics are:
+\begin{enumerate}
+    \item \textbf{Layered Computational Core:} The \textbf{size $S(n)$} of the computational core (the local spatial context read by the Rule) at different levels $n$ varies and increases monotonically with $n$ ($S(n) > S(n-1)$). This is the sole source of all physical hierarchical structures.
+    \item \textbf{History Memory:} Each node possesses a \textbf{history state memory} of depth $H(n)$, recording its states for the past $H(n)$ steps of $\tau$.
+\end{enumerate}
+
+\begin{axiom}[\textbf{The Software}]
+A Single, History-Based, Reversible Rule
+\end{axiom}
+There exists a \textbf{single, universal} transformation rule, Rule, of the most trivial form. This rule is \textbf{deterministic and reversible}. Its sole input is the \textbf{history state vector} of all nodes within its computational core. The Rule acts uniformly across all computational layers and includes comprehensive (intra-layer spatial and inter-layer dimensional) bidirectional interactions.
+
+\begin{axiom}[\textbf{The Dynamic Cycle}]
+The Eternal $b_0$-$b_N$ Information Closed Loop
+\end{axiom}
+The universe is without beginning or end, eternally evolving. Its dynamic core is a \textbf{completely closed, ``Ouroboros-like'' information feedback loop} from $b_0$ to $b_N$ and back to $b_0$.
+\begin{enumerate}
+    \item \textbf{Bottom-up ``Complexification'':} The chaos of the $b_0$ layer, acting as a pseudo-random source, propagates upwards layer by layer, driving the evolution of higher levels.
+    \item \textbf{Top-down ``Globalization'':} The \textbf{topmost layer $b_N$}, due to its large \textbf{computational core}, has a state that is a \textbf{macroscopic average}.
+    \item \textbf{Final Feedback (Closed Loop):} The evolution of the $b_0$ layer is not only influenced by the $b_1$ layer but also receives \textbf{feedback input} from this ``global macroscopic state'' of the \textbf{topmost layer $b_N$}.
+    \item \textbf{The ``Big Bang''} is merely a large-scale ``structural crystallization'' phase transition initiated in the $b_1$ layer within this eternal cycle.
+\end{enumerate}
+
+\begin{axiom}[\textbf{The Drive}]
+A Unified Chiral Time Flow
+\end{axiom}
+There exists an absolute, globally synchronized system clock $\tau$. The evolution of all computational layers of the universe is driven by a \textbf{single, common, fixed, and periodic ``computational axis activation'' sequence $S = \{x, y, z, \dots\}$}. This fixed \textbf{sequence order} itself defines the intrinsic, global \textbf{chirality} of the universe, and is the ultimate origin of all parity non-conservation phenomena.
+
+\subsection*{A Realization Model}
+
+\textit{This section provides a core, operationally clear mathematical framework for the unique Rule in Axiom C2. This framework aims to unify the geometric symmetries of relativity and the probabilistic nature of quantum mechanics on the same microscopic dynamical foundation.}
+
+\begin{assumption}[\textbf{Core Dynamical Framework of the Rule}]
+We speculate that the dynamical process of the Rule is a computational protocol that simultaneously satisfies \textbf{``spacetime geometry constraints''} and \textbf{``quantum probability principles''} at the microscopic level.
+
+For any spacetime node $P = (x, y, z, \tau)$, the determination of its new state $State(P, \tau+1)$ follows these two core principles:
+\end{assumption}
+
+\begin{principle}[\textbf{The Spacetime Geometry Constraint}]
+The dynamics of the Rule, when establishing any microscopic causal link, adheres to the \textbf{geometry defined by the Lorentz spacetime interval $s^2 = (c\Delta\tau)^2 - \Delta x^2$} \cite{Einstein1905}.
+\begin{itemize}
+    \item \textbf{Mechanism}: When updating the state of a node $P$, the Rule needs to select ``parent nodes'' $P'$ from its local past spacetime as information sources.
+    \item \textbf{Core Constraint}: The \textbf{probability} of selecting $P'$ is defined as a \textbf{function of the spacetime interval $s^2(P, P')$}. Furthermore, this probability distribution has an \textbf{overwhelming peak} on the \textbf{light cone surface ($s^2 = 0$)}.
+    \item \textbf{Physical Consequences}:
+    \begin{itemize}
+        \item \textbf{Emergence of Relativity}: This constraint directly ensures that, macroscopically, the effective, most probable information propagation must follow the principle of the \textbf{invariance of the speed of light}, thus making the entire spacetime structure of \textbf{Special Relativity} an inevitable macroscopic manifestation of the Rule's dynamics \cite{Einstein1905}.
+        \item \textbf{Possibility of Quantum Phenomena}: The non-zero values of the probability distribution in the $s^2 \ne 0$ region provide the necessary microscopic basis for the existence of quantum fluctuations.
+    \end{itemize}
+\end{itemize}
+\end{principle}
+
+\begin{principle}[\textbf{The Quantum Probability Principle}]
+The linear algebraic structure of the Rule must be able to naturally give rise to the probability rules of quantum mechanics \cite{deBroglie1930, Bohm1952}.
+\begin{itemize}
+    \item \textbf{Mechanism}: We assume that the final computational step of the Rule is a \textbf{linear} operation (for example, an XOR summation).
+    \item \textbf{Core Constraint}: This linear operation must ensure that as the system evolves, its total \textbf{``probability norm'' is conserved}. Mathematically, this corresponds to \textbf{unitary evolution}.
+    \item \textbf{Physical Consequences}:
+    \begin{itemize}
+        \item \textbf{Definition of the Wave Function}: A stable particle (information vortex) can be effectively described by a mathematical object—the ``wave function $\psi$.''
+        \item \textbf{Emergence of Born's Rule}: Due to the conservation of total probability, $|\psi(x)|^2$ necessarily and uniquely becomes the \textbf{probability density} of finding the particle at position $x$ \cite{deBroglie1930}.
+        \item \textbf{Quantum Superposition and Interference}: A linear rule naturally allows for the superposition of states. To more profoundly explain the phenomenon of interference, we further speculate that the \textbf{fundamental information units} operated on by the Rule are not just individual 0/1 bits, but a richer structure capable of carrying \textbf{phase information} (for example, the \textbf{history state vector}), whose evolution in bit space automatically produces ``rotation''-like interference effects \cite{deBroglie1930}.
+    \end{itemize}
+\end{itemize}
+\end{principle}
+
+\begin{conjecture}[\textbf{Specific Parameters}: A Universe Defined by Prime Numbers]
+We speculate that the specific numerical values of the parameters defined in Axiom C1 are directly governed by the most fundamental of mathematical structures: the \textbf{sequence of prime numbers}.
+\begin{itemize}
+    \item \textbf{Computational Core Size $S(n)$—The ``Prime Number Ladder'' of the Universe}:
+    \begin{itemize}
+        \item \textbf{Core Conjecture}: We hypothesize that the sequence of the linear size of the computational core, $S(n)$, \textbf{is} the sequence of \textbf{odd prime numbers} in ascending order.
+            \begin{itemize}
+                \item $S(0) = 1$ (as the fundamental unit of computation)
+                \item $S(1) = 3$ (corresponding to first-generation particles)
+                \item $S(2) = 5$ (corresponding to second-generation particles)
+                \item $S(3) = 7$ (corresponding to third-generation particles)
+                \item $S(4) = 11$ (possibly corresponding to first-generation dark matter)
+            \end{itemize}
+        \item \textbf{Physical Motivation}: This hypothesis unifies hardware laws with software preferences. The growth law of the hardware is itself a direct manifestation of the Rule achieving optimal computation (maximizing irreducibility).
+        \item \textbf{Possible Explanation for the Three-Generation Mystery}: The fact that stable particle families appear in ``three generations'' may be related to the ``computational cost'' of maintaining cross-layer resonance for larger prime cores with $S(n) \ge 11$ exceeding some critical threshold.
+    \end{itemize}
+    \item \textbf{Total Number of Computational Layers and the Cosmic Loop}:
+    \begin{itemize}
+        \item \textbf{Fundamental Law}: The computational layers of the universe extend upwards to an \textbf{ultimate computational layer $b_N$}.
+        \item \textbf{Ultimate Conjecture}: The computational core size of this ultimate layer, $S(N)$, is the first \textbf{prime number} whose size is comparable to the topological scale of the entire universe. The state of this ``physical boundary,'' determined jointly by the physical size of the universe and the distribution of prime numbers, represents the ultimate macroscopic state of the universe.
+    \end{itemize}
+    \item \textbf{History Depth $H(n)$}:
+    \begin{itemize}
+        \item $H(n)$ is an integer large enough to support the Rule's effective ``time-depth'' sampling.
+    \end{itemize}
+\end{itemize}
+\end{conjecture}
+
+
+
+
+
+
+
+
+
+\section{Core Dynamics and the Emergence of Physical Reality}
+
+\subsection{Core Axioms and Definitions: Computational Entropy Fluid Dynamics}
+
+\textit{This section elaborates on how the ``computational engine'' of our universe operates and derives the origin of core physical concepts from first principles. To do this, we must endow the abstract concept of ``computational entropy'' from the first chapter with specific dynamical properties, treating it as a ``fluid'' flowing within the computational field.}
+
+\subsubsection{The Foundational Definitions}
+
+\begin{definition}[\textbf{Computational Entropy Density ($\sigma$)}]
+Within any infinitesimal volume element $dV$ of the computational field, the amount of incompressible algorithmic information it contains is defined as the \textbf{computational entropy density $\sigma$}. It is a scalar field $\sigma(x, t)$ that describes the ``information richness'' or ``degree of chaos'' at every point in space.
+\end{definition}
+
+\begin{definition}[\textbf{Average Vacuum Entropy Density ($\sigma_0$)}]
+In a vast, flat region of the computational field where no matter exists, its entropy density $\sigma$ will reach a macroscopically uniform background value determined by the cosmic Rule. We call this the \textbf{average vacuum entropy density $\sigma_0$}. This is the ``baseline chaos level'' of the cosmic computational background.
+\end{definition}
+
+\begin{definition}[\textbf{Entropy Flux ($J_\sigma$)}]
+Computational entropy can flow within the computational field. We define the \textbf{entropy flux density vector $J_\sigma$}, whose direction represents the direction of entropy flow and whose magnitude represents the amount of entropy passing through a unit area per unit time. According to Axiom C4 and Conjecture M1, the upper limit for the speed of information propagation in the medium is $c$, therefore, the maximum speed of entropy flux is also $c$.
+\end{definition}
+
+\subsubsection{The Dynamical Axioms}
+
+\begin{axiom}[\textbf{Axiom of Entropy Generation}]
+Every node (or infinitesimal volume $dV$) of the computational field, due to its continuous interaction with the chaos of the $b_0$ layer, will \textbf{intrinsically and spontaneously} generate computational entropy at a fixed rate $s$. This is a \textbf{source term}, representing the fundamental tendency of the cosmic Rule to drive the system towards higher complexity (``heat death'').
+\begin{itemize}
+    \item \textbf{Mathematical Form:} $\partial\sigma/\partial t |_{\text{source}} = s$ ($s$ is a positive cosmological constant)
+\end{itemize}
+\end{axiom}
+
+\begin{axiom}[\textbf{Axiom of Entropy Consumption}]
+Matter (as stable information solitons), in order to maintain its highly ordered structure, must continuously \textbf{consume} the computational entropy of its surrounding environment. The rate at which a particle of matter with mass $m$ consumes entropy is \textbf{directly proportional} to its mass.
+\begin{itemize}
+    \item \textbf{Mathematical Form:} $\partial\sigma/\partial t |_{\text{sink}} = -k \cdot m$ ($k$ is a universal proportionality constant)
+    \item \textbf{Physical Meaning:} Rest mass $m_0$ represents the ``basal metabolic rate'' required for the particle to maintain its structure. A larger mass implies a more complex structure, which needs to consume more environmental entropy to resist the erosion of chaos.
+\end{itemize}
+\end{axiom}
+
+\begin{axiom}[\textbf{Axiom of Entropy Flow}]
+The flow of entropy follows a law similar to heat conduction or diffusion (\textbf{Fick's Law}). Entropy spontaneously flows from regions of \textbf{high density} to regions of \textbf{low density}, with a flux proportional to the \textbf{gradient} of the entropy density.
+\begin{itemize}
+    \item \textbf{Mathematical Form:} $J_\sigma = -D \cdot \nabla\sigma$ ($D$ is the entropy diffusion coefficient, whose maximum value is related to $c$)
+    \item \textbf{Physical Meaning:} This axiom defines the macroscopic behavior of entropy as a ``fluid.'' It ensures that the entropy density field will spontaneously tend towards smoothness and uniformity.
+\end{itemize}
+\end{axiom}
+
+\subsubsection{The Continuity Equation for Entropy}
+
+Combining the three dynamical axioms above, we can write the \textbf{complete continuity equation} that describes the evolution of computational entropy density $\sigma$ in spacetime. This equation is the core of this theory's dynamics:
+
+\[
+\frac{\partial\sigma}{\partial t} + \nabla \cdot J_\sigma = s - k \cdot \rho_m
+\]
+
+where:
+\begin{itemize}
+    \item $\partial\sigma/\partial t$ is the total rate of change of entropy density at a point.
+    \item $\nabla \cdot J_\sigma$ is the net rate of entropy outflow from that point (the divergence). According to \textbf{Axiom M3}, $\nabla \cdot J_\sigma = -D \cdot \nabla^2\sigma$.
+    \item $s$ is the entropy ``source term'' from \textbf{Axiom M1}.
+    \item $k \cdot \rho_m$ is the entropy ``sink term'' from \textbf{Axiom M2}, where $\rho_m$ is the mass density of matter.
+\end{itemize}
+
+Substituting \textbf{Axiom M3}, we get the final \textbf{Entropy Field Dynamics Equation} \cite{Newton1687}:
+
+\[
+\frac{\partial\sigma}{\partial t} = D \cdot \nabla^2\sigma + s - k \cdot \rho_m
+\]
+
+\subsubsection{The Emergence of Physical Reality}
+
+\begin{itemize}
+    \item \textbf{The Nature of Dark Energy:} In a vacuum devoid of matter ($\rho_m = 0$), the generation of entropy ($s$) and the diffusion of entropy ($D \cdot \nabla^2\sigma$) will reach a dynamic equilibrium, forming a non-zero, uniform background entropy density $\sigma_0$. This \textbf{background entropy density $\sigma_0$ and its generation rate $s$} are the fundamental sources of what we macroscopically observe as \textbf{dark energy} and the \textbf{accelerated expansion of the universe} \cite{Planck2020}. $s$ represents the strength of the ``vacuum repulsion.''
+
+    \item \textbf{The Origin of Gravity:}
+    \begin{enumerate}
+        \item \textbf{An Entropy ``Depression'':} In a region where a large mass $M$ is present ($\rho_m > 0$), the entropy consumption term $-kM$ will dominate, causing the \textbf{steady-state entropy density} $\sigma$ in the surrounding area to be significantly lower than the distant vacuum background value $\sigma_0$.
+        \item \textbf{Entropy Density Gradient Field:} This inevitably forms a stable \textbf{entropy density gradient field $\nabla\sigma$} around the matter, pointing towards the center of the matter.
+        \item \textbf{Gravitational Field:} We will later prove that this \textbf{entropy density gradient field $\nabla\sigma$}, generated by matter, is precisely what we experience as the \textbf{gravitational field}. \textbf{Matter is a depression in $\sigma$.}
+    \end{enumerate}
+\end{itemize}
+
+\subsection{The Relativity of Time: Local Clock Period as a Function of Entropy Density}
+
+\begin{theorem}[\textbf{Inverse Proportionality between Local Clock Period and Local Entropy Density}]
+The \textbf{local proper period $T_{\text{local}}$} of a physical system (such as an atom or particle, viewed as an extended self-consistent pattern) is \textbf{precisely defined as} the time required for a signal to complete one round-trip self-consistency loop within its internal structure. We assert that this period is \textbf{inversely proportional} to the \textbf{local computational entropy density $\sigma$} at its location \cite{Einstein1905}.
+\[
+T_{\text{local}} \propto 1/\sigma
+\]
+\begin{corollary}
+Correspondingly, the frequency of a local clock $f_{\text{local}}$ ($f=1/T$) is \textbf{directly proportional} to the local entropy density $\sigma$.
+\[
+f_{\text{local}} \propto \sigma
+\]
+\end{corollary}
+\end{theorem}
+
+\subsubsection*{Dynamical Proof based on ``Computational Viscosity''}
+
+This core relationship can be derived from our fundamental understanding of the ``computational field'' as an information-processing medium.
+
+\begin{enumerate}
+    \item \textbf{Principle of Computational Viscosity:} We posit that the \textbf{degree of order} of the computational field, i.e., a state of \textbf{low entropy}, imposes a form of \textbf{``computational viscosity''} or \textbf{``computational drag''} on the propagation of information. A highly ordered, structured region (low $\sigma$), like a viscous syrup, requires information to overcome more structural constraints to propagate, thus the \textbf{effective propagation speed $c_{\text{eff}}$ becomes slower}.
+    \begin{itemize}
+        \item \textbf{Physical Intuition:} In a perfect crystal lattice (extremely low entropy), the speed of a signal (like a phonon) is determined by the rigidity of the lattice. In a completely unstructured, chaotic gas (extremely high entropy), the propagation of a signal (like a pressure wave) might be more direct, encountering less structural ``drag.''
+        \item \textbf{This new analogy resolves the contradiction:}
+        \begin{itemize}
+            \item \textbf{Low entropy density $\sigma$} (gravitational field) $\implies$ \textbf{High orderliness} $\implies$ \textbf{High computational viscosity} $\implies$ \textbf{Slower signal propagation}.
+            \item \textbf{High entropy density $\sigma$} (vacuum) $\implies$ \textbf{Low orderliness (chaos)} $\implies$ \textbf{Low computational viscosity} $\implies$ \textbf{Faster signal propagation}.
+        \end{itemize}
+    \end{itemize}
+
+    \item \textbf{Relationship between Signal Propagation Speed and Entropy Density:} Based on the principle above, we assert that the \textbf{effective propagation speed of a signal $c_{\text{eff}}$} in the computational field is \textbf{directly proportional to the local entropy density $\sigma$}.
+    \begin{itemize}
+        \item \textbf{Mathematical Form:} $c_{\text{eff}} = K \cdot \sigma$ ($K$ is a proportionality constant).
+        \item In the average vacuum ($\sigma=\sigma_0$), we recover the familiar speed of light $c$, i.e., $c = K \cdot \sigma_0$.
+        \item Therefore, at any point, the effective signal speed is: \textbf{$c_{\text{eff}}(\sigma) = c \cdot (\sigma / \sigma_0)$}.
+    \end{itemize}
+
+    \item \textbf{Calculation of Clock Period:} We can now calculate the local proper period $T_{\text{local}}$ of a stationary ``clock'' (a self-consistent pattern) of size $L_0$.
+    \begin{itemize}
+        \item By its definition, the period is the time required for a signal to make a round trip inside: $T_{\text{local}} = 2L_0 / c_{\text{eff}}$.
+        \item Substituting the expression for $c_{\text{eff}}$:
+        \[
+        T_{\text{local}} = \frac{2L_0}{c \cdot (\sigma / \sigma_0)} = \frac{2L_0\sigma_0}{c} \cdot \frac{1}{\sigma}
+        \]
+    \end{itemize}
+
+    \item \textbf{Final Conclusion:}
+    \begin{itemize}
+        \item Since $(2L_0\sigma_0 / c)$ is a constant for a specific clock and vacuum background, we obtain a precise, computable relationship:
+        \[
+        T_{\text{local}} \propto 1/\sigma
+        \]
+        \item \textbf{Q.E.D.}
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection*{Physical Inference: The Precise Emergence of Gravitational Time Dilation}
+
+This rigorously proven theorem allows us to precisely describe gravitational time dilation.
+
+\begin{enumerate}
+    \item \textbf{A Gravitational Field is a Low Entropy Density Region:} A massive object $M$ creates an entropy density field $\sigma(r)$ around it, where $\sigma(r) < \sigma_0$.
+    \item \textbf{Period of a Clock in a Gravitational Field:}
+    \begin{itemize}
+        \item A standard clock has a proper period of $T_0 = 2L_0 / c$ in flat space ($\sigma=\sigma_0$).
+        \item When this clock is placed at a distance $r$ from the center of the gravitational field, the entropy density there is $\sigma(r)$.
+        \item According to the theorem we just proved, its local period $T(r)$ at that point will become:
+        \[
+        T(r) = \left(\frac{2L_0}{c}\right) \cdot \frac{\sigma_0}{\sigma(r)}
+        \]
+        \item Substituting the definition of $T_0$, we get:
+        \[
+        T(r) = T_0 \cdot \frac{\sigma_0}{\sigma(r)}
+        \]
+    \end{itemize}
+    \item \textbf{Final Conclusion:}
+    \begin{itemize}
+        \item Since $\sigma(r) < \sigma_0$ in a gravitational field, the ratio $\sigma_0 / \sigma(r)$ is necessarily greater than 1.
+        \item This means $T(r) > T_0$. Any clock placed in a gravitational field will have its \textbf{period lengthen}, meaning \textbf{time passes more slowly} \cite{Einstein1905}.
+        \item This formula not only qualitatively describes time dilation but also provides a \textbf{quantitative prediction}: the exact factor of time dilation is equal to the ratio of the \textbf{background vacuum entropy density $\sigma_0$} to the \textbf{local entropy density at that point $\sigma(r)$}. It translates the geometric language of spacetime curvature into the physical language of varying \textbf{computational viscosity} in the computational field.
+    \end{itemize}
+\end{enumerate}
+
+\subsection{The Emergence of Gravity: Dynamical Consequences of the Entropy Density Field}
+
+The existence of gravity is not one of the four fundamental forces of the universe, but a \textbf{secondary, emergent macroscopic dynamical phenomenon}. It is a necessary logical consequence of the \textbf{existence of matter} (as a ``sink'' of entropy) in a universe governed by the ``entropy fluid dynamics'' of \textbf{Axioms M1-M3}. We offer two perspectives that are physically equivalent but differ in their explanatory emphasis.
+
+\subsubsection*{Perspective A: ``Spacetime Non-uniformity'' Model (Language of Geometry and Potential)}
+
+This perspective explains gravity as the ``inertial motion'' of particles in a \textbf{non-uniform spacetime} determined by the entropy density field, which is spiritually isomorphic to the ``geodesic motion'' of general relativity \cite{Einstein1905}.
+
+\begin{enumerate}
+    \item \textbf{Premise 1: Spacetime is the Entropy Field.} According to the rigorous proof of \textbf{Theorem T4}, the period of a local clock $T_{\text{local}}$ is inversely proportional to the local entropy density $\sigma$ ($T_{\text{local}} \propto 1/\sigma$). This means the entropy density field $\sigma(x,t)$ directly defines the \textbf{local causal structure} and the \textbf{rate of time flow} of the universe. A non-uniform entropy density field is a \textbf{region of non-uniform spacetime}.
+
+    \item \textbf{Premise 2: Principle of Least Action.} We adopt the most universal principle in physics, the \textbf{``Principle of Least Action.''} A free particle will spontaneously choose the spacetime path that minimizes its ``total action'' (roughly Energy $\times$ experienced local time).
+
+    \item \textbf{Formation of the Entropy Density Landscape:} Any material body $M$, as a ``sink'' of entropy (Axiom M2), will inevitably create an \textbf{entropy density ``potential well''} around it. The closer to $M$, the lower the value of $\sigma$.
+
+    \item \textbf{Emergence of Gravitational Attraction:}
+    \begin{itemize}
+        \item According to Premise 1, a region with lower entropy density $\sigma$ is also a region where ``local time flows slower'' (the clock period $T_{\text{local}}$ is longer).
+        \item Now, consider another test particle $m$. To minimize its total action, it will spontaneously and necessarily accelerate towards the region that allows it to ``experience more time for less energy''—that is, the region where \textbf{time flows the slowest}.
+        \item This point of slowest time flow is precisely the point of lowest entropy density created by $M$.
+        \item \textbf{Conclusion:} \textbf{Gravity is the necessary trajectory of matter minimizing its ``total action'' on the non-uniform spacetime landscape defined by the entropy density field.} It is not a ``force'' but a form of ``inertia,'' a direct manifestation of spacetime non-uniformity.
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection*{Perspective B: ``Entropy Pressure Difference'' Model (Language of Force)}
+
+This perspective explains gravity as an \textbf{unbalanced pressure}, which more intuitively reveals the dual nature of gravity and dark energy.
+
+\begin{enumerate}
+    \item \textbf{Premise: Universal ``Entropy Pressure'' of the Universe.} According to \textbf{Axioms M1} and \textbf{M3}, the cosmic computational field itself possesses an intrinsic tendency for ``information diffusion'' towards uniformity and high entropy. This tendency manifests macroscopically as a \textbf{universal, isotropic ``vacuum repulsion'' or ``entropy pressure'' $P_\sigma$}. The strength of this pressure is proportional to the local entropy density $\sigma$. $P_\sigma \propto \sigma$. This is precisely the dynamical essence of \textbf{dark energy}.
+
+    \item \textbf{Matter's ``Shielding Effect'':} Consider two material particles A and B, not far from each other. Each is a ``sink'' of entropy.
+    \begin{itemize}
+        \item On their outer sides, they face a high entropy density region close to the background vacuum $\sigma_0$, and thus experience a large, inward-directed entropy pressure $P_{\text{outer}} \propto \sigma_0$.
+        \item In the region between them, due to their mutual ``consumption'' effect, the entropy density $\sigma_{\text{inner}}$ is significantly reduced, $\sigma_{\text{inner}} < \sigma_0$. Consequently, the entropy pressure acting on their inner sides, $P_{\text{inner}} \propto \sigma_{\text{inner}}$, is also reduced.
+    \end{itemize}
+
+    \item \textbf{Emergence of Gravitational Attraction:}
+    \begin{itemize}
+        \item For particle A, the pressure acting on its outer side $P_{\text{outer}}$ is \textbf{greater than} the pressure acting on its inner side $P_{\text{inner}}$.
+        \item This \textbf{net, inward ``pressure difference'' $\Delta P = P_{\text{outer}} - P_{\text{inner}}$} inevitably \textbf{pushes} particle A towards particle B.
+        \item \textbf{Conclusion:} \textbf{Gravity is an effective attractive effect produced when the universal ``entropy pressure'' (dark energy) is mutually ``shielded'' by matter (regions of low entropy density).} It is a ``pushing force,'' not a ``pulling force.''
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection*{Unification of the Two Perspectives:}
+These two perspectives are completely equivalent. The ``potential well'' of Perspective A is maintained precisely by the ``pressure difference'' of Perspective B. Together, they paint a profound physical picture: the ground state of the universe is ``repulsion'' (entropy generation and diffusion), while matter ``carves out'' local ``attractive'' effects in this universal repulsive background by ``consuming entropy.'' Gravity and dark energy are no longer two separate mysterious phenomena, but two sides of the same coin of a single ``entropy fluid dynamics'' process.
+
+\subsubsection{Mathematical Formalization: From the Entropy Field Equation to Newton's Law of Gravitation}
+
+The two physical pictures described above (least action and entropy pressure difference) provide an intuitive, mechanistic explanation for the origin of gravity. Now, we will demonstrate that these physical pictures can be rigorously supported by mathematics, and that we can directly derive the familiar \textbf{Newton's Law of Universal Gravitation} from our \textbf{entropy field dynamics equation} \cite{Newton1687}.
+
+\paragraph{Step 1: Solving for the static entropy field $\sigma(r)$ around a single point mass}
+
+We consider the simplest case: an isolated, stationary point mass $M$ placed in the universe. We solve for the steady-state ($\partial\sigma/\partial t = 0$) distribution of the entropy density field $\sigma(r)$ around it.
+
+According to the core dynamics equation from section 3.1.3:
+\[
+\frac{\partial\sigma}{\partial t} = D \cdot \nabla^2\sigma + s - k \cdot \rho_m
+\]
+
+In the steady state, $\partial\sigma/\partial t = 0$. For a point mass $M$, its mass density can be expressed as $\rho_m = M \cdot \delta(\mathbf{r})$, where $\delta(\mathbf{r})$ is the Dirac delta function. In the vast space outside the source point ($r > 0$), the source term is zero, and the equation simplifies to the Laplace equation $\nabla^2\sigma(\mathbf{r}) = -s/D$. On cosmological scales, $s$ is an extremely small constant; in local system analysis, we are primarily concerned with the perturbation caused by the mass $M$.
+
+The complete equation including the source term is the standard \textbf{Poisson equation}:
+\[
+D \cdot \nabla^2\sigma(\mathbf{r}) = k \cdot M \cdot \delta(\mathbf{r}) - s
+\]
+
+Solving this equation using standard field theory methods (like Green's functions) and applying the boundary condition—that at infinity ($r\to\infty$), the entropy density returns to the vacuum background value $\sigma_0$—we can obtain its physically relevant solution:
+
+\[
+\sigma(r) = \sigma_0 - \frac{kM}{4\pi D} \cdot \frac{1}{r}
+\]
+
+\begin{itemize}
+    \item \textbf{Physical Meaning:} This solution precisely describes our expectation. A mass $M$, acting as a ``sink'' of entropy, necessarily creates a $1/r$ ``entropy potential well'' around it. The closer to the object, the lower the entropy density $\sigma(r)$.
+\end{itemize}
+
+\paragraph{Step 2: Deriving the gravitational field $\mathbf{g}$ from the entropy field gradient}
+
+Now let's calculate the gravitational force. According to \textbf{Perspective B (Entropy Pressure Difference Model)}, the force $F_g$ experienced by a test mass $m$ in the entropy field arises from the non-uniformity of the ``entropy pressure field'' $P_\sigma$ it is immersed in. A fundamental principle of physics tells us that the force on an object in a potential field points in the direction of decreasing potential energy. Here, the object will tend towards regions of lower entropy pressure.
+
+\begin{enumerate}
+    \item \textbf{Relationship between Pressure and Entropy Density:} We have posited that the entropy pressure $P_\sigma$ is directly proportional to the local entropy density $\sigma$. $P_\sigma = \alpha \sigma$ ($\alpha$ is a positive constant).
+    \item \textbf{Relationship between Force and Pressure Gradient:} The net force on a test object $m$ of volume $V$ is equal to the negative of the pressure gradient multiplied by the volume: $\mathbf{F} = -V \nabla P_\sigma$. For a point-like particle, we simplify this to the force being proportional to and in the opposite direction of the pressure gradient.
+    \item \textbf{Definition of Gravitational Field $\mathbf{g}$:} The gravitational field $\mathbf{g}$ is the force per unit mass ($\mathbf{g} = \mathbf{F}_g/m$). It is therefore in the opposite direction of the entropy density gradient (pointing towards decreasing entropy density). We define a universal proportionality constant $\beta > 0$:
+    \[
+    \mathbf{g} = -\beta \nabla\sigma
+    \]
+    This definition directly stipulates physically: \textbf{The gravitational field is attractive; it always points in the direction where the entropy density $\sigma$ decreases most rapidly.}
+
+    \item \textbf{Calculating the Gradient:} Let's calculate the gradient of $\sigma(r)$, $\nabla\sigma$. In spherical coordinates, the gradient has only a radial component:
+    \[
+    \nabla\sigma = \frac{d\sigma}{dr} \hat{\mathbf{r}} = \frac{d}{dr} \left[\sigma_0 - \frac{kM}{4\pi D} \cdot \frac{1}{r}\right] \hat{\mathbf{r}} = \left[ \frac{kM}{4\pi D} \cdot \frac{1}{r^2} \right] \hat{\mathbf{r}}
+    \]
+    The direction of this gradient vector $\nabla\sigma$ is \textbf{radially outward}, pointing in the direction of increasing entropy.
+
+    \item \textbf{Solving for the Gravitational Field $\mathbf{g}$:} Substitute the result for $\nabla\sigma$ into the definition of $\mathbf{g}$:
+    \[
+    \mathbf{g} = -\beta \left[ \frac{kM}{4\pi D} \cdot \frac{1}{r^2} \right] \hat{\mathbf{r}}
+    \]
+\end{enumerate}
+
+\textbf{Conclusion: We have rigorously derived from the entropy field dynamics equation that the gravitational field $\mathbf{g}$ is an attractive field pointing towards the source center, with a magnitude that follows an inverse-square law.}
+
+\paragraph{Step 3: Identifying the Gravitational Constant $G$}
+
+Let's make a precise, one-to-one comparison of our derived formula for gravity, $\mathbf{g} = - \left[\frac{\beta k}{4\pi D}\right] \cdot \frac{M}{r^2} \hat{\mathbf{r}}$, with Newton's law of universal gravitation, $\mathbf{g} = - G \cdot \frac{M}{r^2} \hat{\mathbf{r}}$ \cite{Newton1687}.
+
+We can immediately identify that the \textbf{Gravitational Constant $G$}, which we are familiar with and have measured experimentally, is no longer a fundamental constant of nature in this theory, but a \textbf{composite constant} determined by deeper-level parameters of the computational field:
+
+\[
+G = \frac{\beta k}{4\pi D}
+\]
+
+where:
+\begin{itemize}
+    \item $k$ is the \textbf{entropy consumption coefficient} (Axiom M2), representing the strength of the interaction between matter and the entropy field.
+    \item $D$ is the \textbf{entropy diffusion coefficient} (Axiom M3), representing the efficiency with which the computational field (the vacuum) transmits information perturbations.
+    \item $\beta$ is a universal coupling constant that converts the gradient of entropy density into physical acceleration.
+    \item $4\pi$ is a factor arising from the geometry of three-dimensional space.
+\end{itemize}
+
+\textbf{The Final Profound Meaning:}
+This mathematical formalization not only successfully derives Newton's law of gravitation quantitatively from our axiomatic system but also reveals the profound nature of gravity. \textbf{The strength of gravity, $G$}, is essentially determined by a ``tug-of-war'' between ``matter's ability to consume entropy ($k$)'' and ``the vacuum's ability to transmit entropy ($D$).'' If matter's ability to consume entropy were stronger, or the vacuum's efficiency in transmitting it were lower, gravity would appear stronger. This novel perspective provides unprecedented, mechanistic insight into the oldest known force in the universe.
+
+\subsection{Emergence of Relativistic Effects: A Process of ``Dynamical Adaptation''}
+This section explains how a particle's \textbf{total mass $m$} (defined as its \textbf{bit-change flux}), as well as its \textbf{morphology $L$} and \textbf{intrinsic rhythm $T$}, systematically change with velocity $v$. These seemingly independent effects—mass increase, length contraction, time dilation—are actually three different facets of the same fundamental physical process: the \textbf{dynamical adaptation} that a stable ``information vortex'' (a particle) must undergo to maintain its ``computational self-consistency'' while in motion.
+
+\begin{itemize}
+    \item \textbf{The Challenge: Risk of Computational Decomposition}
+    For any extended pattern (information vortex) moving at a macroscopic velocity $v$, the internal ``information synchronization'' used to maintain resonance is disrupted. This is because, in a \textbf{computational field} where the speed of information propagation has an upper limit of $c$, the signal transmission between its front and rear ends will suffer from severe time-delay asymmetry due to motion. If the pattern does not adjust itself, this internal ``causal desynchronization'' will lead to a rapid dissolution of its resonant structure, facing the risk of \textbf{``computational decomposition.''}
+
+    \item \textbf{Matter's ``Adaptability'' and the Emergence of the Lorentz Factor}
+    A particle that can move stably is necessarily a \textbf{``dynamical survivor.''} This means its pattern \textbf{must} actively and dynamically adjust to maintain the \textbf{``phase synchronization''} of its internal information waves and its \textbf{structural self-consistency}. We assert that the unique set of adjustments that guarantees its ``survival'' is mathematically described precisely by the Lorentz factor $\gamma = 1 / \sqrt{1 - v^2/c^2}$ \cite{Einstein1905}.
+
+    This is not an externally imposed rule but a dynamical law that \textbf{inevitably emerges} from the foundation of our theory—a computational field with a fixed speed of information propagation. We rigorously prove this in \textbf{Appendix A} through two independent lines of argument \cite{DrazinJohnson1989}:
+    \begin{enumerate}
+        \item \textbf{The argument from internal self-consistency} shows that for an extended pattern to maintain the logical harmony and rhythmic synchronization of its multi-dimensional structure while in motion, its morphology and period must undergo mutually compensating adjustments by factors of $1/\gamma$ and $\gamma$.
+        \item \textbf{The argument from soliton dynamics}, through a concrete mathematical example (a breather soliton), analytically proves that the energy, size, and intrinsic period of any stable, self-sustaining nonlinear wave packet will \textbf{necessarily} follow the transformation relations described by the Lorentz factor when in motion.
+    \end{enumerate}
+
+    Therefore, relativistic effects are a coordinated set of \textbf{``costs''} that a particle, this \textbf{``dynamical survivor,''} must pay to maintain its ``right to exist'' (computational self-consistency) at different speeds of motion:
+    \begin{itemize}
+        \item \textbf{Mass Increase ($m = \gamma m_0$)}: This is the \textbf{energy cost} it must pay. A particle's energy/mass is precisely defined as the \textbf{total bit-change flux $(\Phi)$} contained in its pattern (the number of bits flipped per unit of absolute time). To propel itself and organize the surrounding computational field while in motion, its total flux must increase from $\Phi_0$ at rest to $\gamma\Phi_0$.
+        \item \textbf{Length Contraction ($L = L_0/\gamma$)}: This is the \textbf{morphological cost} it must pay to compensate for the asymmetry in signal transmission.
+        \item \textbf{Time Dilation ($T = \gamma T_0$)}: This is the \textbf{rhythmic cost} it must pay to synchronize its larger, more complex moving system.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{Two Dynamical Instances of Acceleration}
+
+\paragraph{Instance One: ``Gentle Acceleration''—Ordered Adaptation in an Electric Field}
+\begin{itemize}
+    \item \textbf{Scenario:} In a large linear accelerator, an electron is accelerated by a gentle electric field.
+    \item \textbf{Computational Field Picture:} The electric field can be seen as a gentle, ordered ``gradient'' in the computational field, providing a continuous, stable \textbf{computational driving force} for the electron's structural adjustment process.
+    \item \textbf{Dynamical Process:} As the velocity $v$ increases, the dynamics of the electron vortex \textbf{gracefully and step-by-step} adjusts in response to this external drive. Its internal \textbf{bit-change flux} smoothly increases according to the Lorentz scheme, while its spatial morphology is systematically compressed. This is an \textbf{adiabatic, reversible} dynamical adaptation process.
+\end{itemize}
+
+\paragraph{Instance Two: ``Instantaneous Acceleration''—Catastrophe and Creation in Particle Collisions}
+\begin{itemize}
+    \item \textbf{Scenario:} In the Large Hadron Collider, two protons, accelerated to extremely high $\gamma$ values (two massive ``computational shockwave clouds'' with extremely high \textbf{bit-change flux}, severely ``flattened''), collide head-on.
+    \item \textbf{Dynamical Consequence (The Verdict of the Rule):} This is no longer a gentle adaptation but a \textbf{catastrophic, non-adiabatic} event. The non-linear dynamics of the Rule will dominate everything.
+    \begin{enumerate}
+        \item \textbf{Overwhelming Outcome $\rightarrow$ Annihilation into Simplicity:} In the vast majority of collisions, this ``fused entity,'' containing an immense \textbf{bit-change flux} ($\sim 2\gamma\Phi_0$) and being extremely non-self-consistent, fails to find any stable resonant mode. Its enormous computational activity will be ``disbanded,'' radiating away in the form of a multitude of simpler, ``fundamental modes'' (like photons, mesons, etc.). This is the ``jet of particles'' we see in detectors.
+        \item \textbf{Extremely Rare Outcome $\rightarrow$ Creation from Chaos:} If the energy and ``angle'' of the collision are just right, precisely matching the ``nucleation conditions'' of a potential, higher-mass stable resonant mode, the Rule might ``assemble'' a brand new, heavier stable vortex (like a Higgs boson) from that chaotic ``high-flux computational soup.'' This is the discovery of a new particle.
+    \end{enumerate}
+\end{itemize}
+
+\subsection{The Ontology of a Particle: A Self-Consistent ``Cross-Dimensional Information Vortex''}
+
+In this theory, an elementary particle of matter (like an electron), at its most fundamental level, is not a static ``point'' or ``thing,'' but a \textbf{specific, stable, self-consistent dynamical process} that is spatially extended and composed of a vast number of bits. We name its most basic form the \textbf{``Cross-Dimensional Information Vortex,''} whose microscopic topological structure is analogous to a \textbf{``Self-Synchronized Oscillating Loop (SSOL)''} \cite{DrazinJohnson1989, Skyrme1961}.
+
+\subsubsection{Source of the Vortex's Stability: A Self-Consistent Information Feedback Loop}
+\begin{itemize}
+    \item \textbf{Existence is Stability:} An ``information vortex'' can exist as a stable particle precisely because its \textbf{internal dynamics}, driven by the Rule, form a \textbf{perfect, self-consistent ``information feedback loop.''}
+    \item \textbf{Resisting Chaos:} On the $b_1$ computational layer, the $0/1$ state information at point A on the vortex loop, through the action of the Rule on its spatial neighbors, will eventually ``cycle'' back after a series of $\tau$ steps to \textbf{re-reinforce and confirm} the proper state of point A. It is this intrinsic feedback loop, based on intra-layer interactions, that allows a particle pattern to \textbf{resist} the continuous ``erosion'' from the chaos of the $b_0$ layer and maintain its existence as an \textbf{``island of order'' with low thermodynamic entropy $S_T$}. Any $0/1$ pattern that fails to form such a self-consistent feedback loop will quickly ``dissolve'' into the vacuum.
+\end{itemize}
+
+\subsubsection{The Vortex's Dynamical Core: The $b_0$-$b_1$ Cross-Dimensional Cycle}
+\begin{itemize}
+    \item \textbf{Core Mechanism:} A stable particle vortex does not just cycle ``planarly'' on the $b_1$ layer; its stable existence \textbf{necessarily} involves a continuous, bidirectional information exchange with the \textbf{$b_0$ computational layer}.
+    \item \textbf{``Computational Respiration'':} This $b_0$-$b_1$ feedback loop is key to the particle's ability to \textbf{utilize} (not just resist) the underlying chaos to maintain its own stability.
+    \begin{itemize}
+        \item \textbf{Information Sinking:} The vortex continuously ``sinks'' its structured information from the $b_1$ layer and inputs it into the $b_0$ layer.
+        \item \textbf{Chaotic Processing:} The $b_0$ layer ``processes'' this information with its chaotic dynamics.
+        \item \textbf{Information Surfacing:} The chaos-processed information from $b_0$ is then ``absorbed'' back into the $b_1$ layer by the vortex from the outside, serving as the ``fuel'' and ``driving force'' to maintain its own dynamic resonance.
+    \end{itemize}
+    \item \textbf{A ``Self-Sustaining Engine'':} The electron, and all stable particles, are perfect, perpetual \textbf{``self-sustaining systems''} that use the chaotic dynamics of the $b_0$ layer as part of their ``engine.''
+\end{itemize}
+
+\subsubsection{Source of the Vortex's ``Personality'': Differences in Geometry and Topology}
+All of a particle's intrinsic properties (quantum numbers) arise from the specific \textbf{geometric and topological} properties of its ``cross-dimensional information vortex,'' which determine how it interacts with the surrounding cellular bits.
+
+\begin{itemize}
+    \item \textbf{Charge:} Determined by the \textbf{net direction} of the $b_0$-$b_1$ cross-dimensional information flow.
+    \begin{itemize}
+        \item \textbf{Matter (e.g., electron):} Is an ``information-sinking'' ($b_1 \rightarrow b_0$) vortex, defined as negative charge.
+        \item \textbf{Antimatter (e.g., positron):} Is an ``information-surfacing'' ($b_0 \rightarrow b_1$) vortex, defined as positive charge.
+    \end{itemize}
+
+    \item \textbf{Spin:} Determined by the \textbf{intrinsic rotational direction (chirality)} of the spatial circulation on the $b_1$ layer.
+    \begin{itemize}
+        \item \textbf{Spin-up:} May correspond to a ``clockwise'' rotating vortex.
+        \item \textbf{Spin-down:} May correspond to a ``counter-clockwise'' rotating vortex.
+    \end{itemize}
+
+    \item \textbf{Generation/Family:} Determined by the \textbf{highest computational layer} involved in this vortex system.
+    \begin{itemize}
+        \item \textbf{First Generation:} Is the basic $b_0$-$b_1$ vortex.
+        \item \textbf{Second Generation:} Is a more complex, nested vortex system involving $b_0$-$b_1$-$b_2$ coupling.
+    \end{itemize}
+\end{itemize}
+
+(\textit{Note: The different types of forces are the dynamical consequences determined respectively by these different vortex properties—total scale (gravity), flow direction (electromagnetism), topological boundary (strong force), and resonance stability (weak force).})
+
+\paragraph{}
+The photon, as the most fundamental information carrier in our universe, has an ontological status that is distinctly different from the ``matter vortices'' that possess rest mass. We assert that the photon is the ultimate manifestation of \textbf{``topological complexity zero.''} The profound meaning of this definition is that its existence \textbf{does not require} an intrinsic, closed topological structure to maintain its stability; its \textbf{stability comes entirely from the act of ``motion'' itself} \cite{deBroglie1930}.
+
+\begin{itemize}
+    \item \textbf{Core Mechanism: A Chain Reaction Driven by a ``Chiral'' Rule}
+    The most fundamental bit pattern of a photon is a perpetual, mutually-generating \textbf{``chain reaction''} between \textbf{spatially perpendicular $0/1$ bit pattern gradients}, spawned by the \textbf{``chiral time flow''} (the fixed $\{x, y, z\}$ update sequence) defined in our \textbf{Axiom C4}.
+    \begin{itemize}
+        \item \textbf{Dynamical Process:} During the $x$-axis update sub-step, a bit gradient pattern in the $x$-direction is formed. In the following $y$-axis update sub-step, the deterministic evolution of the Rule \textbf{transforms} this $x$-direction gradient into a \textbf{new, perpendicular gradient pattern} in the $y$-direction. In the subsequent $z$-axis update sub-step, this newly formed $y$-direction gradient, in turn, \textbf{re-spawns} a new $x$-direction gradient ahead of it (at position $z+1$).
+        \item This cycle of \textbf{$x$-gradient $\rightarrow$ $y$-gradient $\rightarrow$ $x$-gradient($z+1$) $\rightarrow \dots$} is like a continuously forward-``tumbling'' wave that is its own reason for advancing.
+    \end{itemize}
+
+    \item \textbf{Dynamical Explanation of Zero Rest Mass:}
+    This ``self-exciting'' propagation process is a \textbf{self-sufficient, computationally ``zero-intrinsic-maintenance-cost''} cycle. Unlike a matter vortex, it does not need to expend extra computational cost to maintain a \textbf{static} topological structure. If a photon is \textbf{absorbed} by a matter pattern (i.e., ``stopped''), its open, propagating chain-reaction structure is broken. The reversibility and conservation laws of the Rule would force the entire computational cost (energy) it carries to be \textbf{transformed} into the \textbf{``excitation energy''} of the absorbing matter or a new pair of \textbf{``matter-antimatter'' vortices}. It cannot exist in a ``rest'' state, and therefore its \textbf{rest mass must be zero}.
+
+    \item \textbf{Energy as a Manifestation of ``Spatial Frequency'':}
+    The energy of a photon comes not from its ``amplitude,'' but from the \textbf{``spatial frequency''} of its bit pattern along its path of propagation. A high-energy photon's pattern is a periodic $0/1$ wave train with a \textbf{shorter spatial ``interval.''} The shorter the interval, the higher the ``computational activity'' (bit flip rate) of the gradient transformations, and thus the greater the energy. This gives rise to the \textbf{Planck relation ($E \propto f$)} from first principles \cite{deBroglie1930}.
+
+    \item \textbf{Emergence of Wave-Particle Duality and the Uncertainty Principle:}
+    \begin{itemize}
+        \item \textbf{Wave Nature:} The photon, as a \textbf{spatially extended, periodic $0/1$ wave train}, perfectly explains interference and diffraction \cite{deBroglie1930}.
+        \item \textbf{Particle Nature:} When this \textbf{entire wave train} (a unified dynamical event) interacts with a local ``matter vortex'' (a detector), the \textbf{total computational cost (energy)} it carries is absorbed by the detector in a \textbf{single, quantized event}.
+        \item \textbf{Uncertainty:} A spatially localized ``wave packet'' (position $x$ is relatively certain), according to Fourier analysis, must be composed of a superposition of various ``spatial frequencies'' (momenta $p$). This reproduces the Heisenberg uncertainty principle from the geometry of bit arrangements \cite{deBroglie1930}.
+    \end{itemize}
+
+    \item \textbf{Origin of Non-Interaction: Linearity of the Rule}
+    The reason photons hardly interact with each other (at low energies) is, most fundamentally, that:
+    \begin{enumerate}
+        \item \textbf{The photon is the ``linear eigenstate'' of our universe's Rule}, a pattern that evolves under the dominance of the linear (XOR) part of the Rule.
+        \item \textbf{Matter, in contrast, is the ``non-linear eigenstate'' of the Rule}.
+    \end{enumerate}
+    According to the \textbf{principle of linear superposition} of the XOR rule, when two photon wave packets overlap in space, their bit patterns simply undergo a simple XOR addition (manifesting as ``interference''). After passing through the overlapping region, they will re-emerge \textbf{perfectly and without loss}, continuing their respective propagations as if nothing had happened. \textbf{Their paths can overlap, but their dynamical states do not change.}
+
+    \item \textbf{Conclusion:}
+    The photon is a \textbf{pure, formless, perpetually moving, linear ``dynamical event''} in our computational universe. This unified, visualizable picture naturally and necessarily gives rise to \textbf{all the core quantum properties} of light from the first principles of our theory, and profoundly reveals the fundamental difference between it and the ``non-linear'' world of matter.
+\end{itemize}
+
+\subsection{The Emergence of Mass: A Structural Cost of ``Dynamical Adaptability''}
+
+In this theory, mass is not an intrinsic, fundamental property, but an \textbf{emergent, dynamical} quantity. We assert that all phenomena related to ``mass'' in the universe originate from the same fundamental cause: \textbf{the intrinsic ``structural adjustments'' and ``computational activity'' that a stable ``information vortex'' (particle) must undertake to maintain its computational self-consistency in different dynamical environments.}
+We provide two definitions for mass that are physically equivalent but more explanatory in different contexts:
+
+\begin{definition}[\textbf{The Structural Mass}]
+The \textbf{rest mass $m_0$} of a stable pattern (particle) is proportional to the \textbf{total structural scale} it must construct to form and maintain its core resonant vortex in a \textbf{state of rest}, i.e., the \textbf{number of fundamental bits $N_0$} contained in its core structure.
+\[
+m_0 \propto N_0
+\]
+This definition emphasizes the \textbf{``construction cost''} of mass, i.e., the structural complexity required to create a stable particle from ``nothing.''
+\end{definition}
+
+\begin{definition}[\textbf{The Dynamical Mass}]
+The \textbf{total energy/total mass $m$} of a physical pattern is more universally defined as the \textbf{total bit-change flux $\Phi$} contained in its pattern (i.e., the total number of bits that flip per unit of absolute time).
+\[
+m \propto \Phi
+\]
+This definition emphasizes the \textbf{``maintenance cost''} and \textbf{``motional cost''} of mass, i.e., the total amount of computational activity required to sustain a pattern's existence and to move it.
+\end{definition}
+
+\subsubsection*{Equivalence of the Two Definitions:}
+For a \textbf{stationary particle}, the very act of maintaining its stable resonance (resisting chaotic erosion from the $b_0$ layer) is itself a continuous, dynamic computational process. Its internal bits are constantly undergoing periodic, coordinated flips. Therefore, its \textbf{bit-change flux at rest, $\Phi_0$}, is necessarily proportional to the \textbf{structural scale $N_0$} it needs to maintain. That is, $\Phi_0 \propto N_0$.
+Thus, the two definitions are completely equivalent in the state of rest: \textbf{$m_0 \propto N_0 \propto \Phi_0$}.
+
+\subsubsection*{Origin of the ``Family'' Hierarchy of Particle Rest Mass $m_0$}
+
+\begin{itemize}
+    \item \textbf{The Challenge:} Our universe's hardware (Axiom C1) is a \textbf{``multi-scale''} computational medium. Different computational layers $b_n$ have computational cores of vastly different sizes $S(n)$. A higher-generation particle ($n \ge 2$) is defined by its ability to maintain a \textbf{unified, synchronized} cross-layer resonance in this \textbf{hardware-inhomogeneous} environment. This presents an enormous \textbf{``hardware scale disharmony.''}
+
+    \item \textbf{The Solution (Structural Expansion):} To ``bridge'' these vast hardware scale differences and force different layers into ``phase-locked synchronization,'' the dynamics of the Rule must construct an \textbf{extremely large and complex ``coupling field.''}
+
+    \item \textbf{Source of Rest Mass:} The reason higher-generation particles have exponentially increasing rest masses $m_0$ is primarily the huge number of bits $N_{\text{coupling}}$ contained in this extremely ``expensive'' ``coupling structure'' that must be built to counteract the ``hardware scale disharmony.''
+    \begin{itemize}
+        \item $N_0(n=1)$ (First Generation): Is the basic $b_0$-$b_1$ vortex, with $N_{\text{coupling}}$ being zero.
+        \item $N_0(n=2)$ (Second Generation): $\approx N_0(b_1) + N_0(b_2) + N_{\text{coupling}}(b_1 \leftrightarrow b_2)$.
+        \item $N_0(n=3)$ (Third Generation): Is an even more complex structure involving both $b_1 \leftrightarrow b_2$ and $b_2 \leftrightarrow b_3$ couplings, whose $N_{\text{coupling}}$ cost grows exponentially.
+    \end{itemize}
+
+    \item \textbf{Explanation of Stability:} Higher-generation particles are more unstable and have shorter lifetimes because this extremely complex ``multi-layer coupling structure'' is more \textbf{fragile} in resisting the chaotic erosion from the $b_0$ layer and is more prone to ``resonance disharmony'' (i.e., weak interaction decay).
+
+    \item \textbf{Origin of Inertia:} The inertia of a particle is the intrinsic dynamical resistance of this highly correlated, static resonant system of $N$ bits to \textbf{having its resonance pattern altered}.
+
+    \item \textbf{Origin of Symmetry Breaking (Chiral Time Flow):} The fixed $\{x, y, z\}$ update sequence in \textbf{Axiom C4} intrinsically endows the universe with a \textbf{global ``chirality.''} The parity non-conservation of the weak interaction and CP violation are the necessary asymmetric effects that emerge when particle patterns interact with this ``chiral time flow.''
+\end{itemize}
+
+\subsection{The Emergence of Forces: Dynamical Consequences of Different Vortex Interactions}
+
+All ``forces'' are the macroscopic manifestations of these ``information vortices'' influencing and interacting with their surrounding ``bit background environment'' through our single Rule.
+
+\paragraph{Electromagnetic Interaction:}
+\begin{itemize}
+    \item \textbf{Source:} Arises from the \textbf{``charge''} property of the vortex.
+    \item \textbf{Mechanism:} An ``information-sinking/surfacing'' vortex necessarily induces and maintains a \textbf{long-range, static, ordered ``bit polarization field''} in its surrounding bit background. The electromagnetic force is the interaction between these ``polarization fields'' (e.g., a ``sinking flow'' and a ``surfacing flow'' will form a closed information loop, manifesting as attraction) \cite{Einstein1905}.
+\end{itemize}
+
+\paragraph{Strong Interaction:}
+\begin{itemize}
+    \item \textbf{Source:} The \textbf{``topologically open boundaries''} of special vortices like quarks.
+    \item \textbf{Mechanism:} A vortex with an ``open boundary'' is extremely non-self-consistent and creates catastrophic ``computational stress'' in its immediate vicinity. The dynamics of the Rule forces these ``open boundaries'' to connect via one-dimensional \textbf{``bit-flux tubes'' (color lines)}, forming an overall topologically closed, stable structure (like a proton). The strong interaction is the immense tension of these ``bit-flux tubes'' \cite{Skyrme1961}.
+\end{itemize}
+
+\paragraph{Weak Interaction:}
+\begin{itemize}
+    \item \textbf{Source:} The \textbf{``resonance stability''} of complex/multi-layer vortices.
+    \item \textbf{Mechanism:} The weak interaction is an event of \textbf{``vortex topology rearrangement.''} When a complex vortex system (like a neutron or a muon) suffers a \textbf{``resonance disharmony''} due to interaction with the underlying chaos, the Rule drives it to \textbf{decay} into a new, simpler, and more stable set of vortices.
+\end{itemize}
+
+\paragraph{Gravitational Interaction:}
+\begin{itemize}
+    \item \textbf{Source:} Arises from the \textbf{``total computational cost''} of the vortex, i.e., its \textbf{mass}.
+    \item \textbf{Mechanism:} The existence of any vortex is a region of \textbf{high non-uniformity} (low thermodynamic entropy $S_T$). According to the macroscopic thermodynamic tendency of the Rule (see Axiom M), the universe's bit background has a \textbf{universal ``diffusion pressure''} (vacuum repulsion) that seeks to smooth out any non-uniformity. Gravity is the \textbf{net, effective attractive effect} produced when two or more matter vortices mutually \textbf{``shield''} this universal ``diffusion pressure'' from each other \cite{Newton1687}.
+\end{itemize}
+
+\subsection{The Essence of Entanglement: A ``Gravity-Encoded'' Superdeterminism}
+
+Quantum entanglement, the most mysterious phenomenon in quantum mechanics, receives a completely deterministic, first-principles physical explanation in this theory \cite{Bell1964}. We assert that entanglement is not ``spooky action at a distance,'' but a necessary \textbf{``synchronous response''} \textbf{coordinated by a common, local macroscopic background (the gravitational field)}. This mechanism is a physically realizable form of \textbf{``Superdeterminism''} \cite{Bohm1952}.
+
+\subsubsection{Redefining ``Randomness'' and ``Hidden Variables''}
+
+\begin{itemize}
+    \item \textbf{Source of ``Randomness'' in Quantum Measurement:}
+    The reason the outcome of a quantum measurement appears probabilistic is rooted in the fact that any measurement device is inevitably immersed in an extremely complex, dynamic \textbf{``gravitational bit stream''} generated by macroscopic objects (like the Earth). For any informationally incomplete ``internal observer,'' the precise sequence of this bit stream is \textbf{unknowable}. This, and this alone, is the \textbf{sole source} of quantum randomness.
+
+    \item \textbf{The Physical Entity of ``Hidden Variables'':}
+    The ``hidden variable'' that has puzzled physics for a century is finally identified in this theory: \textbf{it is the microscopic, information-rich bit stream of the gravitational field itself} \cite{Bohm1952}.
+\end{itemize}
+
+\subsubsection{The Creation of Entanglement: A ``Complementary Structure'' Locked by Conservation Laws}
+
+\begin{itemize}
+    \item When a system decays into a pair of entangled particles, fundamental symmetries inherent in the Rule, such as the \textbf{``conservation of topological charge,''} forcibly shape the nascent pair of ``information vortices'' into \textbf{structurally perfectly complementary} forms (e.g., $Rotation_A = -Rotation_B$).
+\end{itemize}
+
+\subsubsection{The Ultimate Mechanism of Entanglement Correlation: Synchronous Decoding of a Common ``Gravitational Waveform''}
+
+\begin{itemize}
+    \item \textbf{The Dynamics of Measurement:}
+    A measurement process is a \textbf{``decoding''} event. The final output of a measurement apparatus is determined by a \textbf{deterministic function} acting on \textbf{two inputs}:
+    \begin{enumerate}
+        \item \textbf{Input One (Microscopic):} The \textbf{intrinsic, complementary} structure of the particle being measured.
+        \item \textbf{Input Two (Macroscopic):} The \textbf{``Gravitational Information Waveform''} that the instrument receives during the time window of the measurement.
+    \end{enumerate}
+
+    \item \textbf{Properties of the ``Gravitational Information Waveform'':}
+    It is a macroscopic, coherent signal, a pseudo-random ``analog signal'' with \textbf{temporal continuity and spatial coherence}, radiated by a macroscopic object (like the Earth). It can itself carry macroscopic information that breaks mirror symmetry, for example, during a certain period, it might exhibit a \textbf{net, specific ``local chirality'' or ``polarization state.''}
+
+    \item \textbf{The Emergence of ``Superluminal'' Correlation:}
+    \begin{enumerate}
+        \item \textbf{Common Background:} Alice and Bob, located in the same gravitational field, are both immersed in the \textbf{same ``gravitational broadcast.''}
+        \item \textbf{Coherence:} For a lab-scale Bell experiment, because the Earth's gravitational field is a macroscopic, quasi-static field, the characteristic time scale of changes in its ``information waveform'' is \textbf{far greater than} the time it takes for a light signal to travel between Alice and Bob. Therefore, within the \textbf{extremely short time window} of the measurement, the segment of the \textbf{``gravitational information waveform''} they receive has a \textbf{macroscopic polarization state that is highly coherent and almost identical}.
+        \item \textbf{Synchronous Decoding:} When the measurement occurs, Alice's and Bob's instruments ``decode'' their respective complementary particle structures against the background of this \textbf{almost identical} ``gravitational waveform.''
+        \item \textbf{Inevitable Correlation:} Since the particle structures are perfectly complementary and the macroscopic ``background signal'' they use for ``decoding'' is synchronous and common, the deterministic dynamics of the Rule must lead to their final measurement results exhibiting a \textbf{perfect, super-classical statistical anti-correlation}.
+    \end{enumerate}
+\end{itemize}
+
+\subsubsection{Conclusion}
+
+\begin{enumerate}
+    \item \textbf{The Source of ``Randomness'' is Finally Determined:} The so-called ``randomness'' of quantum measurement is not random at all, but the necessary consequence of us, the ``ignorant'' observers, being unable to decode the extremely complex \textbf{``gravitational bit stream''} emitted by the planet beneath our feet.
+    \item \textbf{The ``Hidden Variable'' is Finally Found:} The ``hidden variable'' that puzzled physics for a century has \textbf{been with us all along}. It is the \textbf{gravitational field itself}—its microscopic information stream.
+    \item \textbf{The Mystery of Entanglement is Completely Demystified:} Two entangled particles are like two radios with \textbf{complementary ``antennas.''} When they receive the \textbf{same signal} from the \textbf{same broadcast station (Earth's gravitational field)}, they will necessarily play ``complementary'' music.
+\end{enumerate}
+
+\subsubsection{Core Prediction}
+
+The core of this theoretical model is that the apparent randomness of quantum measurements stems from an undecipherable ``hidden information waveform'' provided by the local macroscopic environment. This core mechanism leads to a unique, and in-principle testable, core prediction:
+
+\begin{itemize}
+    \item \textbf{Prediction: The correlation of quantum entanglement exhibits ``gravity environment dependence''} \cite{Bell1964}.
+
+    \begin{itemize}
+        \item \textbf{Basic Principle:}
+        The perfect correlation of entanglement relies on both parties decoding \textbf{a completely coherent ``gravitational information background.''} In reality, however, due to the different spatial locations of the measurement instruments, their respective \textbf{``gravitational backgrounds''} must have \textbf{minute differences}. This ``background difference'' will cause a \textbf{slight ``incoherence''} in the ``hidden variables'' they decode, thereby producing an extremely small, yet in-principle measurable, deviation in the entanglement correlation from the ideal prediction of quantum mechanics.
+
+        \item \textbf{Two Possible Observable Scenarios:}
+        We propose here two in-principle feasible experimental scenarios to test this ``environment dependence.''
+
+        \paragraph{Scenario One: Modulation Effect of a Near-Field Strong Gravity Source}
+        \begin{itemize}
+            \item \textbf{Concept:} Introduce a \textbf{massive, macroscopic body} (e.g., a specially made high-density alloy sphere, or utilize a natural massive environment like a cave) in the \textbf{immediate vicinity} of a high-precision Bell's inequality test setup.
+            \item \textbf{Possibility:} This near-field mass would superimpose its own ``gravitational information waveform'' onto the experimental area, creating \textbf{complex interference} with the dominant background field from the Earth.
+            \item \textbf{Observable Effect:} This interference \textbf{could potentially} cause a \textbf{tiny, yet systematic ``drift''} in the statistical correlation of entanglement that is correlated with the presence and position of the mass.
+        \end{itemize}
+
+        \paragraph{Scenario Two: Correlation Difference Under Different Dominant Gravity Sources}
+        \begin{itemize}
+            \item \textbf{Concept:} Conduct a Bell experiment spanning different dominant gravitational sources, for example, placing the entanglement source on Earth, with Alice's instrument on Earth and Bob's instrument in a \textbf{low-Earth orbit space station} or on the \textbf{lunar surface}.
+            \item \textbf{Possibility:} In this case, the \textbf{degree of correlation} between Alice's and Bob's ``gravitational information backgrounds'' will differ significantly.
+            \item \textbf{Observable Effect:} We predict that the strong correlation of entanglement will be \textbf{significantly and observably affected}, and the value of the Bell parameter $S$ will \textbf{decrease significantly}.
+        \end{itemize}
+
+        \item \textbf{Significance:}
+        This prediction forges a profound and unprecedented connection between two seemingly unrelated fields: \textbf{the foundations of quantum mechanics (entanglement)} and \textbf{precision gravitational measurements (gravimetry)}. Measuring the Bell parameter $S$ with unprecedented accuracy and in different gravitational environments to search for a \textbf{correlation} with the \textbf{local gravitational environment} would serve as the ultimate verdict on our ``gravity-encoded superdeterminism'' theory.
+    \end{itemize}
+\end{itemize}
+
+\subsection{The Internal Morphology of the Atom}
+
+\paragraph{The Internal Morphology of the Proton: A ``Strongly Confined'' Vortex Group}
+
+The proton is not a single, fundamental vortex but a complex \textbf{``particle group''} composed of \textbf{three ``topologically open'' quark vortices}, \textbf{confined} together by three high-tension \textbf{``bit-flux tubes'' (color lines)} in a dynamic ``tensegrity-like structure.'' As a whole macroscopic pattern, it exhibits a net charge of $+1$ and a net spin of $1/2$.
+
+\paragraph{The Morphology of the Electron Cloud: An ``Orbitalized'' Vortex Standing Wave}
+
+When an electron is bound to a proton to form a hydrogen atom, it is \textbf{no longer} an independent, localized vortex.
+
+\begin{itemize}
+    \item \textbf{The Essence of an ``Orbital'':} The electron's ``$b_0$-$b_1$ information fountain'' structure is \textbf{``stretched'' and ``smeared out''} in the proton's powerful ``bit polarization field,'' forming a probabilistic \textbf{``vortex cloud''} that covers the entire atomic scale.
+    \item \textbf{Quantization:} To form a \textbf{stable, overall resonant system} with the proton as the ``central oscillating source,'' the morphology of this ``vortex cloud'' must satisfy \textbf{standing wave conditions}. These allowed, stable ``resonant standing wave'' modes are what we know as the \textbf{quantized ``electron clouds'' with specific shapes (such as s, p, d, f orbitals)}.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Core Explanations and Future Predictions}
+
+\subsection{Introduction: A Falsifiable Unified Theory}
+
+``Computational Realism'' not only aims to construct a logically self-consistent philosophical framework but also strives to be a scientific theory in the true sense—it must be able to explain puzzles that existing theories cannot, and propose a series of unique predictions that are \textbf{Falsifiable} by future experiments and observations. This chapter will systematically elaborate on the theory's core explanations for the most cutting-edge problems in physics, compare them with the current standard models, and list its most important future predictions.
+
+\subsection{Explanations for Core Puzzles in Fundamental Physics}
+
+This theory provides first-principles, mechanistic explanations for a series of long-standing fundamental problems in physics.
+
+\begin{itemize}
+    \item \textbf{Redefinition of the ``Invariance of the Speed of Light'' and Its Fundamental Difference from Relativity:}
+    The invariance of the speed of light that this theory \textbf{derives} is ontologically distinct from the invariance of the speed of light that Einstein's special relativity \textbf{postulates} \cite{Einstein1905}.
+    \begin{enumerate}
+        \item \textbf{Einstein's Invariance of Light Speed:} It is an axiom concerning \textbf{spacetime geometry}, stipulating that the speed of light $c$ is constant for \textbf{all inertial observers}, thereby abolishing an absolute frame of reference.
+        \item \textbf{This Theory's Invariance of Light Speed:} It is a \textbf{corollary} derived from \textbf{medium dynamics}. It states that the propagation speed $c$ of light (as an information perturbation) in the physical medium of the ``computational field'' is determined solely by the \textbf{intrinsic properties of the medium itself}, and is \textbf{independent of the motion state of the source}. This is consistent with all classical wave phenomena and acknowledges the existence of an \textbf{absolute, stationary ``computational field'' frame of reference}.
+        \item \textbf{Core Difference:} In this theory, for an observer moving relative to the absolute reference frame, the ``true'' speed of light relative to him is $c \pm v$. However, that observer and all the measuring instruments he carries, as ``information solitons,'' will \textbf{necessarily undergo} coordinated dynamical adjustments (length contraction, time dilation) described by the Lorentz transformation while in motion. As proven in \textbf{Appendix A}, this adjustment will \textbf{precisely and systematically compensate} for the velocity difference, such that the speed of light he \textbf{ultimately measures} is \textbf{always $c$}. Therefore, Einstein's ``invariance of the speed of light for all observers'' is interpreted in this theory as an \textbf{operational, derivable ``measurement invariance''} caused by the physical changes in the observer himself, rather than a fundamental ontological axiom \cite{Einstein1905}.
+    \end{enumerate}
+
+    \item \textbf{Explanation for the Nature of ``Gravity'':}
+    Gravity is not a fundamental force but an \textbf{emergent effect} arising from the thermodynamic properties of the computational field (the vacuum) \cite{Newton1687}. The intrinsic entropy generation tendency of the cosmic computational field (see Section 4.3 on Dark Energy) manifests as a universal ``vacuum repulsion.'' Matter, as stable low-entropy ``information solitons,'' maintains its existence by continuously consuming environmental entropy, thereby forming an entropy density ``shielding zone'' or ``depression'' around it. \textbf{Gravity is precisely the unbalanced, net, effective attractive effect produced when two or more material bodies mutually ``shield'' this universal repulsive force from each other}. It is a ``pushing force,'' not a ``pulling force,'' and shares a common origin with dark energy.
+
+    \item \textbf{Explanation for ``Quantum Entanglement'':}
+    Entanglement is not ``spooky action at a distance'' but a \textbf{completely deterministic ``synchronous decoding'' phenomenon based on a common background} \cite{Bell1964}. This theory proposes a ``gravity-encoded superdeterminism,'' positing that the apparent randomness of quantum measurement originates from an unknowable, extremely complex \textbf{``information waveform''} provided by the \textbf{local macroscopic gravitational field}. Entangled particles are created with perfectly \textbf{complementary structures}. When measured in the same gravitational environment, they are like two receivers with complementary antennas, deterministically decoding the \textbf{same ``gravitational broadcast,''} which inevitably leads to their measurement outcomes exhibiting perfect statistical correlation.
+
+    \item \textbf{Explanation for the ``Measurement Problem'':}
+    The ``collapse'' of the quantum wave function is not a real physical process but an \textbf{epistemological} phenomenon, arising when a macroscopic, metastable ``measurement apparatus'' interacts with a microscopic system driven by underlying chaos, \textbf{amplifying and recording} the microscopic, unknowable ``pseudo-random choice'' into a classical, definite result \cite{deBroglie1930}.
+
+    \item \textbf{Explanation for the ``Quantum-Classical Boundary'':}
+    This boundary is not an abstract concept but a concrete \textbf{``hardware''} problem. Classical behavior is the natural emergence of the $b_2$ and higher computational layers, which possess \textbf{enormous computational cores}, ``filtering'' out the quantum chaos from the $b_0$ layer through their powerful \textbf{statistical averaging capability}.
+
+    \item \textbf{Explanation for the ``Particle Mass Spectrum'':}
+    The hierarchical structure of the three generations of particles originates from the stable \textbf{``cross-layer resonance''} modes in a system with different hardware scales (layered computational cores). The enormous differences in mass come from the exponentially increasing \textbf{``structural cost''} (number of fundamental bits $N_0$) that must be paid to maintain this ``cross-scale, cross-dimensional'' resonance.
+
+    \item \textbf{Explanation for the ``Arrow of Time'':}
+    The irreversibility of time is an intrinsic dynamical property of our cellular automaton Rule. It manifests as a process of \textbf{``information forgetting''}: the system always spontaneously and inevitably evolves from a ``memory-rich,'' predictable state of low thermodynamic entropy $S_T$ to a ``complete amnesia,'' random state of high $S_T$ \cite{Kolmogorov1965}.
+\end{itemize}
+
+\subsection{Explanations for Core Puzzles in Cosmology}
+
+This theory provides unified, endogenous explanations for the ``four pillar puzzles'' of the $\Lambda$CDM standard cosmological model, without introducing any new entities or ``patches.''
+
+\begin{itemize}
+    \item \textbf{Explanation for the ``Big Bang Singularity'':}
+    The ``Big Bang'' was not a singularity of infinite spacetime density, but rather, in our eternally evolving computational universe, a \textbf{dynamical diffusion and ``structural crystallization'' event of matter/energy on a fixed computational field}, originating from an extremely low-entropy initial state.
+
+    \item \textbf{Reinterpretation of the ``Cosmic Expansion'' Paradigm:}
+    \begin{enumerate}
+        \item \textbf{Abandoning the Expansion of Space:} ``Cosmic expansion'' is not the stretching of space itself \cite{Guth1981}, but the high-speed \textbf{dynamical diffusion} of all matter (information solitons) across this \textbf{fixed stage of the computational field} after the ``Big Bang.''
+        \item \textbf{Prohibition of Superluminal Speeds and the Nature of Redshift:} In this framework, the motion of all galaxies is ``real'' motion within the medium, and their speeds can \textbf{never exceed $c$}. The \textbf{cosmological redshift} we observe is primarily the \textbf{relativistic Doppler effect} caused by galaxies moving away from us at high speeds. As a galaxy's speed approaches $c$, its redshift will increase indefinitely. Therefore, this theory can explain all redshift phenomena with a single, non-superluminal dynamical mechanism, without needing to introduce the two extra explanatory layers of ``space expansion'' and ``superluminal recession.''
+        \item \textbf{No Need for Cosmic Inflation:} The flatness and homogeneity of the universe are the necessary results of its \textbf{symmetric common origin} and the underlying ``flat computational field'' hardware, requiring no additional inflationary period to ``smooth things out.''
+    \end{enumerate}
+
+    \item \textbf{Critical Explanation and Reconstruction of ``Dark Energy/Cosmological Constant $\Lambda$''}:
+
+    In this theory, it \textbf{is the most fundamental dynamical property of the cosmic computational field itself}.
+    \begin{enumerate}
+        \item \textbf{Ontological Clarification—From $\Lambda$ to $s$: } In the Friedmann equations describing cosmic expansion, the cosmological constant $\Lambda$ term represents the inherent energy density of the vacuum itself that drives the accelerated expansion of the universe. We assert that the physical essence of $\Lambda$ is the macroscopic manifestation of the \textbf{intrinsic entropy generation rate $s$} at each node of the computational field, as described in \textbf{Axiom M1}. This $s$ represents the fundamental tendency of the cosmic Rule to drive the system towards higher complexity, which macroscopically manifests as a \textbf{universal ``vacuum repulsion'' or ``entropy pressure''}. $\Lambda$ is no longer a fundamental constant to be measured, but can be directly mapped to this dynamical parameter $s$ ($\Lambda \propto s$), which explains why $\Lambda$ is a spacetime-independent constant and why it must manifest as a repulsive force \cite{Planck2020}.
+
+        \item \textbf{The ``Two Sides of One Coin'' Relationship with Gravity:} One of the most profound conclusions of this theory is the revelation of the two-sides-of-one-coin nature of \textbf{dark energy (repulsion)} and \textbf{gravity (attraction)}. They are not two independent, opposing forces, but rather the \textbf{manifestations of the same ``entropy dynamics'' process in two different environments}:
+        \begin{itemize}
+            \item \textbf{Dark energy} is the \textbf{default behavior} of the computational field in a \textbf{vacuum}—namely, the \textbf{generation} and \textbf{diffusion} of entropy, manifesting as \textbf{repulsion}.
+            \item \textbf{Gravity} is the \textbf{responsive behavior} of the computational field \textbf{around matter}—matter, as a ``sink'' of entropy (Axiom M2), \textbf{consumes} and \textbf{lowers} the surrounding entropy density, thereby ``carving out'' an effective \textbf{attractive} effect in this universal repulsive background.
+        \end{itemize}
+
+        \item \textbf{Unification and Inverse Correlation of $G$ and $\Lambda$:} In the Standard Model, the gravitational constant $G$ \cite{Newton1687} and the cosmological constant $\Lambda$ \cite{Planck2020} are two independent constants. In this theory, they are unified by the same underlying Rule. As shown in the mathematical proof in \textbf{Section 3.3.1}, the strength of $G$ is inversely proportional to the entropy diffusion coefficient $D$ ($G \propto 1/D$), while the strength of $\Lambda$ is directly proportional to the entropy generation rate $s$ ($\Lambda \propto s$). Since the diffusion efficiency $D$ of the medium is necessarily positively correlated with its internal activity $s$ ($D \propto s$), we ultimately derive a profound intrinsic relationship: \textbf{$G \propto 1/\Lambda$}.
+        \begin{itemize}
+            \item This ``inverse correlation'' implies that $G$ and $\Lambda$ are not two independent constants, but two different manifestations of the \textbf{same fundamental property} of the universe—the ``computational activity'' of the computational field. A universe with higher ``computational activity'' (high $\Lambda$) would have a stronger vacuum repulsion, and simultaneously, the relative strength of its gravitational effect, $G$, would be weaker.
+        \end{itemize}
+
+        \item \textbf{Resolution of the ``Coincidence'' Problem:}
+        The fact that we observe the dark energy density and matter density to be of the same order of magnitude today may not be a coincidence. It might reflect that the universe has evolved into a ``middle-aged'' period where the macroscopic effects of ``entropy generation'' (driven by $s$, corresponding to $\Lambda$) and ``entropy consumption'' (driven by $k\rho_m$, whose macroscopic effect strength is $G$) have reached some form of dynamic equilibrium or turning point. The emergence of this period is a necessary stage in the dynamical evolution of the universe as determined by the Rule.
+    \end{enumerate}
+
+    \item \textbf{Explanation for ``Dark Matter'':}
+    Dark matter is not a new particle outside the Standard Model that needs to be discovered. It is a \textbf{logically necessary consequence} of our theory's \textbf{multi-layered computational hardware (Axiom C1)} framework: namely, \textbf{``higher-dimensional information solitons''} that are stable on the \textbf{$b_4$ and higher computational layers}. The reason it is ``dark'' is because its ``interaction ports'' are in a different computational dimension from ours, leading to ``dimensional segregation,'' which prevents electromagnetic and other interactions, and also prevents it from being ``collided'' with in underground direct detection experiments \cite{Planck2020}.
+\end{itemize}
+
+\subsection{Our ``Absolute Velocity'' in the Universe}
+
+This theory acknowledges and requires an absolute rest frame (the computational field itself). A direct consequence is that our own motion relative to this absolute background can be measured. We assert that the precise measurement of the \textbf{``dipole anisotropy''} of the \textbf{Cosmic Microwave Background (CMB)} has already revealed this motion, but its standard interpretation \textbf{may have systematically underestimated our true absolute velocity}.
+
+According to the final data from the Planck satellite \cite{Planck2020}, we observe a systematic blueshift (temperature increase of about $3.36\,\mathrm{mK}$) in one direction of the sky (towards Leo/Crater) and an equal redshift (temperature decrease of about $3.36\,\mathrm{mK}$) in the opposite direction. Standard cosmology attributes this dipole signal \textbf{entirely} to the Doppler effect produced by our own motion (about $370\,\mathrm{km/s}$).
+
+However, ``Computational Realism'' offers a more physically profound interpretation. In our ``dynamical diffusion'' model of the universe, the background of the universe itself is not perfectly uniform. There must be a structural difference in physical state between the leading edge (the outside) and the trailing edge (the inside) of the diffusion, meaning the universe should have a \textbf{faint ``intrinsic temperature gradient''} from the inside (older, hotter) to the outside (younger, colder).
+
+Therefore, the CMB dipole we observe is not a purely kinematic effect but the \textbf{superposition of two physical effects}: a \textbf{stronger Doppler signal} produced by our high-speed motion, which is \textbf{partially ``cancelled'' and ``weakened''} by an opposing, \textbf{intrinsic cosmic temperature gradient}. The direction of our backward motion happens to be the ``inner side'' of the cosmic diffusion, where the background temperature is intrinsically slightly higher, while our forward direction is the ``outer side,'' where the background temperature is intrinsically slightly lower.
+
+This conclusion leads to a profound inference: since the ``ruler'' we use to calculate our velocity (the observed temperature difference) is smaller than the true Doppler effect magnitude, the currently accepted value of $370\,\mathrm{km/s}$ is \textbf{likely only a lower bound on our true absolute velocity}.
+
+This assertion finds indirect support from \textbf{observations of matter distribution}. Recent analyses of large-scale radio galaxy and quasar surveys have also revealed a ``matter density dipole'' in the same direction as the CMB dipole. This alignment of radiation and matter not only confirms the existence of absolute motion but the subtle differences in their signal amplitudes may hold the key to decoupling the cosmic ``intrinsic gradient'' and our \textbf{true absolute velocity}.
+
+Ultimately, this measured velocity holds fundamental significance in this theory. It is not the ``peculiar velocity'' caused by local gravity as believed in the Standard Model, but the \textbf{absolute velocity of motion} of ourselves, as ``information solitons,'' on this ultimate computational substrate of the universe. It is this (possibly underestimated) velocity that drives the faint but real Lorentz effects in ourselves and in all local physical experiments.
+
+
+\subsection{Core Predictions}
+
+This theory puts forward the following specific, core predictions that can be tested or falsified by future experiments and astronomical observations, covering the broad fields of particle physics, cosmology, and fundamental physics.
+
+\subsubsection{Predictions on Unified Field Theory and Particle Masses}
+
+\begin{enumerate}
+    \item \textbf{The ``Non-Unifiability'' of Gravity with Other Forces:}
+    We predict that any attempt to unify \textbf{gravity} (the fluid dynamics of ``density'') \cite{Newton1687} with the other three forces (the dynamics of ``rotation'' and ``topology'') under the same \textbf{quantum field theory framework} \cite{deBroglie1930} (such as loop quantum gravity, or certain paths in string theory) is \textbf{ontologically extremely difficult}. They are dynamics of different properties of the same medium, but not the same type of interaction.
+
+    \item \textbf{The Existence and Detection Method of Fourth and Higher Generation Particles:}
+    Our theory \textbf{does not prohibit} the existence of higher generation particles with $n \ge 4$, but it predicts that they \textbf{cannot} be ``created'' through traditional particle colliders. This is because the energy from the collision of our three generations of matter circulates mainly within the $b_1$-$b_3$ layers and cannot effectively ``activate'' the resonance of the $b_4$ layer. The \textbf{only way} to detect them is through \textbf{astronomical observation}—specifically, by searching for \textbf{``spectral peaks'' in ultra-high-energy cosmic rays} produced by their decay from black holes (the universe's only ``hyper-dimensional particle accelerator'').
+
+    \item \textbf{The ``Mathematical Constant'' Property of Particle Mass Ratios:}
+    We predict that the \textbf{rest mass ratios} of all elementary fermions are not random parameters to be experimentally determined, but are calculable \textbf{mathematical constants} originating from the \textbf{coupled resonance dynamics} of our universe's Rule and $N=3$ computational layers. We further speculate that these ratios have profound, precise algebraic relationships with fundamental constants like $\pi$ and the fine-structure constant $\alpha$, similar to the \textbf{Koide formula}. Future precision measurements and theoretical calculations will eventually reveal this hidden ``harmonic law of the particle mass spectrum.''
+\end{enumerate}
+
+\subsubsection{Predictions on Entanglement, Gravity, and Quantum Computing}
+
+This theory proposes two interconnected, profound, and testable core predictions for the foundations of quantum information science. They both originate from a fundamental assertion of our theory: \textbf{Quantum phenomena are not an isolated, intrinsic mathematical reality, but a dynamical process profoundly modulated by the macroscopic physical environment in which they occur (especially the gravitational field).}
+
+\begin{enumerate}
+    \setcounter{enumi}{3} % Start numbering from 4
+    \item \textbf{The ``Gravity Environment Dependence'' of Quantum Entanglement} \cite{Bell1964}
+
+    \begin{itemize}
+        \item \textbf{Core Mechanism:} We assert that the strong correlation of quantum entanglement arises from both parties decoding a \textbf{macroscopic, coherent ``gravitational information waveform''} (the hidden variable) provided by the \textbf{same dominant gravitational source}.
+        \item \textbf{Core Prediction:} Therefore, the degree of entanglement correlation is not a universal, immutable mathematical constant, but a \textbf{dynamic physical quantity that is ``modulated'' by the macroscopic gravitational environment of the universe in which it is situated}.
+        \item \textbf{Observable Effects:}
+        \begin{itemize}
+            \item \textbf{A. Weak Modulation:} On the Earth's surface, by introducing \textbf{massive, controllable bodies} (like high-density spheres) near a Bell test apparatus, or by utilizing \textbf{natural gravitational gradient differences} (e.g., deep mountains vs. plains, Earth vs. low-Earth orbit vs. the Moon), it is \textbf{potentially possible} to observe a \textbf{tiny, systematic ``drift''} in the Bell parameter $S$.
+            \item \textbf{B. Significant Effect:} In Bell experiments that \textbf{span different dominant gravitational sources} (e.g., Earth-Moon or Earth-deep space probe), due to the \textbf{significant decrease in the correlation} of the ``gravitational information backgrounds'' of the two parties, we predict that the strong correlation of entanglement will be \textbf{significantly affected}, and the value of the Bell parameter $S$ will \textbf{significantly decrease}.
+        \end{itemize}
+        \item \textbf{Theoretical Significance:} This prediction forges an unprecedented link between the foundations of quantum mechanics and precision gravimetry and space science. Confirming this ``environment dependence'' would at once prove the correctness of ``gravity-encoded superdeterminism.''
+    \end{itemize}
+
+    \item \textbf{The Theoretical and Physical Limits of Large-Scale Fault-Tolerant Universal Quantum Computers}
+
+    \begin{itemize}
+        \item \textbf{The Nature of Quantum Computing:} In our theory, quantum computing is an \textbf{analog algorithm that invokes a massive number of underlying bits for incomplete screening}. By manipulating ``collective modes'' composed of vast numbers of cellular bits (qubits), it ``simulates'' a physical process that can ``cool'' to the correct answer of our mathematical problem.
+        \item \textbf{Source of the Limit (Dual Constraint):}
+        \begin{itemize}
+            \item \textbf{Theoretical Limit ($b_0$ Chaos):} The ``parallelism'' of a quantum algorithm comes from its ability to explore the vast ``possibility space'' provided by the $b_0$ layer's chaos. But the essence of this process is driven by the \textbf{deterministic, pseudo-random} background of $b_0$. Therefore, the theoretical limit of quantum computation is constrained by the scale of the underlying bits it can call upon and the intrinsic information structure of the $b_0$ chaos. It is not an ``infinitely parallel'' machine.
+            \item \textbf{Physical Limit (Decoherence and the Gravitational Background):}
+            \begin{itemize}
+                \item \textbf{Decoherence:} Any attempt to maintain large-scale coherence must fight against the inevitable perturbations from all computational layers, i.e., the ``diffusion of entanglement.''
+                \item \textbf{The ``Noise'' of the Gravitational Background:} Every qubit and quantum gate is continuously interacting with the surrounding \textbf{``gravitational information waveform.''} Although this waveform is highly coherent on a laboratory scale, it is itself \textbf{not a perfect, noise-free ``clock signal.''} It contains extremely complex, unpredictable ``gravitational noise'' from the entire Earth (and even the solar system).
+            \end{itemize}
+        \end{itemize}
+        \item \textbf{Final Prediction:}
+        \begin{itemize}
+            \item Quantum computation is achievable to a certain extent, as it can indeed call upon enormous underlying bit-computing power, but it has a clear theoretical limit.
+            \item To achieve \textbf{large-scale, perfect ``fault-tolerance,''} one must not only combat local thermal and electromagnetic noise but also \textbf{combat the omnipresent ``gravitational background noise'' from the entire planet}.
+            \item We predict that this \textbf{fundamental ``background decoherence'' originating from the gravitational field} will set an \textbf{insurmountable physical limit} on the efficiency of all quantum error correction codes.
+        \end{itemize}
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection{Predictions on Cosmology, Dark Matter, and Dark Energy}
+
+\begin{enumerate}
+    \setcounter{enumi}{5} % Start numbering from 6
+    \item \textbf{The Topological Structure of the Universe and Confirmation of CMB Large-Scale Anomalies:}
+    We predict the universe is a finite \textbf{three-dimensional torus}, and that higher-precision CMB observations will confirm the \textbf{large-scale power suppression} caused by its finite size \cite{Planck2020}.
+
+    \item \textbf{The Two-Sides-of-One-Coin Nature of Dark Energy and Gravity:}
+    We predict that \textbf{dark energy (vacuum repulsion)} and \textbf{gravity (shielded repulsion)} are not two independent phenomena, but are \textbf{the same force}—namely, the ``thermodynamic diffusion'' tendency intrinsic to our cosmic Rule—manifesting in two different environments.
+    \begin{itemize}
+        \item \textbf{A Key Prediction:} Therefore, the cosmological constant $\Lambda$ (describing dark energy) and the gravitational constant $G$ are not two independent natural constants, but are two manifestations of a single process determined by the same underlying Rule.
+    \end{itemize}
+
+    \item \textbf{The ``Non-Particle'' Discovery of Dark Matter and the ``Duality'' of Black Holes:}
+    \begin{itemize}
+        \item We predict that all attempts to \textbf{directly detect} single dark matter particles (WIMPs, axions, etc.) via ``elastic collisions'' in underground laboratories will ultimately be \textbf{unsuccessful}. This is because dark matter exists in a different computational dimension from us, and its interaction cross-section is extremely small.
+        \item \textbf{The ``discovery'' of dark matter will be an astronomical one.} Its evidence will come from:
+        \begin{enumerate}
+            \item \textbf{a.} Finding the \textbf{``peak'' in the energy spectrum} of ultra-high-energy cosmic rays, thereby measuring its mass.
+            \item \textbf{b.} Detecting the \textbf{subtle waveform differences} between \textbf{stellar-mass black holes} and \textbf{supermassive black holes} with next-generation gravitational wave observatories, caused by the latter containing a ``dark matter component.''
+        \end{enumerate}
+        \item \textbf{``Black Hole Duality'':} We predict that black holes simultaneously play the dual roles of ``classical celestial bodies'' (described by general relativity) and ``macroscopic quantum particles'' (described by our theory). This duality may produce \textbf{tiny, observable deviations from general relativity} around \textbf{extremely rotating or merging} black holes.
+    \end{itemize}
+\end{enumerate}
+
+
+\subsection*{Conclusion}
+``Computational Realism'' is not an untestable philosophical speculation, but a hard-core physical theory filled with concrete predictions. Its ultimate fate depends not on how self-consistent and elegant its internal logic is, but on whether future experiments and observations will follow the unique, clear path it points to—a path distinct from all existing theories.
+
+
+
+
+
+
+
+\appendix
+\section{Appendix A: The Emergence of Relativity—A Theory of ``Dynamical Existence''}
+
+\subsection{Introduction: From ``Spacetime Geometry'' to ``Medium Dynamics''}
+
+In twentieth-century physics, special relativity is typically regarded as a set of fundamental axioms concerning spacetime geometry itself \cite{Einstein1905}. By stipulating the ``principle of relativity'' and the ``principle of the constancy of the speed of light,'' it constructs an elegant and self-consistent view of spacetime. However, this axiomatic approach, while operationally extremely successful, leaves in abeyance the question of ``why'' spacetime possesses these peculiar properties. It describes ``what is,'' but does not explain ``why it must be so.''
+
+This theory takes a distinctly different, yet perhaps more fundamental, path: we assert that the entirety of relativity does not originate from the intrinsic properties of spacetime, but rather from the \textbf{dynamical laws} that any \textbf{stable, self-sustaining ``information pattern''} must follow in order to propagate and maintain its own existence within a \textbf{physical medium} where the speed of information propagation has an upper limit ($c$). The Lorentz transformation is not a set of externally imposed rules, but a macroscopic law that \textbf{emerges} from the interaction between the underlying physical entity and the medium.
+
+This appendix aims to rigorously prove this point in two different but complementary ways:
+
+\begin{enumerate}
+    \item \textbf{The Argument from Internal Consistency:} A derivation based on geometry and logic, demonstrating that relativistic effects are the necessary adjustments an extended object must make to maintain its ``identity'' while in motion.
+    \item \textbf{The Argument from Soliton Dynamics:} A mathematical paradigm based on nonlinear field theory, showing how relativistic effects naturally emerge as intrinsic properties of a stable pattern from the underlying dynamical equations \cite{DrazinJohnson1989}.
+\end{enumerate}
+
+We will jointly prove that a ``particle'' follows relativity not because it is commanded by external spacetime rules, but because \textbf{only those patterns that follow relativity can continue to exist as stable, self-consistent entities while in motion.}
+
+\subsection{Ontological Foundation: The Computational Field and ``Information Patterns''}
+
+Based on the core axioms of this theory, we establish the following foundations:
+
+\begin{enumerate}
+    \item \textbf{The Computational Field as a Physical Medium:} The substrate of the universe is a ``computational field,'' which is a physical medium, not a void. In this medium, the maximum speed of information propagation is an isotropic, constant universal constant $c$.
+    \item \textbf{Particles as Dynamic Patterns:} An elementary particle (such as the ``information vortex'' described in this theory) has the ontological status of a localized, self-sustaining \textbf{dynamic information pattern} that is stable within this computational field. Its stable existence depends on continuous, synchronized information exchange among its internal parts.
+    \item \textbf{Definition of Identity:} The ``identity'' of a pattern is defined by its \textbf{proper period $T_0$} and \textbf{proper dimensions $L_0$, $H_0$} required to complete its fundamental ``self-consistency cycle'' in a state of rest.
+\end{enumerate}
+
+\subsection*{Part One: The Argument from Internal Consistency}
+
+In this section, we will proceed entirely from the perspective of an information pattern itself to prove that it must undergo adjustments in its morphology and rhythm when in motion, in order to maintain the self-consistency of its internal logic, i.e., ``identity conservation.''
+
+\subsubsection{Transverse Consistency and the Adjustment of Temporal Rhythm}
+
+A stable information pattern must be self-consistent in all dimensions. We first analyze its structure perpendicular to the direction of motion (transverse).
+
+\begin{enumerate}
+    \item \textbf{Transverse Identity:} At rest, the pattern has a structural dimension $H_0$ in the y-direction. A signal making one round trip up and down within it defines its transverse proper period $T_{0H} = 2H_0 / c$.
+    \item \textbf{The Challenge in Motion:} When the pattern moves with velocity $v$ in the x-direction, the internal signal must travel along a diagonal path to maintain this up-and-down cycle.
+    \item \textbf{Dynamical Consequence:} Let the dynamical period of the pattern's transverse cycle be $T_H$ and its transverse dimension be $H$ when in motion. According to the Euclidean geometry of the medium (Pythagorean theorem), we necessarily obtain the relation: $(c T_H / 2)^2 = (v T_H / 2)^2 + H^2$.
+    \item \textbf{Application of Identity Conservation:} Since the motion is perpendicular to the transverse direction, there is no dynamical reason to require a change in the transverse dimension. Therefore, the most economical way to achieve self-consistency is to maintain $H = H_0$. Substituting this into the above equation and solving for $T_H$, we get:
+    \[
+    T_H = \frac{2H_0/c}{\sqrt{1 - v^2/c^2}} = \frac{T_{0H}}{\sqrt{1 - v^2/c^2}} = \gamma T_{0H}
+    \]
+    \item \textbf{Inference One:} To maintain its transverse identity, the pattern's \textbf{dynamical rhythm} (i.e., the time required to complete one cycle in the absolute medium's clock) \textbf{must be slowed down by a factor of $\gamma$}. This is the dynamical origin of \textbf{time dilation} \cite{Einstein1905}.
+\end{enumerate}
+
+\subsubsection{Longitudinal Consistency and the Adjustment of Morphological Structure}
+
+Now, we analyze the pattern's structure in the direction of motion (longitudinal).
+
+\begin{enumerate}
+    \item \textbf{Longitudinal Identity:} At rest, the pattern has a structural dimension $L_0$ in the x-direction, and its \textbf{longitudinal proper period is $T_{0L} = 2L_0 / c$}.
+    \item \textbf{The Challenge in Motion:} When the pattern moves with velocity $v$, the round-trip signal between its front and back points will experience one ``chase'' and one ``encounter,'' leading to a severe asymmetry in signal transmission times.
+    \item \textbf{Principle of Unified Rhythm:} As a unified, self-consistent entity, \textbf{all its internal dynamical rhythms must be synchronized}. Otherwise, the pattern would disintegrate due to internal desynchronization. Therefore, the dynamical period of its longitudinal cycle, $T_L$, must be exactly equal to the period of its transverse cycle, $T_H$: $T_L = T_H = \gamma T_0$ (assuming $T_{0L} = T_{0H} = T_0$ at rest).
+    \item \textbf{Dynamical Consequence:} Let the longitudinal dimension of the pattern in motion be $L$. Based on the calculation of signal transmission times, we get $T_L = (2L/c) \cdot [1 / (1 - v^2/c^2)] = (2L/c) \gamma^2$.
+    \item \textbf{Inference Two:} Equating the two expressions for $T_L$: $(2L/c) \gamma^2 = \gamma T_0$. Substituting $T_0=2L_0/c$ and solving for $L$, we obtain:
+    \[
+    L = L_0 / \gamma = L_0 \sqrt{1 - v^2/c^2}
+    \]
+    In order for its longitudinal rhythm to synchronize with the slowed-down transverse rhythm, the pattern's \textbf{physical morphology} in the direction of motion \textbf{must be compressed by a factor of $\gamma$}. This is the dynamical origin of \textbf{length contraction} \cite{Einstein1905}.
+\end{enumerate}
+
+\subsubsection{Summary: The Cost of Identity Conservation}
+
+The argument from internal consistency eloquently proves that time dilation and length contraction are not independent phenomena, but are the simultaneous and mutually compensating \textbf{rhythmic adjustments} and \textbf{morphological adjustments} that a dynamic information pattern must undergo to \textbf{maintain the unity and harmony of its ``identity''} while in motion.
+
+\subsection*{Part Two: The Argument from Soliton Dynamics}
+
+In this section, we will show that the geometric deductions above are perfectly and analytically confirmed in a concrete mathematical model derived from nonlinear field theory. We will treat the ``information pattern'' as a kind of ``information soliton.''
+
+\subsubsection{Mathematical Example: The Sine-Gordon Theory and its ``Breather'' Soliton}
+
+We take the \textbf{one-dimensional Sine-Gordon theory} as a mathematical example \cite{DrazinJohnson1989}, whose equation for the scalar field $\phi(x,t)$ is:
+\[
+\frac{\partial^2\phi}{\partial t^2} - c^2\frac{\partial^2\phi}{\partial x^2} + \omega_0^2\sin(\phi) = 0
+\]
+This equation describes the struggle between the \textbf{dispersive properties} of the medium (the linear wave terms) and its \textbf{nonlinear cohesive properties} (the $\sin(\phi)$ term). A soliton is the \textbf{stable dynamic equilibrium} reached in this struggle. A famous solution to this equation is the ``breather,'' which can be physically viewed as a bound state of a ``kink-antikink'' pair. Its energy is confined to a region, causing the field in that region to oscillate periodically.
+
+A stationary breather has the form: $\phi(x,t) = 4 \arctan\left[ \frac{\Omega}{\omega_0} \frac{\sin(\Omega t)}{\cosh\left(\frac{\Omega}{c}x\right)} \right]$, and its \textbf{proper period is $T_0 = 2\pi / \Omega$}.
+
+Without presupposing any Lorentz transformation, by directly solving for the traveling wave solution of this equation, one can obtain the exact form of a moving soliton (breather):
+
+\[
+\phi(x,t) = 4 \arctan\left[ \frac{\Omega}{\omega_0} \frac{\sin\left( \Omega \frac{t - vx/c^2}{\sqrt{1 - v^2/c^2}} \right)}{\cosh\left( \frac{\Omega}{c} \frac{x - vt}{\sqrt{1 - v^2/c^2}} \right)} \right]
+\]
+
+\subsubsection{The Emergence of Relativistic Effects: Read Directly from the Soliton Solution}
+
+\begin{enumerate}
+    \item \textbf{Direct Emergence of Time Dilation:}
+    We focus on the phase term describing the \textbf{oscillation}, $\Phi(x,t) = \Omega \frac{t - vx/c^2}{\gamma}$. The angular frequency $\omega$ measured by an external observer is the partial derivative of the phase with respect to time: $\omega(v) = \partial\Phi/\partial t = \Omega/\gamma$. Therefore, the observed oscillation period $T(v)$ is: $T(v) = 2\pi / \omega(v) = \gamma (2\pi/\Omega) = \gamma T_0$ \cite{Einstein1905}.
+    \[
+    \textbf{$T(v) = \gamma T_0$}
+    \]
+
+    \item \textbf{Direct Emergence of Length Contraction:}
+    We focus on the $\cosh(\dots)$ term describing the \textbf{spatial morphology}. Its argument contains $(x - vt) / \gamma$, which indicates that the moving coordinate $x$ is scaled by a factor of $1/\gamma$ relative to the soliton's own coordinate, meaning its spatial width is compressed \cite{Einstein1905}.
+    \[
+    \textbf{$L(v) = L_0 / \gamma$}
+    \]
+
+    \item \textbf{Emergence of Mass Increase:}
+    By integrating the energy density of the moving breather solution over all space, its total energy $E_{\text{total}}(v)$ is also found to satisfy \cite{Einstein1905}:
+    \[
+    \textbf{$E_{\text{total}}(v) = \gamma E_0$}
+    \]
+\end{enumerate}
+
+\subsubsection{Conclusion: The Lorentz Transformation as a ``Dynamical Survival Law''}
+
+This appendix, through two distinctly different but concordant lines of argument—one based on \textbf{geometric deduction from internal logical consistency}, and the other on \textbf{analytical proof from nonlinear field theory}—has jointly established a profound conclusion:
+
+The core of special relativity—the Lorentz transformation—need not be treated as a fundamental axiom about spacetime itself. Instead, it is the \textbf{universal ``survival law''} that must be followed by any stable, self-sustaining information pattern (soliton) existing in a physical medium (the computational field) with a fixed speed of information propagation, $c$.
+
+\begin{itemize}
+    \item \textbf{Time Dilation ($T=\gamma T_0$)} is the \textbf{rhythmic cost} of survival, determined by the pattern's need to maintain transverse self-consistency, and can be read directly from the soliton's oscillation period.
+    \item \textbf{Length Contraction ($L=L_0/\gamma$)} is the \textbf{morphological cost} of survival, determined by the pattern's need to synchronize its longitudinal rhythm, and can be read directly from the soliton's spatial width.
+    \item \textbf{Mass Increase ($E=\gamma E_0$)} is the \textbf{energetic cost} of survival, the energy cost required for the pattern to drive itself and its ``accompanying field'' in motion, and can be calculated directly from the soliton's total energy.
+\end{itemize}
+
+This system of ``costs'' collectively constitutes the Lorentz transformation, its sole purpose being to ensure that an ``information soliton'' can continue to maintain its existence as a \textbf{unified, self-consistent, existing entity} amidst violent motion. The reason we observe the universe to follow relativity is that those patterns that \textbf{do not follow} this set of laws have long since ``perished'' in the dynamical evolution of the universe, unable to maintain their own stability. Relativity is the \textbf{mathematical proof of dynamical stability} in physical reality.
+
+\section{Appendix B: Dark Matter—The Universe's ``Higher-Dimensional Form of Matter''}
+
+\subsection{Introduction: Beyond the ``Three-Generation Island''}
+The immense success of the Standard Model of particle physics is limited to explaining only about 5\% of the total mass-energy of the universe. The remaining ~25\% is thought to be dark matter, the nature of which is one of the greatest puzzles in modern physics \cite{Planck2020}. In ``Computational Realism,'' dark matter is not a strange ``new particle'' requiring extra explanation, but a \textbf{logically necessary, higher-computational-dimension, yet equally ``ordinary''} form of matter in our multi-layered computational universe.
+
+\subsection{The Ontology of Dark Matter: The ``Deep-Sea Dwellers'' of $n \ge 4$}
+According to the physical axioms of our theory, the computational substrate of the universe is composed of multiple computational layers $[b_0, b_1, \dots]$. The ``visible universe'' as we know it is the ``low-energy island'' constituted by stable patterns that have ``crystallized'' out of the \textbf{lowest three} matter layers ($b_1, b_2, b_3$, i.e., generation number $n=1, 2, 3$).
+
+\textbf{The ultimate definition of dark matter is:}
+\textbf{Dark matter consists of the stable ``spacetime resonators'' (SSOLs) that have ``crystallized'' during the evolution of the universe, dominated by the fourth computational layer $b_4$ and higher levels (i.e., generation number $n \ge 4$).}
+
+\begin{itemize}
+    \item \textbf{They are ``matter,'' not ``dark energy'':} Like us, they are stable, low-thermodynamic-entropy $S_T$ ``crystals,'' not the high-thermodynamic-entropy $S_T$ ``bit ocean'' (dark energy) that serves as the cosmic background.
+    \item \textbf{They are ``higher-dimensional'':} The main ``computational activity'' and ``topological structure'' of their stable resonance patterns exist in computational dimensions like $b_4, b_5$, etc., with which we cannot directly ``interact.''
+\end{itemize}
+
+\subsection{The ``Darkness'' of Dark Matter: The ``Dimensional Segregation'' of Interactions}
+The reason dark matter is ``dark,'' why it barely interacts with our world, is rooted in our theory's mechanisms of \textbf{``layered computational cores''} and \textbf{``resonance mismatch.''}
+
+\begin{enumerate}
+    \item \textbf{Segregation of Interaction Ports:}
+    \begin{itemize}
+        \item \textbf{All non-gravitational interactions} we know (strong, weak, electromagnetic) have their dynamical ``protocols'' defined within the complex interplay of the $b_1, b_2, b_3$ computational cores.
+        \item A $b_4$-level dark matter particle has its primary ``interaction ports'' existing on the $b_4$ layer. It lacks a \textbf{direct, efficient} ``resonance channel'' with our three generations of matter, and thus cannot engage in these force interactions.
+    \end{itemize}
+
+    \item \textbf{The Only Common Language—Gravity:}
+    \begin{itemize}
+        \item Gravity is the sole exception. According to our theory of gravity, gravity is the macroscopic effect resulting from the ``shielding'' of the \textbf{universal ``vacuum repulsion''} by any form of ``matter'' (a non-uniform structure of low $S_T$) \cite{Newton1687}.
+        \item A $b_4$-level dark matter particle, being a stable, low-$S_T$ structure, \textbf{will necessarily} produce a \textbf{``shielding''} effect on its surrounding ``vacuum repulsion field,'' just as our three generations of particles do.
+        \item Therefore, dark matter \textbf{must} produce gravity and must also be affected by gravity. This is its \textbf{only, unavoidable} connection to our visible world.
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Physical Properties and Predictions of Dark Matter}
+
+\subsubsection{Stability}
+We predict that the lightest fourth-generation particle ($n=4$), i.e., the most prominent dark matter candidate, is itself \textbf{stable}, because it is already the ``energy ground state'' in its ``higher-dimensional ecological niche,'' with no lower-energy ``dark particles'' for it to decay into.
+
+\subsubsection{Mass}
+Through the analysis of \textbf{black holes as ``hyper-dimensional particle accelerators''} (see Appendix D for details), we make a core, testable prediction:
+\begin{itemize}
+    \item \textbf{The mass scale of the lightest fourth-generation particle (dark matter) is on the order of $\sim 1 \text{ TeV}$ or higher.}
+    \item This prediction provides a \textbf{concrete ``target mass window,'' anchored by astronomical observations,} for all direct dark matter detection experiments (such as underground WIMP detectors).
+\end{itemize}
+
+\subsubsection{Interaction with Black Holes}
+This is one of the most subversive predictions of our theory, stemming from the \textbf{``transcendence of computational core scale.''}
+\begin{itemize}
+    \item \textbf{The ``Digestive Capacity'' of Ordinary Black Holes:} The ``information-shredding'' ability of an ordinary black hole formed from our ``three-generation matter'' is calibrated by the dynamical scales of its internal $b_1$-$b_2$-$b_3$ layers.
+    \item \textbf{The ``Immunity'' of Dark Matter:} A $b_4$-level dark matter particle, whose stable resonance is dominated by a \textbf{huge $b_4$ computational core ($S(4)=11$)}, possesses a ``computational power'' and ``structural resilience'' that is \textbf{higher than} the ``digestive capacity'' of an ordinary black hole.
+    \item \textbf{Prediction:} \textbf{A dark matter particle should be able to pass ``unscathed'' through an ordinary stellar-mass or galactic-mass black hole.} Ordinary black holes can gravitationally ``capture'' dark matter to form a halo around them, but they cannot ``destroy'' them via their event horizon.
+\end{itemize}
+
+\subsubsection{Dark Matter ``Self-Interaction'' and Indirect Detection}
+\begin{itemize}
+    \item Dark matter particles should have their own \textbf{``dark interactions''} with each other, occurring on the $b_4$ layer and higher. This might explain the astronomical observational anomaly of ``lower-than-expected core densities in galaxies.''
+    \item \textbf{The Golden Channel for Indirect Detection:} In regions of extremely high dark matter density (like the Galactic Center), these ``dark interactions'' (e.g., the \textbf{annihilation} of a pair of $b_4$ particles) might, through extremely faint \textbf{``cross-dimensional leakage,''} produce a \textbf{very small number of detectable high-energy Standard Model particles} (like photons or neutrinos).
+    \item \textbf{Prediction:} Searching for \textbf{gamma-ray} or \textbf{neutrino} signals from high-density dark matter regions, signals that have a \textbf{specific cutoff energy spectrum (with an upper energy limit around $\sim m_{\text{DM}} \cdot c^2$)}, is another golden path to verify our theory and measure the mass of dark matter.
+\end{itemize}
+
+\subsection*{Conclusion}
+In ``Computational Realism,'' dark matter is no longer a mysterious entity that needs to be specially invented, but a \textbf{logically necessary, higher-computational-dimension component} of our \textbf{computational universe}.
+
+Our theory not only provides a solid mechanistic explanation for the ``darkness'' of dark matter but, more importantly, through its analysis of black holes and high-energy astrophysics, it offers \textbf{a series of concrete, testable predictions} for the properties of this ``dark neighbor,'' which can be tested by future experiments and observations.
+
+
+
+
+
+
+
+
+
+\section{Appendix C: Dark Energy—The Universe's ``Computational Entropy'' and its Physical Manifestation}
+
+\subsection{Introduction: Abandoning the ``Cosmological Constant,'' Returning to a ``Dynamical Process''}
+In standard cosmology, dark energy is often equated with a mysterious ``cosmological constant'' that is ``fine-tuned'' to an extremely small value, or with some unknown ``quintessence'' field \cite{Planck2020}. In ``Computational Realism,'' we completely discard these static entities that require additional explanation.
+
+We assert that \textbf{dark energy is not a ``thing,'' but a ``process,''} or more precisely, \textbf{a measurable macroscopic property of the most fundamental dynamical reality that permeates all spacetime regions of our universe}. It is the manifestation of the most fundamental, bottom-level ``computational dynamics'' of our cellular automaton universe.
+
+This appendix aims to elaborate on how this single underlying dynamic manifests from different perspectives as four seemingly different but ontologically identical phenomena: \textbf{computational entropy, vacuum fluctuations, quantum entanglement, and cosmic expansion}, and ultimately reveals its profound relationship with the gravitational constant $G$ and gravity itself.
+
+\subsection{The Fourfold Ontology of Dark Energy: Four Facets of a Unified Reality}
+
+The core insight of our theory is that the ``ground state'' of the universe—the physical vacuum—is not a static ``nothingness,'' but an eternally ``boiling'' ``bit ocean'' driven by the deterministic chaos of the $b_0$ layer. This single, underlying \textbf{``chaotic dynamic''} presents itself with four equivalent identities, depending on the ``angle'' from which we observe it.
+
+\begin{itemize}
+    \item \textbf{First Identity: It is Computational Entropy (The Information-Theoretic Ontology)}
+    \begin{itemize}
+        \item We assert that the \textbf{dark energy density $\rho_\Lambda$} that we measure macroscopically has as its most profound physical identity the \textbf{background, local, average ``computational entropy density''} of the universe's vacuum \cite{Kolmogorov1965, Planck2020}.
+        \[
+        \rho_\Lambda \propto S_C(\text{Vacuum})
+        \]
+        \item The profound meaning of this definition is:
+        \begin{itemize}
+            \item \textbf{The vacuum is ``high-entropy'':} $\rho_\Lambda$ is a positive, non-zero value, which means our universe's vacuum, at the most microscopic scale, is an \textbf{extremely information-rich, incompressible} fractal structure. This is in perfect agreement with our conclusion about the ``entropy spectrum.''
+            \item \textbf{It provides the foundation for gravity:} It is precisely because the vacuum possesses a fundamental, non-zero computational entropy density that matter can create a ``gradient of entropy'' by ``consuming'' or ``pacifying'' it, thereby giving rise to gravity.
+        \end{itemize}
+    \end{itemize}
+
+    \item \textbf{Second Identity: It is Vacuum Fluctuations (The Temporal Evolution Perspective)}
+    \begin{itemize}
+        \item When we, in a fixed region of space, point our ``detector'' along the flow of time to observe the evolution of this underlying ``chaotic dynamic'' on the \textbf{time axis $\tau$}, what we see is \textbf{vacuum fluctuations} \cite{deBroglie1930}.
+        \item We see countless ``micro-fractals'' (virtual particle pairs) being coincidentally ``spawned'' from the chaotic ``seeds'' of $b_0$, growing rapidly in an extremely short time, and then quickly ``dissolving'' back into the background bit ocean because they fail to form stable resonant modes.
+        \item \textbf{Vacuum fluctuations are the dynamic manifestation of dark energy/computational entropy in the time dimension.}
+    \end{itemize}
+
+    \item \textbf{Third Identity: It is Quantum Entanglement (The Spatial Correlation Perspective)}
+    \begin{itemize}
+        \item When we, at a fixed instant in time $\tau$, point our ``detector'' towards space to observe the correlation between two stable particle patterns of ``common origin'' (from the same decay event), what we see is \textbf{quantum entanglement} \cite{Bell1964}.
+        \item Although these two patterns are far apart, because they both ``crystallized'' from the \textbf{same ``chaotic dynamic'' background} and grew up in the evolutionary history of the same ``pseudo-random'' background field, their internal fine fractal structures are necessarily \textbf{profoundly and non-locally correlated} by this common, unknowable background.
+        \item \textbf{Quantum entanglement is the manifestation of the non-local correlation of dark energy/computational entropy in the spatial dimension.}
+    \end{itemize}
+
+    \item \textbf{Fourth Identity: It is Cosmic Expansion (The Macroscopic Average Perspective)}
+    \begin{itemize}
+        \item When we perform a \textbf{four-dimensional spacetime statistical average} of this unceasing, universe-pervading ``chaotic dynamic'' on the most macroscopic, ``cosmological'' scale, what we measure is the \textbf{accelerated expansion of the universe} \cite{Planck2020}.
+        \item \textbf{Energy Density:} The \textbf{average ``computational activity''} (average bit-flip rate) of this process is what we call the energy density of dark energy.
+        \item \textbf{Negative Pressure Property:} This ``fractal growth'' process is an intrinsic ``creation'' process from nothing, ``creating'' new computational space. This eternal ``creation'' must macroscopically manifest as a \textbf{holistic, outward, isotropic ``pressure,''} i.e., negative pressure.
+        \item \textbf{The accelerated expansion of the universe is the grandest dynamical manifestation of dark energy/computational entropy on a cosmological scale.}
+    \end{itemize}
+\end{itemize}
+
+\subsection{The Mirror Relationship of G and $\Lambda$: Two Sides of a Unified Process}
+
+The gravitational constant $G$ \cite{Newton1687} and the dark energy density $\Lambda$ \cite{Planck2020} share a profound \textbf{``mirror relationship.''} They are not two independent entities, but the \textbf{manifestations of the same ``matter-vacuum'' interaction process as seen from two opposite perspectives}.
+
+\begin{enumerate}
+    \item \textbf{$\Lambda$ (Dark Energy Density):}
+    \begin{itemize}
+        \item \textbf{Perspective:} From the viewpoint of the ``vacuum.''
+        \item \textbf{Definition:} $\Lambda$ is the \textbf{intrinsic ``computational activity density'' and ``expansion pressure''} of the \textbf{universe's ``chaotic ground state'' itself}. It represents the inherent ability of the vacuum to \textbf{``self-expand''} and \textbf{``create randomness.''}
+    \end{itemize}
+
+    \item \textbf{G (Gravitational Constant):}
+    \begin{itemize}
+        \item \textbf{Perspective:} From the viewpoint of ``matter.''
+        \item \textbf{Definition:} $G$ is a \textbf{coupling constant} that measures the \textbf{efficiency} with which \textbf{``matter,''} as an ordered structure, can \textbf{``shield'' or ``respond to''} the ``expansion pressure'' of the surrounding vacuum.
+        \item A higher value of $G$ means that matter is more capable of ``shielding'' the vacuum repulsion, thus producing a stronger effective ``gravity.''
+    \end{itemize}
+\end{enumerate}
+
+\begin{itemize}
+    \item \textbf{Mirror Relationship:} $\Lambda$ describes the \textbf{power of the ocean (vacuum) itself}, while $G$ describes the \textbf{ability of the island (matter) to resist and utilize this power}. They are necessarily two inseparable sides of the same underlying dynamical Rule, like the two faces of a coin.
+\end{itemize}
+
+\subsection{Dark Energy as the Ultimate Origin of Gravity}
+
+We can finally provide the most profound explanation for the origin of gravity, based entirely on ``dark energy'' and ``computational entropy.''
+
+\begin{enumerate}
+    \item \textbf{Premise:} The background of the universe is a vacuum of \textbf{high computational entropy $S_C$}, with a universal \textbf{``expansion pressure,''} as manifested by ``dark energy.''
+
+    \item \textbf{The Role of Matter:} According to \textbf{Axiom M (Interaction of Matter and Entropy)}, matter is a \textbf{``devourer of computational entropy.''} Its existence continuously ``absorbs'' and ``processes'' the microscopic fractal complexity of its surrounding vacuum.
+
+    \item \textbf{Formation of the Entropy Gradient:} This ``devouring'' process necessarily leads to a \textbf{decrease} in the \textbf{``computational entropy density $S_C(V)$''} (what we call ``dark energy density'') of the vacuum background in the vicinity of matter.
+
+    \item \textbf{The Emergence of Gravity:}
+    \begin{itemize}
+        \item \textbf{The ``Shielded Repulsion'' Model:} The ``vacuum repulsion'' is now finally identified as the inherent, outward-expanding \textbf{``information pressure''} of this high-entropy ``dark energy'' background.
+        \item Matter \textbf{``shields''} this universal information pressure by lowering the $S_C$ (dark energy density) around it.
+        \item In the region between two bodies of matter, the $S_C$ (dark energy density) is lowest, and therefore the ``information pressure'' is also lowest.
+        \item This \textbf{``entropy density pressure difference''} between the outer side (high $S_C$) and the inner side (low $S_C$) ultimately \textbf{``pushes''} the matter bodies towards each other.
+        \textbf{This, is gravity!} \cite{Newton1687}
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{C.5 Conclusion}
+In ``Computational Realism,'' dark energy is thoroughly ``demystified'' and endowed with its ultimate, multiple-yet-unified identities.
+
+\textbf{Dark energy is the macroscopic manifestation of the most fundamental, eternal ``chaotic dynamics'' of our fully deterministic computational universe.} It is both the ``ground state'' of the universe and the ``maternal body'' from which all order (matter) ``crystallizes''; it is the common origin of both vacuum fluctuations and quantum entanglement, the ultimate engine driving the macroscopic evolution of the universe, and the most fundamental background that enables gravity to exist. The precise measurement of the properties of dark energy is a direct probe of the ``background computational activity level'' and ``information complexity'' of this ultimate computer that is the universe.
+
+
+\section{Appendix D: Black Holes—The Universe's ``Hyper-Dimensional Particles''}
+
+\subsection{Introduction: Abandoning the ``Singularity,'' Embracing the ``Particle Group''}
+
+In ``Computational Realism,'' the ``gravitational singularity'' predicted by general relativity does not exist from the outset \cite{Einstein1905}. A black hole is not a ``mathematical monster'' where the laws of physics break down, but an \textbf{ultimate phase state of matter}, whose ontological status can be precisely understood as a \textbf{macroscopic, dynamic ``particle group.''}
+
+This appendix aims to elaborate on the computational nature of black holes, reconstructing them as composite entities analogous to a ``proton,'' made of more fundamental units, and to reveal their ultimate role as the \textbf{``hyper-dimensional particles''} and \textbf{``dimensional ascension engines''} that connect our ``three-generation universe'' with higher computational dimensions.
+
+\subsection{The Ontology of a Black Hole: A ``Gravitationally Confined'' Particle Group}
+
+\begin{itemize}
+    \item \textbf{A Black Hole is Like a ``Proton'':}
+    A black hole is not, ontologically, a single ``giant particle'' (SSOL), but a vast collective, \textbf{confined by gravity itself}, composed of an \textbf{astronomical number of the most fundamental ``gravitational quanta''} (possibly the smallest stable mass patterns at the Planck scale).
+    \item \textbf{Internal Dynamics: ``Computational Superfluid''}
+    The interior of a black hole is an extremely dynamic ``particle group'' made of these ``gravitational quanta.'' Under extreme conditions, the $b_1$ and $b_0$ layers enter a state of \textbf{collective, macroscopic ``correlation group'' (G$_{01}$)}, and their dynamics become locked. This system, composed of G$_{01}$ ``quasi-bits,'' behaves as a \textbf{``computational superfluid.''} The properties of a black hole that we observe from the outside are all macroscopic manifestations of the \textbf{collective modes} of this internal ``particle group.''
+\end{itemize}
+
+\subsection{The ``Dimensional Ascension'' of Black Holes: Becoming Kin to ``Dark Matter''}
+
+Black holes are the only places in our universe where \textbf{``dimensional phase transitions''} occur.
+
+\begin{itemize}
+    \item \textbf{The Challenge and Opportunity:}
+    A black hole formed from the collapse of ordinary matter ($n \le 3$) has its ``particle group's'' collective resonance primarily occurring on the $b_1$-$b_3$ layers. Its own structural scale and computational complexity are \textbf{insufficient} to form an effective resonance with the dynamics of the $b_4$ and higher layers.
+    \item \textbf{Scale-Dependent Phase Transition:}
+    However, \textbf{when the scale (total mass/total number of bits) of a black hole grows beyond a certain critical value through accretion}, the intensity and wavelength of its collective vibrations on the $b_1$-$b_3$ layers will \textbf{``unlock''} and \textbf{``activate''} the resonance of the $b_4$ layer.
+    \item \textbf{Composing a ``New Particle'':}
+    This process is a fundamental \textbf{``dimensional ascension'' phase transition}. The black hole, an entity that originally had complex structure only on the $b_1$-$b_3$ layers, now \textbf{``grows''} a \textbf{$b_4$-layer resonance structure} that is \textbf{phase-locked} with it. It is no longer an ``ordinary black hole,'' but a new, more complex \textbf{``$b_4$-level black hole''} or \textbf{``dark matter black hole,'''} spanning four computational dimensions.
+\end{itemize}
+
+\subsection{The Interaction of Black Holes and Dark Matter: Same-Layer Resonance and Assimilation}
+
+This ``dimensional ascension'' mechanism perfectly explains the profound relationship between black holes and dark matter.
+
+\begin{itemize}
+    \item \textbf{Definition of Dark Matter:} Dark matter consists of particles dominated by the $b_4$ and higher computational layers.
+    \item \textbf{The Nature of the Interaction:}
+    \begin{itemize}
+        \item A \textbf{small, non-ascended} black hole cannot effectively resonate with a $b_4$ dark matter particle; they are almost ``transparent'' to each other.
+        \item A \textbf{huge, ascended} ``$b_4$-level black hole'' and an incoming $b_4$ dark matter particle are now \textbf{``kindred spirits.''} They share the same ``language'' and ``resonance frequency'' on their common computational layer, $b_4$.
+    \end{itemize}
+    \item \textbf{Conclusion:} An incoming dark matter particle will be very ``smoothly'' \textbf{assimilated} by this ``$b_4$-level black hole,'' \textbf{like a drop of water merging into the ocean}, becoming \textbf{part} of its $b_4$-layer resonance structure. This perfectly explains why the primary ``food source'' for supermassive black holes at the centers of galaxies might be the dark matter we cannot see \cite{Planck2020}.
+    \item \textbf{Final Inference: Supermassive black holes are condensed, ``liquid'' $b_4$-layer matter, while dark matter halos are diffuse, gaseous $b_4$-layer matter. They are different phase states of the same existence.}
+\end{itemize}
+
+\subsection{The ``Radiation'' of Black Holes: Two Distinctly Different Dynamics}
+
+This ``giant particle group'' that is a black hole releases its information and energy back into the universe through two mechanisms.
+
+\subsubsection{Hawking Radiation: ``Surface Evaporation'' of the Particle Group}
+\begin{itemize}
+    \item \textbf{Mechanism:} This is a \textbf{low-energy, thermodynamic, surface} process, dynamically identical to the \textbf{``$\alpha$-decay'' of an atomic nucleus}.
+    \item \textbf{Process:} Near the event horizon, through a rare statistical fluctuation, one or a small group of ``gravitational quanta'' \textbf{``escapes''} the collective confinement of the black hole via a ``gravitational tunneling effect.'' This ``escaped'' unit then \textbf{decays} into the low-energy particles we are familiar with (like photons, neutrinos, etc.).
+    \item \textbf{Significance:} It explains the \textbf{long-term, slow mass loss} of black holes.
+\end{itemize}
+
+\subsubsection{Ultra-High-Energy Cosmic Rays: ``Cross-Dimensional De-excitation'' of the Particle Group}
+\begin{itemize}
+    \item \textbf{Mechanism:} This is a \textbf{high-energy, quantized, holistic} process, with dynamics similar to the ``particle de-excitation'' following \textbf{``deep inelastic scattering.''} It is triggered by the \textbf{collision of a black hole with dark matter}.
+    \item \textbf{Process:}
+    \begin{enumerate}
+        \item \textbf{Excitation (Energy Injection):} A group of $b_4$ dark matter particles collides with and merges into a ``$b_4$-level black hole,'' with the main interaction occurring on the \textbf{$b_4$ layer}. This injects a huge pulse of energy into the black hole's $b_4$ layer, putting it into a highly unstable \textbf{``excited state.''}
+        \item \textbf{Energy Leakage Cascade:} This enormous ``vibration'' on the $b_4$ layer will, through cross-layer interaction, \textbf{``leak'' energy downwards} (like an avalanche) to the $b_3$, $b_2$, and finally to the $b_1$ layer.
+        \item \textbf{Eruption (De-excitation):} The $b_1$ layer cannot contain this immense energy from the top layers and will \textbf{``eject''} it from weak points in the black hole in the form of \textbf{highly collimated, relativistic ``jets.''} This jet eventually cools and forms the \textbf{``ultra-high-energy cosmic rays''} that we observe.
+    \end{enumerate}
+    \item \textbf{Significance:} It explains the origin of the \textbf{most extreme high-energy phenomena} in the universe and provides the most direct, testable physical channel for us to \textbf{``measure'' the mass of dark matter} (via the ``peak'' in the energy spectrum) by observing these ultra-high-energy rays.
+\end{itemize}
+
+
+\begin{thebibliography}{99} % The number 99 ensures sufficient space for labels
+
+\bibitem{Bell1964}
+Bell, J. S., "On the Einstein Podolsky Rosen Paradox," \textit{Physics Physique Fizika} \textbf{1}, 195-200 (1964).
+
+\bibitem{Bohm1952}
+Bohm, D., "A Suggested Interpretation of the Quantum Theory in Terms of 'Hidden' Variables. I \& II," \textit{Physical Review} \textbf{85}, 166-193 (1952).
+
+\bibitem{deBroglie1930}
+de Broglie, L., \textit{An Introduction to the Study of Wave Mechanics} (Methuen \& Co., London, 1930).
+
+\bibitem{DrazinJohnson1989}
+Drazin, P. G., and Johnson, R. S., \textit{Solitons: an introduction} (Cambridge University Press, Cambridge, 1989).
+
+\bibitem{Einstein1905}
+Einstein, A., "On the Electrodynamics of Moving Bodies," \textit{Annalen der Physik} \textbf{17}, 891-921 (1905).
+
+\bibitem{Guth1981}
+Guth, A. H., "Inflationary universe: A possible solution to the horizon and flatness problems," \textit{Physical Review D} \textbf{23}, 347-356 (1981).
+
+\bibitem{Kolmogorov1965}
+Kolmogorov, A. N., "Three approaches to the quantitative definition of information," \textit{Problems of Information Transmission} \textbf{1}, 1-7 (1965).
+
+\bibitem{Newton1687}
+Newton, I., \textit{Philosophiæ Naturalis Principia Mathematica} (1687).
+
+\bibitem{Planck2020}
+Planck Collaboration, Aghanim, N., et al., "Planck 2018 results. VI. Cosmological parameters," \textit{Astronomy \& Astrophysics} \textbf{641}, A6 (2020).
+
+\bibitem{Skyrme1961}
+Skyrme, T. H. R., "A nonlinear field theory," \textit{Proceedings of the Royal Society of London. Series A} \textbf{260}, 127-138 (1961).
+
+\bibitem{Turing1936}
+Turing, A. M., "On Computable Numbers, with an Application to the Entscheidungsproblem," \textit{Proceedings of the London Mathematical Society} \textbf{s2-42}, 230-265 (1936).
+
+\bibitem{Wolfram2002}
+Wolfram, S., \textit{A New Kind of Science} (Wolfram Media, Inc., 2002).
+
+\end{thebibliography}
+
+
+\end{document}

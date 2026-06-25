@@ -1,0 +1,357 @@
+\documentclass[11pt]{article}
+
+% --- PACKAGES ---
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[a4paper, margin=1in]{geometry}
+
+% --- TITLE AND AUTHOR ---
+\title{\textbf{The Entropic Dynamics Mechanism of Quantum Entanglement}}
+\author{Haifeng Qiu} 
+\date{August 14, 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper, based on the framework of Computational Realism, proposes a unified theory of a ``structured entropy field.'' Within this framework, the non-local correlation of quantum entanglement is reduced to a fully deterministic ``synchronous decoding'' process, orchestrated by a shared cosmic background field (the higher-order moments of the entropy field) that possesses a macroscopic coherence time. This approach provides a common mechanistic explanation for both gravity and quantum phenomena. Furthermore, through a re-analysis of existing data from ``loophole-free'' Bell tests, we uncover a long-overlooked ``timescale dependence'' in the degree of Bell's inequality violation. Finally, we design a decisive ``time-delayed entanglement correlation'' experiment aimed at directly measuring the coherence time of this cosmic background field, thereby providing an ultimate verdict mechanism for the entire theory.
+\end{abstract}
+
+\thispagestyle{empty} % No page number on the title page
+\newpage
+\setcounter{page}{1}
+
+
+% --- CHAPTER 1 ---
+\section{Introduction — The Scale Emergence of Physics}
+
+\subsection{A Unified Starting Point: From Bits to the Structural Scales of the Universe}
+
+The framework of ``Computational Realism'' that we construct has at its core the following assertion: The entirety of physical reality as we know it consists of effective dynamics emerging at multiple, distinct structural scales from a single, deterministically ruled \textbf{bit computation field}. We divide this into four scales:
+
+\begin{enumerate}
+    \item   \textbf{The Bit-Scale:} The most fundamental, discrete computational substrate of the universe. Its dynamics are governed by a unique \texttt{Rule}, manifesting as pseudo-random chaos, which is the ultimate origin of all physical phenomena.
+    
+    \item   \textbf{The Particle-Scale:} Stable, local patterns with specific \textbf{topological structures}, formed by the self-organization of bits. Its dynamics (topological dynamics) are responsible for explaining the generation mechanism of \textbf{fundamental particles} and their \textbf{strong, weak, and electromagnetic interactions}.
+    
+    \item   \textbf{The Microscopic Scale of Entropic Effects:} This is the manifestation of the chaos at the \textbf{Bit-Scale} as \textbf{high-frequency fluctuations} in microscopic regions of spacetime. Its dynamics are responsible for injecting definite, yet unknowable, initial conditions into the \textbf{creation of quantum events}.
+    
+    \item   \textbf{The Statistical Scale of Entropic Effects:} This is the \textbf{smooth, classical background entropy structure field} that emerges after the chaos of the \textbf{Bit-Scale} is \textbf{statistically averaged} over macroscopic spacetime regions. Its dynamics (entropic dynamics) lead to the effects of \textbf{gravity} and \textbf{quantum measurement}.
+\end{enumerate}
+
+\subsection{Positioning and Core Thesis of This Paper}
+
+The complete theory of Computational Realism aims to provide a unified explanation for all the emergence mechanisms, from the Bit-Scale to all higher scales. \textbf{This paper, however, will focus on the third and fourth scales mentioned above—namely, the two scales of ``entropic effects''}—and, based on this, provide a unified mechanistic explanation for \textbf{gravity} and \textbf{quantum entanglement}.
+
+For the clarity of the arguments in this paper, the terms \textbf{``microscopic''} and \textbf{``macroscopic''} used hereafter will be \textbf{specifically and locally} defined as follows:
+\begin{itemize}
+    \item   \textbf{``Microscopic'' in this paper} refers specifically to the \textbf{``Microscopic Scale of Entropic Effects,''} i.e., the entropy field fluctuations that couple with quantum creation.
+    \item   \textbf{``Macroscopic'' in this paper} refers specifically to the \textbf{``Statistical Scale of Entropic Effects,''} i.e., the classical entropy structure field that serves as the background for quantum measurement.
+\end{itemize}
+
+\noindent Based on this qualification, the core thesis of this paper is: The mystery of quantum entanglement can be fully understood as the inevitable deterministic consequence of the interaction between a \textbf{particle (a low-entropy structure emerging at the ``Particle-Scale'')} and the universal entropy field at its \textbf{``Microscopic Scale of Entropic Effects'' (influencing its creation)} and its \textbf{``Statistical Scale of Entropic Effects'' (influencing its measurement)}.
+
+
+% --- CHAPTER 2 ---
+\section{The Ontology of Entropy — A Multi-Scale Effective Field}
+
+\subsection{Fundamental Postulate: Computational Entropy as the Sole Reality}
+The cornerstone of our theory is that the ultimate measure of reality is \textbf{Computational Entropy (Kolmogorov Complexity, $S_C$)}. It measures the incompressibility of a pattern.
+
+\subsection{Application of the Renormalization Idea: From the Fundamental Field to the Effective Field}
+In order to study a discrete, fine-grained field defined at the bit-scale using continuous mathematics, we must define effective scales. Therefore, the core methodology of our theory is the application of a widely validated idea in physics—\textbf{Renormalization}. It is the bridge connecting our universe's discrete computational substrate with continuous mathematical methods.
+
+\subsection{The Flow of Scales: Construction of the Effective Entropy Field}
+We physicalize computational entropy as a discrete, fine-grained \textbf{fundamental entropy tensor field $\Sigma_0(P)$} at the \textbf{bit-scale}. This is the ontological cornerstone of our theory, the sole source of all higher-level physical realities. Any given physical process only interacts with an \textbf{``effective entropy field'' $\Sigma_{\text{eff}}(P; \lambda)$}, which is formed from $\Sigma_0(P)$ through a \textbf{``renormalization transformation'' (i.e., coarse-graining and redefinition of parameters)} at an \textbf{``effective scale'' $\lambda$} defined by the process's ``intrinsic scale'' (or observational energy). It should be noted that in our theory, renormalization is a statistically-based mathematical approximation method for studying discrete problems with continuous methods, and it is unrelated to the fundamental physical essence.
+
+\subsection{The Effective Field of Focus in This Paper: $\Sigma(P)$ and its Multipole Structure}
+This paper aims to explain gravity and quantum measurement, both of which are phenomena that occur at the \textbf{statistical scale}. Therefore, we focus on the effective entropy field at this scale, which, for the sake of simplicity, we denote as $\Sigma(P)$. We perform a \textbf{Multipole Expansion} on this emergent effective entropy field $\Sigma(P)$ at the statistical scale to analyze the different aspects (moments) of its geometric structure. These ``moments'' correspond to the different macroscopic physical phenomena we observe:
+
+\begin{itemize}
+    \item \textbf{Zeroth-Order Moment (Monopole Moment):} The \textbf{scalar trace $\sigma(P)$} of the effective entropy tensor field $\Sigma(P)$, which is the \textbf{effective entropy density}. Its physical effect is to determine the ``computational viscosity'' of spacetime, thereby giving rise to \textbf{gravitational time dilation}.
+    
+    \item \textbf{First-Order Moment (Dipole Moment):} The \textbf{first-order covariant derivative} of the effective entropy tensor field $\Sigma(P)$, whose simplest component is the \textbf{vector gradient $\nabla\sigma$}. Its physical effect is to generate an ``entropic pressure differential,'' thereby giving rise to \textbf{gravity} itself.
+    
+    \item \textbf{Second- and Higher-Order Moments (Quadrupole Moment, etc.):} The higher-order derivatives and intrinsic algebraic properties of the effective entropy tensor field $\Sigma(P)$, which describe its local \textbf{anisotropy}. We assert that this ``anisotropy'' of $\Sigma(P)$ is precisely the physical entity of the \textbf{``super-deterministic'' field} that serves as the background for quantum measurement.
+\end{itemize}
+
+
+% --- CHAPTER 3 ---
+\section{The Entropic Dynamics of Quantum Events}
+
+This chapter will provide a unified description of the two phases of a quantum event, attributing both to the interaction of particles with the ``structure of entropy.''
+
+\subsection{The Ontology of a Particle: A Stable ``Low-Entropy Topological Structure''}
+A fundamental particle (such as an electron) is an \textbf{``spacetime vortex''} (information soliton) with a fixed intrinsic structure and low entropy. All its quantum numbers (charge, spin, etc.) are manifestations of its unique \textbf{``low-entropy topological form''}.
+
+\subsection{The ``Creation'' of Entanglement: Coupling with the ``Microscopic Structure'' of Entropy}
+\begin{itemize}
+    \item   \textbf{Mechanism:} In the event of particle pair creation, the two nascent ``low-entropy topological structures'' undergo a profound \textbf{coupling} with a \textbf{high-frequency, complex ``entropy field fluctuation''} that is microscopic in the local spacetime.
+    \item   \textbf{Consequence:} This coupling process, like an ``entropic mold,'' \textbf{``forges''} the ``low-entropy topological forms'' of these two particles to be perfectly complementary, and ``locks'' their states to that \textbf{specific, yet unknowable to any local observer}, microscopic entropy fluctuation.
+    \item   \textbf{Source of Randomness:} The unknowability of the \textbf{``microscopic structure'' of entropy} at the moment of creation endows the particle pair with a definite, yet unknown, initial state.
+\end{itemize}
+
+\subsection{The ``Measurement'' of a Quantum State: Alignment with the ``Macroscopic Structure'' of Entropy}
+\begin{itemize}
+    \item   \textbf{Mechanism:} A measurement apparatus forces the already ``forged'' particle to undergo a \textbf{``structural alignment''} between its own \textbf{``intrinsic low-entropy topological form''} and the \textbf{``macroscopic entropy structure'' (i.e., the background field $\Sigma(P)$)} of the apparatus's environment.
+    \item   \textbf{Consequence:} The measurement outcome is the \textbf{deterministic} output of this ``structural alignment'' that corresponds to the lowest energy state (e.g., ``up'' or ``down'').
+    \item   \textbf{Source of Determinism:} The measurement is based on the macroscopic entropy field environment where the instrument is located, therefore, its result is deterministic.
+\end{itemize}
+
+\subsection{The Essential Unity of Measurement and Creation: A Scale Emergence from ``1-to-2'' to ``1-to-N''}
+We assert that ``measurement'' is not a new physical process fundamentally different from ``creation.'' Both are, in essence, the \textbf{same dynamics}—namely, \textbf{``Entanglement Spreading.''}
+
+\begin{itemize}
+    \item   \textbf{Entanglement Creation (``1-to-2''):} The preparation of an entangled state is the ``spreading'' and \textbf{preparation} of a source quantum state into a \textbf{microscopic entangled state of 2 particles}. This is a \textbf{microscopic process where coherence can be tracked}.
+    \item   \textbf{Quantum Measurement (``1-to-N''):} A measurement, conversely, involves a microscopic system interacting with a macroscopic apparatus composed of \textbf{$N \approx 10^{23}$ particles}, causing its entangled state to \textbf{``avalanche-spread,''} thereby \textbf{giving rise to} a \textbf{classical macroscopic state composed of $10^{23}$ particles}.
+\end{itemize}
+
+\noindent The \textbf{``wave function collapse''} or the quantum-classical boundary is not a mysterious leap, but a fully physical, \textbf{statistics-based phase transition}. It marks the evolution of a system from a \textbf{``fluctuation-dominated'' microscopic quantum state}, via \textbf{``entanglement spreading,''} to an \textbf{``average-dominated'' macroscopic classical state}.
+
+
+% --- CHAPTER 4 ---
+\section{From Theory to Cosmology -- The Origin and Properties of the Background Entropy Field}
+
+\subsection{The Origin of the Macroscopic Entropy Structure}
+The macroscopic entropy structure field $\Sigma(P)$, which serves as the measurement background, emerges collectively from the contributions of all bit patterns within its \textbf{entire past light cone} through an \textbf{action integral}.
+
+\subsection{The Dual Dynamics of the Entropy Field: A Game between Matter and Dark Energy}
+The macroscopic structure and dynamic evolution of the $\Sigma(P)$ field originate from two opposing and perpetually competing physical processes:
+
+\begin{itemize}
+    \item   \textbf{The Effect of Matter:}
+    \textbf{Low-entropy structures} defined by \textbf{matter} [information solitons]. By \textbf{consuming entropy}, matter attempts to establish and maintain ordered, stable ``structural islands'' within the computational field.
+
+    \item   \textbf{The Effect of Dark Energy:}
+    A \textbf{high-entropy substrate} defined by the \textbf{vacuum environment} itself. By \textbf{creating entropy}, dark energy manifests as the eternal, chaotic ``background boiling'' of the cosmic computational field.
+\end{itemize}
+
+\subsection{Gravity and the Coherent Decoding Field: "First-Order" and "Higher-Order" Emergence of the Same Low-Entropy Effect}
+We assert that the ``low-entropy effect'' generated by the macroscopic body of \textbf{Earth} creates a special, ``purified'' region in the space surrounding it. Within this region, the intense, high-entropy ``noise'' from the external cosmic vacuum is significantly \textbf{shielded}.
+
+This matter-dominated ``low-entropy shielded region'' gives rise to two distinct but homologous macroscopic physical effects, which can be understood as different moments of the $\Sigma(P)$ field:
+
+\begin{itemize}
+    \item   \textbf{The First-Order Effect is Gravity:}
+    This is a manifestation of the \textbf{first-order structure [gradient]} of the $\Sigma(P)$ field. It is the most macroscopic and longest-range expression of the low-entropy effect of matter. Its action gives rise to gravity.
+
+    \item   \textbf{The Higher-Order Effect is the Coherent Decoding Field:}
+    This is a manifestation of the \textbf{higher-order structures [anisotropy, chirality, etc.]} of the $\Sigma(P)$ field. Within this shielded region, the fine structure of the entropy field becomes relatively stable and ordered, thus forming a \textbf{Coherent Decoding Field} capable of sustaining quantum entanglement correlations.
+\end{itemize}
+
+\noindent Because gravity is its \textbf{lower-order effect}, it is more prominent and has a wider range of influence on the macroscopic scale. The Coherent Decoding Field, being its \textbf{higher-order effect}, is more ``subtle'' and more sensitive to microscopic quantum processes [such as measurement].
+
+\subsection{The Scale of Coherence: A Semi-Quantitative Inference from Experiment}
+The \textbf{spacetime range} over which this ``Coherent Decoding Field''—sustained by Earth's low-entropy effect—can effectively shield the high-entropy effects of the external vacuum, i.e., the \textbf{coherent spacetime scale} [$\tau_c$ and $L_c$], is determined by the \textbf{strength ratio} between the \textbf{low-entropy effect of Earth} and the \textbf{high-entropy effect of the vacuum}.
+
+We cannot calculate this range directly, but we can make a semi-quantitative inference about it using existing experimental data.
+
+\begin{itemize}
+    \item   \textbf{Principle of Spacetime Symmetry:} One of the cornerstones of our theory is spacetime symmetry. Therefore, the coherent spatial distance $L_c$ and the coherent time interval $\tau_c$ must be locked by the speed of light $c$:
+    \textbf{$L_c = \tau_c \cdot c$}
+
+    \item   \textbf{Constraint from the "Micius" Experiment:}
+    China's "Micius" quantum science satellite has successfully distributed and maintained high-quality quantum entanglement between two ground stations separated by more than \textbf{1200 kilometers}.
+    This irrefutable experimental fact sets a \textbf{solid experimental lower bound} for the coherence scale of our theory.
+
+    \item   \textbf{Our Prediction:}
+    The fact that entanglement correlation can still be maintained over a spatial distance of $L_{\text{exp}} \approx 1200$ km implies that $L_{\text{exp}}$ must be \textbf{within the range of the coherence length $L_c$}.
+    From this, we can make a \textbf{semi-quantitative prediction} for the coherence time $\tau_c$:
+    \[ \tau_c = L_c / c \geq L_{\text{exp}} / c \approx \frac{1200 \text{ km}}{300,000 \text{ km/s}} = 0.004 \text{ seconds} \]
+    
+    \begin{quote}
+        \textbf{We predict that the coherence time $\tau_c$ of our local universe should be at least 4 milliseconds.} This falsifiable lower bound provides a clear \textbf{theoretical benchmark} that must be surpassed by all future experiments attempting to test fundamental physics through ``time-delayed correlation measurements.''
+    \end{quote}
+\end{itemize}
+
+
+% --- CHAPTER 5 ---
+\section{A Decisive Physical Experiment}
+
+\subsection{Objective}
+This experiment aims to go beyond traditional Bell's inequality tests. Our goal is no longer to verify the existence of quantum correlations themselves, but to \textbf{directly measure} the coherence time $\tau_c$ of the macroscopic \textbf{``cosmic entropy structure field $\Sigma(P)$''} which, in our theory, is the root of quantum phenomena—that is, how long the ``memory'' of this field can be maintained.
+
+\subsection{Experimental Method: Time-Delayed Entanglement Correlation Measurement with a ``Zero-Delay'' Control Group}
+The core of this experimental design is to \textbf{alternatingly} conduct measurements in two different modes within the same experimental setup, in order to precisely separate the true physical effect from potential systematic errors.
+
+\begin{itemize}
+    \item   \textbf{Experimental Group:} To measure the physical effect of the temporal evolution of the cosmic background field on entanglement strength.
+    \begin{itemize}
+        \item   Alice performs a measurement on particle A at time $t_A$.
+        \item   Bob performs a measurement on particle B after a controllable time delay $\Delta t$, at $t_B = t_A + \Delta t$.
+    \end{itemize}
+
+    \item   \textbf{Control Group:} To calibrate and quantify the systematic errors of the experimental apparatus itself that arise over time.
+    \begin{itemize}
+        \item   Alice and Bob \textbf{simultaneously} perform a measurement on an entangled pair at a time $t + \Delta t$ [which has evolved for the same duration], for the purpose of error calibration.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Experimental Conclusion and the Ultimate Verdict on Our Theory}
+The final, control-group-calibrated \textbf{purely physical correlation decay curve, $C_{\text{phys}}(\Delta t)$}, will provide a \textbf{single, decisive verdict} on our theory.
+
+Based on the first principles of our theory [such as the equivalence principle and entropy dynamics], we make only \textbf{one} core, semi-quantitative prediction: the coherence time $\tau_c$ should lie within a \textbf{specific macroscopic time window} dominated by the physical scale of the Earth. Based on the experimental data from the ``Micius'' quantum science satellite, we have already set an \textbf{experimental lower bound} for this window, namely $\tau_c \geq 4\text{ms}$.
+
+Therefore, there are only two logically mutually exclusive possible outcomes for the experiment:
+
+\begin{itemize}
+    \item   \textbf{Possible Outcome 1: Theory Corroborated}
+    \begin{itemize}
+        \item   \textbf{Observation:} The experiment observes that the characteristic decay time $\tau_c$ of the correlation $C_{\text{phys}}(\Delta t)$ falls significantly within the macroscopic time window of \textbf{milliseconds to seconds}.
+        \item   \textbf{Theoretical Verdict:} This would \textbf{strongly corroborate} the entire framework of our theory. It would mean that we have not only correctly identified the physical carrier of superdeterminism [the $\Sigma(P)$ field] but have also successfully predicted its rate of evolution.
+    \end{itemize}
+
+    \item   \textbf{Possible Outcome 2: Theory Falsified}
+    \begin{itemize}
+        \item   \textbf{Observation:} The experiment observes that $\tau_c$ falls significantly outside our predicted window. For example, $\tau_c$ is much shorter than the millisecond level [complete decoherence on the nanosecond or microsecond scale], or it is so long that no observable decay occurs within the accessible time frame of the experiment [e.g., several hours or more].
+        \item   \textbf{Theoretical Verdict:} This would \textbf{clearly falsify} the core mechanism of our theory. It would imply the existence of other physical mechanisms governing quantum correlations that our theory has not foreseen, or that the properties of the background field are completely different from our predictions.
+    \end{itemize}
+\end{itemize}
+
+
+
+% --- CHAPTER 6 ---
+\section{Conclusion — Physics as ``The Structural Geometry of Entropy''}
+
+We have proposed a unified, deterministic model of quantum entanglement based entirely on ``structured entropy.'' In this model, the mysteries of the quantum world—including its probabilistic nature, non-local correlations, and ``measurement collapse''—are reduced to a more profound and physical unified process: \textbf{the dynamic interaction between matter (as a stable, low-entropy topological structure) and the universal entropy field at different structural scales.}
+
+\begin{itemize}
+    \item   The \textbf{creation} of entanglement is the process by which particles are ``forged'' in the \textbf{microscopic structure (small-scale fluctuations)} of entropy, which injects ``unknowable order'' into them.
+    \item   The \textbf{measurement} of entanglement is the process by which this particle's state is ``read out'' against the \textbf{macroscopic structure (large-scale fluctuations)} of entropy, a statistics-based phase transition from the ``microscopically unknowable'' to the ``macroscopically definite.''
+\end{itemize}
+
+\noindent This perspective ultimately transforms the core questions of quantum mechanics into the study of a \textbf{single, yet infinitely complex, physical entity—the universal entropy field}. We no longer merely ask ``What exists?'' but rather, ``What structure does that which exists (entropy) possess?''
+
+\noindent Thus, our theory points to a completely new picture: \textbf{Gravity and quantum entanglement are, in essence, different manifestations of ``The Structural Geometry of Entropy.''}
+
+\noindent The significance of our proposed ``time-delayed entanglement experiment'' therefore becomes immensely profound. It is no longer just a test of a specific model of entanglement; it is \textbf{using the most precise ``probe'' of quantum phenomena to directly measure the dynamic properties of the universe's most grand ``entropic structure.''} This experiment will deliver the final, decisive verdict on this path of exploration that unifies quantum information, gravitational physics, and cosmology under the central problem of ``the structural scales of entropy.''
+
+
+
+
+
+
+
+
+
+\newpage
+\appendix
+\renewcommand{\thesection}{\Alph{section}} % Set appendix numbering to letters
+\setcounter{section}{23} % Start with X
+
+\section{The Time-Scale Dependence of Bell Inequality Violation: A Reinterpretation of ``Loophole-Free'' Experiments}
+
+\subsection{Introduction: A Critical Overlooked Variable}
+
+In recent years, a series of ``loophole-free'' Bell test experiments has irrefutably confirmed quantum mechanics' violation of local realism. The focus of these experiments has primarily been on closing loopholes in the spatial domain, such as ``locality'' and ``detection''. This appendix, however, aims to argue that the \textbf{temporal structure} of the experiment—specifically, its \textbf{effective average sampling period ($\Delta t_s$)}—may be a long-overlooked physical variable that is key to determining the degree of Bell inequality violation.
+
+We propose the following hypothesis: quantum correlations arise from a dynamically evolving universal background field, $\Sigma(P)$, which possesses a macroscopic coherence time, $\tau_c$. Based on this, we predict that the S-value of a Bell test will exhibit a strong dependence on the sampling period, $\Delta t_s$. This appendix will provide strong evidence for this hypothesis, derived from published data, by re-analyzing two landmark ``loophole-free'' experiments: the photonic experiment by Giustina et al. (2015) and the superconducting qubit experiment by Storz, Wallraff et al. (2023).
+
+\subsection{Theoretical Prediction: From Superdeterminism to the Degeneration into a Hidden-Variable Model}
+
+In our theoretical framework, the ``superluminal'' correlation of quantum entanglement originates from two separated particles synchronously and deterministically decoding the same non-local, dynamically evolving background field, $\Sigma(P)$. This background field itself evolves stochastically, with a characteristic evolution time (i.e., ``memory'' time or coherence time) of $\tau_c$. Based on experimental data from the ``Micius'' satellite, we have semi-quantitatively inferred in the main text that the lower bound for $\tau_c$ is on the order of milliseconds ($\tau_c \geq 4 \text{ ms}$).
+
+This leads to a clear prediction:
+
+\begin{enumerate}
+    \item \textbf{Slow-Sampling Regime ($\Delta t_s \gg \tau_c$):}
+    If the effective sampling period of the experiment, $\Delta t_s$, is much greater than the coherence time of the background field, $\tau_c$, then each effective measurement constitutes an independent sampling of a \textbf{completely new background field, $\Sigma(P)$, that is uncorrelated with the previous one}. In this scenario, the experiment can most fully exhibit the statistical correlations of quantum mechanics, and its S-value should approach the theoretical maximum, \textbf{$S \to 2\sqrt{2} \approx 2.828$}.
+
+    \item \textbf{Fast-Sampling Regime ($\Delta t_s \ll \tau_c$):}
+    If the effective sampling period, $\Delta t_s$, is much smaller than the background field's coherence time, $\tau_c$, then multiple consecutive measurements are, in fact, repeatedly probing a \textbf{nearly unchanged, ``frozen'' background field}, $\Sigma(P)$. For this series of measurements, the quasi-static background field loses its superdeterministic role. In this case, our superdeterministic model [non-local hidden-variable model] will \textbf{degenerate} into an approximate \textbf{local hidden-variable model}, and its S-value will necessarily be systematically suppressed, approaching the classical limit, \textbf{$S \to 2$}.
+
+    \item \textbf{Transition Regime ($\Delta t_s \approx \tau_c$):}
+    When the sampling period is comparable to the coherence time, the S-value should lie within the transition range from the quantum limit to the classical limit, i.e., $2 < S < 2\sqrt{2}$.
+\end{enumerate}
+
+\subsection{Data Analysis from Frontier Experiments}
+
+We will now compare the above predictions with two ``loophole-free'' experiments that employ completely different technological paths and have vastly different sampling periods.
+
+\begin{itemize}
+    \item \textbf{Experiment 1: Storz, Wallraff et al., Nature (2023)}
+    \begin{itemize}
+        \item \textbf{System:} Static superconducting qubits.
+        \item \textbf{Effective Sampling Period $\Delta t_s$:} The paper explicitly reports that the actual repetition frequency of their experiment was \textbf{12.5 kHz}. This corresponds to a sampling period of:
+        \[ \Delta t_s(\text{Wallraff}) = 1 / 12,500 \text{ Hz} = 80 \, \mu\text{s} = 0.08 \text{ ms} \]
+        \item \textbf{Experimental Result (S-value):} $S = 2.0747 \pm 0.0033$.
+        \item \textbf{Analysis:} This sampling period of $0.08 \text{ ms}$ is \textbf{far less than} our predicted coherence time $\tau_c$ ($\geq 4 \text{ ms}$). The experiment falls perfectly into what we define as the ``fast-sampling regime.'' According to our theory, its experimental model must degenerate into an approximate hidden-variable model. The measured S-value of $2.0747$ is very close to the classical limit of $2$, a result that is in \textbf{strong agreement} with our prediction. The paper attributes this to insufficient entanglement preparation fidelity ($F\approx80.4\%$), but our theory provides a different explanation.
+    \end{itemize}
+
+    \item \textbf{Experiment 2: Giustina, Zeilinger et al., PRL (2015)}
+    \begin{itemize}
+        \item \textbf{System:} Flying entangled photons.
+        \item \textbf{Effective Sampling Period $\Delta t_s$:} Although we cannot access the raw data of Giustina et al. (2015), we can make a reasonable estimation based on their paper and supplementary materials. The supplementary material mentions that ``Every second, about 3500 pairs are created in the crystal,'' while in the final 3510-second statistics, the total number of effective ``stopping events'' was 276,515 (``The total number of ... `stopping times' ... is M = ... = 276,515''). The average effective event interval calculated from the latter is approximately \textbf{12.7 milliseconds}. Even if we adopt the reciprocal of the source production rate (approximately \textbf{0.29 milliseconds}), both of these millisecond-scale time frames are significantly \textbf{slower} than the explicit 80-microsecond (12.5 kHz) sampling period in the Storz, Wallraff et al. (2023) experiment. This trend of difference is highly consistent with the observed S-values (Giustina $\approx2.50$ vs. Wallraff $\approx2.07$) under our theoretical framework.
+        \item \textbf{Experimental Result (S-value):} The paper reports $S' > 0.101 \pm 0.020$, which, in a different form of the inequality used, corresponds to $S > 2.4$. We adopt an S-value of approximately \textbf{$S \approx 2.50$}.
+        \item \textbf{Analysis:} This \textbf{millisecond-scale} sampling period $\Delta t_s$ is of the \textbf{same order of magnitude} as our predicted coherence time $\tau_c$ ($\geq 4 \text{ ms}$). The experiment falls precisely into what we define as the ``transition regime.'' According to our theory, its S-value should be significantly greater than 2, but not yet able to reach the theoretical limit. The measured S-value of $\approx 2.50$ is exactly positioned ``halfway up the mountain,'' a result that is again in \textbf{striking agreement} with our prediction.
+    \end{itemize}
+\end{itemize}
+
+It is important to note that an experiment's final reported S-value effectively represents a statistical average over a broad spectrum of sampling delays, $\Delta t$. This ``mixed ensemble'' calculation integrates contributions from both the ``fast-sampling regime'' ($\Delta t \ll \tau_c$), which pulls the S-value towards the classical limit of 2, and the ``slow-sampling regime'' ($\Delta t \gg \tau_c$), which pulls it towards the quantum limit of $2\sqrt{2}$, thus resulting in an intermediate value. The experiment by Storz, Wallraff (2023), with both its sampling interval and total run time being significantly shorter than other experiments, yields a result that more closely approximates a pure ``fast-sampling regime'' measurement. As the raw experimental data is not available to us, this paper provides only a qualitative explanation of this trend; a detailed quantitative deconstruction awaits completion by the teams who possess the experimental data.
+
+\subsection{Conclusion: An Overlooked Phenomenon of Time-Scale Dependence}
+
+\begin{table}[h!]
+\centering
+\caption{Comparison of Experimental Data with Theoretical Prediction Regimes}
+\label{tab:comparison}
+%\begin{tabular}{@{}lccc@{}}
+\begin{tabularx}{\textwidth}{@{} >{\bfseries}l >{\centering\arraybackslash}X >{\centering\arraybackslash}X >{\centering\arraybackslash}X @{}}
+\toprule
+\textbf{Experiment} & \textbf{Effective Avg. Sampling Period} & \textbf{Theoretical Prediction Regime} & \textbf{Measured S-value} \\
+\midrule
+\textbf{Wallraff (2023)} & \textbf{0.08 ms} & Fast-Sampling ($\ll \tau_c$) & \textbf{$\approx 2.07$} \\
+\textbf{Giustina (2015)} & \textbf{$\sim$0.29 ms - 12.7 ms} & Transition ($\approx \tau_c$) & \textbf{$\approx 2.50$} \\
+\textbf{Aspect (1982)} & \textbf{Seconds-scale} & Slow-Sampling ($\gg \tau_c$) & \textbf{$\approx 2.70$} \\
+\bottomrule
+%\end{tabular}
+\end{tabularx}
+\end{table}
+
+Analyzing the data from these experiments in parallel reveals a pattern that is too clear to ignore: \textbf{the degree of Bell inequality violation exhibits a strong positive correlation with the experiment's effective average sampling period, $\Delta t_s$.}
+
+We believe that attributing the lower S-value in the Storz, Wallraff experiment solely to ``entanglement preparation error'' may be an incomplete explanation. It fails to explain why a technically earlier photonic experiment with a sampling period that is orders of magnitude slower could achieve a much higher S-value.
+
+Our proposed ``time-scale dependence'' hypothesis offers a unified and self-consistent explanation for this paradox.It suggests that the experiment by the Storz and Wallraff group may have inadvertently uncovered a more profound temporal dimension of physics---that their measurement, due to its excessively fast sampling, offered the first, inadvertent glimpse of a ``quasi-static'' universal background field that behaves akin to a classical hidden-variable model.
+
+Therefore, the ``time-delayed entanglement correlation measurement'' experiment we propose becomes increasingly important. Its goal will be to systematically and precisely map out this $S(\Delta t_s)$ curve, thereby directly verifying this potentially long-overlooked fundamental physical phenomenon concerning quantum correlation and time scales.
+
+
+
+\section{Supplement: Revised Understanding of Entanglement Based on Electron Standing Wave Research}
+
+Based on our research into the standing wave structure of the electron, we have arrived at a revised understanding of the underlying causes of Bell inequality violations in long-distance entanglement.
+
+Currently, we propose that due to the extreme sensitivity of the nonlinear standing wave system to perturbations at the phase transition bifurcation point, the massive absolute translation and rotational spin of the Earth relative to the absolute stationary reference frame of the underlying vacuum grid constitute a globally consistent, time-varying implicit guiding field. This field drives a time-correlated co-evolution between the internal topological states of macroscopic measurement apparatuses and the target of measurement. Crucially, Lorentz covariance fails to neutralize the influence of this field on the hyper-microscopic and highly sensitive phase transition point of spin bifurcation.
+
+Ultimately, the synergistic effect of this absolute velocity and rotation guides this nonlinear process, giving rise to the emergent violation of Bell's inequalities.
+
+
+\newpage
+\begin{thebibliography}{99}
+
+\bibitem{Wilson1974}
+Wilson, K. G. (1974). The renormalization group and the $\epsilon$ expansion. \textit{Physics Reports}, 12(2), 75-199.
+
+\bibitem{Yin2017}
+Yin, J., Cao, Y., Li, Y. H., Liao, S. K., Zhang, L., Ren, J. G., ... \& Pan, J. W. (2017). Satellite-based entanglement distribution over 1200 km. \textit{Science}, 356(6343), 1140-1144.
+
+\bibitem{Aspect1982}
+Aspect, A., Dalibard, J., \& Roger, G. (1982). Experimental test of Bell's inequalities using time-varying analyzers. \textit{Physical Review Letters}, 49(25), 1804.
+
+\bibitem{Storz2023}
+Storz, S., Schär, J., Kulikov, A., Magnard, P., Kurpiers, P., Lütolf, J., ... \& Wallraff, A. (2023). Loophole-free Bell inequality violation with superconducting circuits. \textit{Nature}, 617(7960), 265-270.
+
+\bibitem{Giustina2015}
+Giustina, M., Versteegh, M. A., Wengerowsky, S., Handsteiner, J., Hochrainer, A., Phelan, K., ... \& Zeilinger, A. (2015). Significant-loophole-free test of Bell's theorem with entangled photons. \textit{Physical Review Letters}, 115(25), 250401.
+
+\end{thebibliography}
+
+
+
+
+\end{document}

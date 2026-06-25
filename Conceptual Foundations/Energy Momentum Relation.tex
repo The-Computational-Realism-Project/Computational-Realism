@@ -1,0 +1,120 @@
+\documentclass[12pt, a4paper]{article}
+
+% PACKAGES
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{authblk}
+
+% DOCUMENT INFORMATION
+\title{\textbf{From First Principles to the Pythagorean Structure of Spacetime: An Axiomatic Derivation of the Energy-Momentum Relation}}
+\author{Haifeng Qiu}
+\date{July 21, 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent This paper presents a derivation of the fundamental energy-momentum relation of special relativity, $E^2 = (m_0c^2)^2 + (pc)^2$, from first principles. Unlike the standard kinematic derivation, which originates from the Lorentz transformations, this argument is founded upon two more elementary postulates: (1) The composition law of physical reality must be algebraically associative to ensure descriptive self-consistency. (2) Physical space is isotropic, implying the absence of an intrinsic, preferred direction in the laws of physics. We demonstrate that these two postulates, acting in concert, necessitate that a particle's "internal reality" (defined by its rest mass $m_0$) and its "external reality" (defined by its momentum $\vec{p}$) be treated as residing in mutually orthogonal vector subspaces. This orthogonality directly leads to the Pythagorean relationship between total energy $E$, rest energy, and momentum-energy. This derivation uncovers the deep logical origins of this famous equation, suggesting it is not merely a consequence of spacetime geometry but a necessary manifestation of the universe's logical consistency and spatial symmetry.
+\end{abstract}
+
+\section{Introduction}
+
+Within the grand edifice of modern physics, the energy-momentum relation $E^2 = (m_0c^2)^2 + (pc)^2$ stands as a critical cornerstone. It not only quantitatively connects the fundamental physical quantities of energy, momentum, and rest mass, but its unique Pythagorean form also hints at the deep geometric properties of spacetime.
+
+Typically, this equation is derived from the Lorentz transformations of special relativity. This derivation, based on the postulates of the constancy of the speed of light and the principle of relativity, is a triumph of kinematic analysis. However, while mathematically impeccable, this approach may obscure a deeper question: Why does the universe's intrinsic dynamical structure take this specific form? Is this quadratic sum merely a contingent outcome of spacetime geometry, or is there a more fundamental principle of logic or symmetry that mandates it?
+
+The purpose of this paper is to offer an alternative, more axiomatic path of derivation. We will demonstrate that the Pythagorean form of the energy-momentum relation can be deduced directly from two of the most basic requirements of the physical world—logical self-consistency and spatial symmetry—without presupposing the full mathematical machinery of the Lorentz transformations. This process will not only deepen our understanding of the physical meaning of the equation but also reveal how the mathematical form of physical laws is shaped by the most fundamental symmetry principles of the universe.
+
+\section{Postulates and Premises}
+
+Our argument is built upon two fundamental postulates and one established physical premise.
+
+\begin{itemize}
+    \item \textbf{Postulate I: The Principle of Compositional Invariance}
+    \begin{quote}
+    The Total Reality of a physical system is composed of its "Internal Reality" and its "External Reality." The mathematical law governing this composition must be \textbf{associative} in its algebraic structure.
+    \end{quote}
+    This postulate ensures that our partitioning of reality is self-consistent. Regardless of how we regroup or define the "fundamental part" and "motional part" of a system, the resulting Total Reality must be identical. If we denote Internal Reality by $I$, External Reality by $P$, and the composition law by $\oplus$, then for any decomposition of motion $P = P_1 + P_2$, the following must hold:
+    \begin{equation}
+        (I \oplus P_1) \oplus P_2 = I \oplus (P_1 + P_2)
+        \label{eq:assoc}
+    \end{equation}
+
+    \item \textbf{Postulate II: The Isotropy of Space}
+    \begin{quote}
+    The laws of physics are equivalent in all spatial directions. There is no intrinsic, preferred direction in space favored by physical law.
+    \end{quote}
+    This is a widely accepted principle of symmetry, fundamental to our modern cosmological view.
+
+    \item \textbf{Physical Premise: The Vector Nature of Momentum}
+    \begin{quote}
+    In three-dimensional Euclidean space, momentum $\vec{p}$ is a vector.
+    \end{quote}
+    This is not a theoretical choice but the standard definition of momentum in both classical and relativistic physics, as it describes both the magnitude and direction of an object's motion.
+\end{itemize}
+
+\section{Derivation}
+
+\subsection{From Associativity to a Vector Space}
+
+According to Postulate I, the operation $\oplus$ must be associative. We now introduce our physical premise: momentum $\vec{p}$ is a vector, and therefore its energy equivalent, $P$, must also carry its vector properties. This implies that on the right-hand side of Equation \eqref{eq:assoc}, the term $P_1 + P_2$ represents a standard \textbf{vector addition}.
+
+For the operation $\oplus$ to be consistent with vector addition and to universally satisfy the associative law, the most natural and powerful mathematical model is to define $\oplus$ itself as a vector addition and to treat all participants—$I$, $P_1$, and $P_2$—within a unified vector space. Thus, Postulate I and the physical premise together compel us to treat the "Internal Reality" $I$ as a generalized vector.
+
+\subsection{The Metric Relation of the Vector Model}
+
+Once we treat $I$ and $P$ as vectors, the Total Reality $E$ must be interpreted as the norm (i.e., length) of the resultant vector $\vec{E}_{\text{vec}} = I + P$. According to the generalized law of vector addition (the Law of Cosines), the square of this norm is given by:
+\begin{equation}
+    E^2 = |I|^2 + |P|^2 + 2|I||P|\cos\theta
+    \label{eq:cosine}
+\end{equation}
+Here, $|I|$ and $|P|$ are the norms of the vectors $I$ and $P$ respectively, and $\theta$ is the angle between them. At this point, we have successfully transformed an abstract compositional problem into a concrete geometric one: determining the value of the angle $\theta$.
+
+\subsection{From Spatial Isotropy to Orthogonality}
+
+We must now invoke Postulate II (the isotropy of space) to determine $\theta$.
+
+The vector $P$ represents momentum and exists in the observable three-dimensional physical space; it can point in any direction. The critical question is: In which direction does the vector $I$, which represents the intrinsic properties of the particle, point?
+
+Let us analyze the possibilities:
+\begin{itemize}
+    \item \textbf{Possibility 1: $I$ exists in the same 3D space as $P$.} If this were the case, $I$ would necessarily point in a specific direction. We could, for instance, rotate our coordinate system such that $I$ aligns with the z-axis. This would imply that the z-axis is a special, preferred direction in the universe, favored by physical law, as the intrinsic reality of a stationary particle ($P=0$) would be oriented along it. This constitutes a severe violation of Postulate II.
+
+    \item \textbf{The Solution: $I$ must exist in an independent dimension.} In order for the existence of $I$ not to violate the symmetry of 3D space, the vector space it occupies must be independent of the physical space occupied by $P$. To ensure that the geometric relationship between $I$ and $P$ remains constant regardless of the direction of $P$ (a necessary requirement of isotropy), the dimension inhabited by $I$ must have a constant, unbiased relationship with \textit{all} dimensions of the 3D space of $P$. The only geometric structure that satisfies this condition is \textbf{orthogonality}.
+\end{itemize}
+Therefore, to simultaneously satisfy Postulate I and Postulate II, the vector space of Internal Reality $I$ must be orthogonal to the vector space of External Reality $P$. This means the angle $\theta$ between them must be exactly 90 degrees.
+
+\subsection{The Final Result}
+
+When $\theta = 90^\circ$, it follows that $\cos\theta = 0$. Our metric relation from Equation \eqref{eq:cosine} instantly simplifies to:
+\begin{equation}
+    E^2 = |I|^2 + |P|^2
+    \label{eq:pythag}
+\end{equation}
+This is a pure Pythagorean relation.
+
+\section{Identification of Physical Quantities and Conclusion}
+
+In the final step, we identify the abstract norms $|I|$ and $|P|$ with their concrete physical counterparts. By standard physical definition:
+\begin{itemize}
+    \item $|I|$ is the intrinsic energy of the particle, which is its rest energy $m_0c^2$.
+    \item $|P|$ is the energy contributed by the particle's momentum $\vec{p}$, which is $pc$.
+\end{itemize}
+Substituting these identifications into our derived Pythagorean relation \eqref{eq:pythag}, we arrive at the final equation:
+\begin{equation}
+    \mathbf{E^2 = (m_0c^2)^2 + (pc)^2}
+\end{equation}
+
+\section{Discussion and Summary}
+
+This derivation demonstrates that the Pythagorean form of the energy-momentum relation is not a mere mathematical coincidence. It is a direct logical consequence of two deeper principles of the universe:
+\begin{enumerate}
+    \item \textbf{Logical Self-Consistency (manifest as associativity)}, which compels us to model the composition of physical reality on a vector addition framework.
+    \item \textbf{Spatial Symmetry (manifest as isotropy)}, which mandates that the vector spaces representing "stasis" and "motion" must be mutually orthogonal.
+\end{enumerate}
+Compared to the standard derivation, the strength of this approach lies in its conceptual clarity. It reveals \textit{why} energy and momentum combine in a sum of squares: because they represent independent, orthogonal contributions to a total reality. This perspective directly links the form of a physical law to the most fundamental symmetry structures of the universe, offering a profound insight into why our universe is governed by such elegant and harmonious mathematical principles.
+
+\end{document}
