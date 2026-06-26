@@ -1,0 +1,335 @@
+\documentclass[12pt, a4paper]{article}
+
+% PACKAGES
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{authblk}
+\usepackage{bm}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,
+    urlcolor=blue
+}
+
+\newcommand{\lambdabar}{{\mkern0.75mu\mathchar '26\mkern -9.75mu\lambda}}
+\linespread{1.2}
+
+\title{A Discussion on Discrete Grids}
+\author{Haifeng Qiu}
+
+\begin{document}
+
+\begin{center}
+    {\uppercase{\Large \textbf{A Discussion on Discrete Grids}}} \\
+    \vspace{0.5em}
+    {\large \textit{A Spinor Dynamics Toy Model Based on Clifford Algebra}} \\
+    \vspace{2em}
+    \textbf{Haifeng Qiu} \\
+    \today
+    \vspace{2em}
+\end{center}
+\begin{abstract}
+This report presents a simplified, conceptual toy model based on a spatiotemporally dual-discrete Euclidean lattice. We investigate the physical conditions required to suppress grid-level dispersive noise and reconstruct flat, continuous wave propagation on a macroscopic scale, utilizing a specific Courant number ($S^2 = 1/3$) and a non-local smoothing operator based on heat kernel convolution. By utilizing the even subalgebra of Clifford algebra, we construct a simplified spinor dynamics toy model to simulate the dynamical generation of a positive mass term through bilateral adjoint transport among grid nodes.
+\end{abstract}
+
+
+\section{Physical Mechanisms: The Dispersion-Free Magic Number and Sub-Grid Low-Pass Filtering}
+
+With specific update rules applied to the discrete grid, measuring the grid itself using emergent entities on that grid inevitably yields a continuous representation. This section attempts to analyze the conditions required to reproduce macroscopic flat, continuous, and dispersion-free wave propagation characteristics on a microscopic discrete system. This is achieved by setting a specific Courant number (the CFL limit) on a Euclidean lattice that is discrete in both space and time, and by introducing a non-local operator based on heat kernel convolution.
+
+\subsection{The Dispersion-Free Magic Number on a Three-Dimensional Euclidean Grid ($S^2 = 1/3$)}
+
+Let the three-dimensional discrete spatial grid be $\mathcal{G} = h\mathbb{Z}^3$, where $h$ is the spatial step size (which is smaller than the Planck scale), and $\Delta t$ is the temporal step size. The source-free wave equation on the grid nodes is discretized using second-order central differences:
+\begin{equation}
+\label{eq:discrete_wave}
+\begin{split}
+\frac{1}{c^2 \Delta t^2} \big[ A^\mu(\mathbf{x}, t+\Delta t) &- 2A^\mu(\mathbf{x}, t) + A^\mu(\mathbf{x}, t-\Delta t) \big] = \\
+\sum_{a \in \{x,y,z\}} \frac{1}{h^2} \big[ A^\mu(\mathbf{x} + h\hat{a}, t) &- 2A^\mu(\mathbf{x}, t) + A^\mu(\mathbf{x} - h\hat{a}, t) \big]
+\end{split}
+\end{equation}
+
+Substituting the monochromatic harmonic wave solution $A^\mu \propto e^{i(\mathbf{k}\cdot\mathbf{x} - \omega t)}$ directly yields the discrete dispersion relation:
+\begin{equation}
+\label{eq:discrete_dispersion}
+\sin^2\left(\frac{\omega \Delta t}{2}\right) = S^2 \left[ \sin^2\left(\frac{k_x h}{2}\right) + \sin^2\left(\frac{k_y h}{2}\right) + \sin^2\left(\frac{k_z h}{2}\right) \right]
+\end{equation}
+where $S = \frac{c \Delta t}{h}$ is the dimensionless Courant number. In a three-dimensional grid, the CFL limit for numerical stability is $S \le 1/\sqrt{3}$.
+
+\subsubsection{Dispersion-Free Condition Along the Principal Diagonal Direction}
+
+When a wave propagates along the principal diagonal path of the grid, the wave vector components satisfy $k_x = k_y = k_z = k_d$, and the physical wave vector magnitude is $k = \sqrt{3}k_d$. If the discrete parameters are set to the \textbf{CFL stability limit point $S^2 = 1/3$ (i.e., $S = 1/\sqrt{3}$)}, substituting this into Eq.~\eqref{eq:discrete_dispersion} yields:
+\begin{equation}
+\label{eq:diagonal_dispersion}
+\sin^2\left(\frac{\omega \Delta t}{2}\right) = 3 \cdot \left(\frac{1}{3}\right) \sin^2\left(\frac{k h}{2\sqrt{3}}\right)
+\end{equation}
+
+Due to the locking condition $\Delta t = \frac{h}{\sqrt{3}c}$, both sides of Eq.~\eqref{eq:diagonal_dispersion} spontaneously simplify to $\sin^2\left(\frac{\omega h}{2\sqrt{3}c}\right) = \sin^2\left(\frac{k h}{2\sqrt{3}}\right)$. This yields:
+\begin{equation}
+\label{eq:speed_of_light}
+\omega = c k \implies v_p = \frac{\omega}{k} = c, \quad v_g = \frac{d\omega}{dk} = c
+\end{equation}
+
+Under this discrete constraint, \textbf{the numerical phase velocity and group velocity of waves propagating along the principal diagonal path are equal to the continuous physical speed of light $c$ at all frequencies, and numerical dispersion is algebraically eliminated}.
+
+\subsubsection{Isotropic Self-Consistency in the Macroscopic Continuous Long-Wave Limit}
+
+For macroscopic long waves in any propagation direction (satisfying $kh \ll 1$), performing a Taylor series expansion on both sides of Eq.~\eqref{eq:discrete_dispersion} leads to the following space-time doubly discretized isotropic dispersion relation containing higher-order correction terms:
+\begin{equation}
+\label{eq:taylor_dispersion}
+\omega^2(\mathbf{k}) = c^2 \mathbf{k}^2 \left[ 1 + \frac{h^2}{36} k^2 - \frac{h^2}{12} \frac{k_x^4 + k_y^4 + k_z^4}{k^2} + \mathcal{O}(h^4) \right]
+\end{equation}
+
+When the wave vector aligns with the diagonal direction, the higher-order correction terms cancel out exactly. In non-diagonal directions, a slight anisotropy remains. However, when the grid step size $h$ is much smaller than the physical wavelength $\lambda$ (i.e., $h/\lambda \ll 1$), and in conjunction with the Weierstrass low-pass filtering mechanism discussed in the next subsection, the residual anisotropic dispersion deviation terms are heavily suppressed. At macroscopic scales, the lattice's inherent crystalline anisotropy fades away entirely, manifesting as highly symmetric, flat Minkowski wave behavior.
+
+\subsection{The Sub-Grid Low-Pass Filtering Mechanism of ``Grid Fluctuations Far Below Grid Precision''}
+
+Transient non-linear discrete impacts at the microscopic grid nodes inevitably generate discontinuous grid-scale noise (assumed to be numerical high-frequency dispersive waves with a wavelength of $\lambda \approx 2h$). However, because the grid rules constitute an iterative system, their cumulative iterative effect at the macroscopic level is equivalent to a random walk. This underlying information exchange mechanism mathematically introduces the effect of a non-local Gaussian smoothing operator based on heat kernel convolution.
+
+To resolve the microscopic structure of solitons (such as circular self-trapping orbits) on discrete grid nodes, the underlying grid step size $h$ and the characteristic smoothing scale (the reduced Compton wavelength) $a$ must satisfy scale separation:
+\begin{equation}
+\label{eq:scale_separation}
+h \ll a
+\end{equation}
+
+\subsubsection{Gaussian Exponential Suppression in the Spectral Domain}
+
+The transfer function of the non-local smoothing operator $\hat{K} = e^{a^2 \nabla^2}$ in Fourier wave-vector space is:
+\begin{equation}
+\label{eq:transfer_function}
+H(k) = e^{-a^2 k^2}
+\end{equation}
+
+The characteristic cutoff wave vector is determined by the characteristic scale $a$ ($k_c \sim 1/a$). Because the scale separation in Eq.~\eqref{eq:scale_separation} is satisfied, the highest-frequency discontinuous noise that the grid can sustain (grid-level numerical step noise with a wavelength of $\lambda \approx 2h$) corresponds to the grid's Nyquist limit wave vector $k_{\text{grid,Nyq}} = \pi/h$.
+
+After a single space-time smoothing iteration, the amplitude attenuation factor of this grid-level noise is:
+\begin{equation}
+\label{eq:nyquist_suppression}
+H(k_{\text{grid,Nyq}}) = e^{-a^2 \left(\frac{\pi}{h}\right)^2} = e^{-\pi^2 \left(\frac{a}{h}\right)^2}
+\end{equation}
+
+Since $a/h \gg 1$, the amplification factor $\left(\frac{a}{h}\right)^2$ in the exponent is extremely large. This causes the grid noise generated by the microscopic grid's discrete discontinuities to be suppressed in a very short time, thereby allowing macroscopic space-time to appear continuous and smooth.
+
+\subsubsection{Continuous Emergence in the Regime where Wave Scale Exceeds Lattice Scale ($\lambda \gg a \gg h$)}
+
+On the scale of particle orbits or macroscopic fluctuations, the physical wavelength $\lambda$ is much larger than the reduced Compton wavelength of the soliton $a$ (satisfying $a/\lambda \ll 1$). Within this well-behaved physical regime, the wave vector satisfies $k \ll 1/a$, and its transfer function approaches unity:
+\begin{equation}
+\label{eq:macroscopic_transfer}
+H(k) = e^{-a^2 k^2} \approx 1 - a^2 k^2 + \mathcal{O}(a^4 k^4) \approx 1
+\end{equation}
+
+Consequently, macroscopic physical wave quantities propagate with negligible attenuation from the filtering operator, and the fluctuations and non-linear interactions of the physical fields are smoothed and confined within the smooth, analytical fluid envelopes of the sub-grid scale. This ensures the emergence of macroscopic continuous field theories with high fidelity.
+
+\section{A Toy Spinor Dynamics Model Based on Clifford Algebra and Local Rotation}
+
+This section constructs a \textbf{conceptual toy model} using space-time algebra and bilateral adjoint transport to illustrate feasibility rather than represent exact physical reality. Utilizing the even subalgebra of Clifford algebra, this model simulates the generation of local gauge potentials and non-linear mass in a physically intuitive manner.
+
+\subsection{Algebraic Formulation of 4-Component Algebraic Spinors and Internal Space Rotations}
+
+We introduce the even subalgebra of three-dimensional space, $\text{Cl}_{3,0}^+$ (which is geometrically isomorphic to the Hamiltonian quaternions $\mathbb{H}$), onto the grid. Let the spatial bivectors be the generators of local spin planes $M_a$:
+\begin{equation}
+\label{eq:bivectors}
+M_x \equiv \sigma_y \sigma_z, \quad M_y \equiv \sigma_z \sigma_x, \quad M_z \equiv \sigma_x \sigma_y
+\end{equation}
+
+They satisfy the non-commutative algebraic relations $M_a^2 = -I_0$ and $M_x M_y = -M_z$.
+
+We define the physical field state on the grid nodes as an \textbf{algebraic spinor $\Psi(x^\mu)$}:
+\begin{equation}
+\label{eq:spinor_def}
+\Psi(x^\mu) \equiv \psi_0 I_0 + \psi_1 M_x + \psi_2 M_y + \psi_3 M_z
+\end{equation}
+
+In this model, the generators $M_a$ and the phase-shift operator $I_0$ act on the \textbf{local internal polarization space of the grid} (the spin fiber), while the \textbf{external coordinate displacements} between grid nodes still obey standard commutation relations, thereby preserving the commutation of grid translations alongside the anticommutation of Clifford generators.
+
+\subsection{Bilateral Adjoint Transport Dynamics and the Spontaneous Emergence of Non-Linear Mass}
+
+We design the following grid state update equation. Its physical picture is that the spinor state at a grid node $\mathbf{x}$ is formed by the coherent superposition of its six neighboring nodes during transport displacements, modulated by the bilateral adjoint transformation of a local rotation operator (rotor):
+\begin{equation}
+\label{eq:bilateral_adjoint}
+\begin{split}
+\Psi(\mathbf{x}, t+\Delta t) &+ \Psi(\mathbf{x}, t-\Delta t) = \\
+\frac{1}{3} \sum_{a \in \{x, y, z\}} \Big[ R(h \hat{a}) \Psi(\mathbf{x} - h \hat{a}, t) R^{-1}(h \hat{a}) &+ R(-h \hat{a}) \Psi(\mathbf{x} + h \hat{a}, t) R^{-1}(-h \hat{a}) \Big]
+\end{split}
+\end{equation}
+
+\subsubsection{Microscopic Physical Scaling of Local Rotors and Phase-Shift Angles}
+
+The local rotor is defined as $R(\pm h \hat{a}) = \exp\left( \pm \chi \frac{\phi}{2} M_a \right)$, where $\chi \in \{-1, 0, 1\}$ is a dynamical physical quantity representing the local fluid helicity. We postulate the following \textbf{microscopic scale scaling law} for the single-step local phase-shift angle $\phi$:
+\begin{equation}
+\label{eq:phase_angle_scaling}
+\phi(\rho, h) \equiv \frac{h}{a_{\text{grid}}} \sqrt{\frac{1}{2} \kappa \ln(1+\rho)}
+\end{equation}
+where $a_{\text{grid}}$ is the characteristic smoothing scale, and $\rho = \Psi^\dagger \Psi / \rho_{\text{max}}$ is the dimensionless local information saturation (representing the ratio of local invariant energy densities $u_{\text{inv}}/u_{\text{th}}$).
+
+When the local perturbation vanishes ($\rho \to 0$), the phase-shift angle satisfies $\phi \to 0$. At this point, the local rotor degenerates to $R(\pm h \hat{a}) = I_0$.
+
+Under the microscopic initial state of the system (a source-free vacuum or local weak fluctuations), the helicity index $\chi$ resides in a symmetric zero-point fluctuation state, $\langle \chi \rangle = 0$, causing the system to appear completely isotropic and parity-conserving at macroscopic scales. When local non-linear energy accumulates ($\rho \to \rho_{\text{max}}$) and attempts to condense into a stable soliton, the wave packet must satisfy the \textbf{topological phase-locking condition (closed interference resonance)}. This triggers a bistable bifurcation of the phase space under non-linear modulation. Through a roll-down driven by spontaneous symmetry breaking in phase space, the system selects either the left-handed attractor ($\chi = -1$) or the right-handed attractor ($\chi = +1$), spontaneously completing the \textbf{helicity locking}.
+
+\subsubsection{Taylor Expansion of Adjoint Transformations and the Emergence of Covariant Differential Equations}
+
+To analyze the continuous limit of the bilateral adjoint update equation, Eq.~\eqref{eq:bilateral_adjoint}, we first perform a higher-order expansion of the rotationally modulated state. Using the Baker-Campbell-Hausdorff (BCH) expansion for Lie group adjoint operators:
+\begin{equation}
+\label{eq:bch_expansion}
+\begin{split}
+R(\pm h \hat{a}) \Psi(\mathbf{x} \mp h \hat{a}) R^{-1}(\pm h \hat{a}) = e^{\pm \chi \frac{\phi}{2} M_a} \Psi(\mathbf{x} \mp h \hat{a}) e^{\mp \chi \frac{\phi}{2} M_a} \\
+= \Psi_\mp \pm \chi \frac{\phi}{2} [M_a, \Psi_\mp] + \chi^2 \frac{\phi^2}{8} [M_a, [M_a, \Psi_\mp]] + \mathcal{O}(\phi^3)
+\end{split}
+\end{equation}
+
+where $\Psi_\mp = \Psi(\mathbf{x} \mp h\hat{a})$.
+
+Expanding the spatial displacement term to second order via finite differences:
+\begin{equation}
+\label{eq:spatial_diff}
+\Psi_\mp \approx \Psi \mp h \partial_a \Psi + \frac{h^2}{2} \partial_a^2 \Psi
+\end{equation}
+
+Substituting Eq.~\eqref{eq:spatial_diff} into Eq.~\eqref{eq:bch_expansion}, and summing the adjoint transport terms in both the positive and negative directions, because $\phi \propto h$, the higher-order cross-coupling terms are absorbed into the remainder $\mathcal{O}(h^3)$. We obtain the combined second-order expansion:
+\begin{equation}
+\label{eq:combined_expansion}
+\begin{split}
+R(h \hat{a}) \Psi(\mathbf{x} - h \hat{a}) R^{-1}(h \hat{a}) + R(-h \hat{a}) \Psi(\mathbf{x} + h \hat{a}) R^{-1}(-h \hat{a}) \\
+\approx 2\Psi + h^2 \partial_a^2 \Psi - \chi \phi h [M_a, \partial_a \Psi] + \chi^2 \frac{\phi^2}{4} [M_a, [M_a, \Psi]] + \mathcal{O}(h^3)
+\end{split}
+\end{equation}
+
+Summing Eq.~\eqref{eq:combined_expansion} over the three spatial dimensions $a \in \{x,y,z\}$ and multiplying by $1/3$, the right-hand side simplifies to:
+\begin{equation}
+\label{eq:sum_spatial_bch_expansion}
+\begin{split}
+2\Psi + \frac{h^2}{3}\nabla^2\Psi - \chi \frac{\phi h}{3}\sum_{a \in \{x,y,z\}} [M_a, \partial_a \Psi] + \chi^2 \frac{\phi^2}{12}\sum_{a \in \{x,y,z\}} [M_a, [M_a, \Psi]] + \mathcal{O}(h^3)
+\end{split}
+\end{equation}
+
+\textbf{1. Spatial Curl of the First-Order Cross-Coupling Term}
+
+Expanding the algebraic spinor into scalar and vector parts as $\Psi = \psi_0 I_0 + \sum_{b \in \{x,y,z\}} \psi_b M_b$, and noting that the scalar part commutes with the generators, computing the commutator yields the first-order space-time cross term:
+\begin{equation}
+\label{eq:spatial_curl}
+\begin{split}
+\sum_{a \in \{x,y,z\}} [M_a, \partial_a \Psi] = \sum_a \sum_b \partial_a \psi_b [M_a, M_b] &= -2 \sum_c M_c \left( \sum_{a,b} \epsilon_{abc} \partial_a \psi_b \right) \\
+&\equiv -2 \left( \nabla \times \vec{\psi} \right) \cdot \mathbf{M}
+\end{split}
+\end{equation}
+where $\vec{\psi} = (\psi_x, \psi_y, \psi_z)^T$ and $\mathbf{M} = (M_x, M_y, M_z)^T$. This term algebraically corresponds to the \textbf{spatial curl} of the spinor's vector component $\vec{\psi}$.
+
+\textbf{Spontaneous Helicity Breaking Mechanism}: In the microscopic source-free vacuum or uncondensed low-energy regions ($\rho \to 0$), because the helicity index symmetry-fluctuates around zero ($\langle \chi \rangle = 0$), this first-order cross term completely vanishes in the macroscopic statistical average. Consequently, the underlying wave equation satisfies isotropy and parity (P-symmetry) conservation in the absence of particle condensation. However, when the formation of a stable soliton induces spontaneous non-linear symmetry breaking ($\chi \to \pm 1$), this term is locked and preserved. Its first-order commutator coupling structure of ``spin-momentum'' is completely isomorphic to $\vec{\sigma} \cdot \vec{p}$ in the first-order chiral spinor operator, establishing an algebraic channel for the transition from second-order wave equations to first-order chiral Dirac dynamics.
+
+\textbf{2. Double Commutator Expansion of the Second-Order Term}
+
+Computing the second-order double commutator of the spin generators acting on the algebraic spinor:
+\begin{align*}
+[M_x, [M_x, \Psi]] &= -4\psi_y M_y - 4\psi_z M_z \\
+[M_y, [M_y, \Psi]] &= -4\psi_z M_z - 4\psi_x M_x \\
+[M_z, [M_z, \Psi]] &= -4\psi_x M_x - 4\psi_y M_y
+\end{align*}
+
+Summing over the spatial dimensions, and noting that the scalar component commutes to zero, we obtain the algebraic identity for the vector part:
+\begin{equation}
+\label{eq:double_commutator_identity}
+\sum_{a \in \{x,y,z\}} [M_a, [M_a, \Psi]] = -8 (\psi_x M_x + \psi_y M_y + \psi_z M_z) = -8 \vec{\Psi}_{\text{vec}}
+\end{equation}
+
+\textbf{3. Emergence of the Covariant Wave Equation}
+
+Expanding the left-hand side of the state update equation, Eq.~\eqref{eq:bilateral_adjoint}, as $\Psi(\mathbf{x}, t+\Delta t) + \Psi(\mathbf{x}, t-\Delta t) \approx 2\Psi + \Delta t^2 \partial_t^2 \Psi$, and combining this with Eqs.~\eqref{eq:sum_spatial_bch_expansion}, \eqref{eq:spatial_curl}, and \eqref{eq:double_commutator_identity}, we can cancel the identical zero-order terms $2\Psi$ from both sides to obtain:
+\begin{equation}
+\label{eq:expanded_discrete_wave}
+\Delta t^2 \partial_t^2 \Psi \approx \frac{h^2}{3}\nabla^2\Psi + \chi \frac{2\phi h}{3} \left( \nabla \times \vec{\psi} \right) \cdot \mathbf{M} - \chi^2 \frac{2 \phi^2}{3} \vec{\Psi}_{\text{vec}}
+\end{equation}
+
+Dividing both sides by $\Delta t^2$ and introducing the dispersion-free magic number locking condition $S^2 = \frac{c^2 \Delta t^2}{h^2} = 1/3 \implies \Delta t^2 = \frac{h^2}{3c^2}$, the wave equation simplifies and rearranges to:
+\begin{equation}
+\label{eq:simplified_wave_eq}
+\left( \frac{1}{c^2} \partial_t^2 - \nabla^2 \right) \Psi \approx \chi \frac{2\phi}{h} \left( \nabla \times \vec{\psi} \right) \cdot \mathbf{M} - \chi^2 \frac{2\phi^2}{h^2} \vec{\Psi}_{\text{vec}}
+\end{equation}
+
+Substituting the microscopic scaling law for the phase-shift angle, Eq.~\eqref{eq:phase_angle_scaling}. Since the right-hand side is composed entirely of the vector part of $M_i$, the scalar field component $\psi_0$ naturally decouples from the vector component.
+
+On the stable attractors after spontaneous chiral symmetry breaking ($\chi^2 \to 1$, $\chi = \pm 1$), the equation satisfied by the spin vector field component $\vec{\psi}$ becomes:
+\begin{equation}
+\label{eq:spin_vector_final}
+\begin{split}
+\left( \frac{1}{c^2} \partial_t^2 - \nabla^2 \right) \vec{\psi} &- \chi \frac{2}{a_{\text{grid}}} \sqrt{\frac{1}{2} \kappa \ln(1+\rho)} \left( \nabla \times \vec{\psi} \right) + \frac{1}{a_{\text{grid}}^2} g(\rho) \vec{\psi} = 0
+\end{split}
+\end{equation}
+
+This gives rise to a Klein-Gordon-type covariant wave equation that contains a positive mass-squared term and a dynamic chiral locking term:
+\begin{equation}
+\label{eq:klein_gordon_emergent}
+\left( \frac{1}{c^2} \partial_t^2 - \nabla^2 - \chi \frac{2}{a_{\text{grid}}} \sqrt{\frac{1}{2} g(\rho)} \left( \nabla \times \right) + \frac{1}{a_{\text{grid}}^2} g(\rho) \right) \vec{\psi} = 0
+\end{equation}
+where the local non-linear logarithmic modulation function is defined as $g(\rho) \equiv \kappa \ln(1+\rho)$, and $\chi \in \{+1, -1\}$ is determined by the selection of the attractor in phase space along the self-trapping path.
+
+\section{An Open Discussion on Underlying Discrete Boolean Operations and Non-Linear Transport Mechanisms}
+
+In the preceding sections, we discussed the three-dimensional discrete difference lattice and the spinor dynamics model based on local rotations in $\text{Cl}_{3,0}^+$. However, from a physical ontology perspective, these models are still forms of \textbf{macroscopic statistical or continuous numerical emergence}, with parameters dependent on manual settings. The underlying purely discrete, finite, and quantitative digital world remains full of mysteries. This section attempts to propose preliminary hypotheses and open discussions regarding the underlying binary logical rules.
+
+\subsection{Hypotheses on Underlying Discrete Boolean Algebra Based on Spatial Rotational Relations}
+
+We speculate that underlying physical space-time is not composed of physical quantities capable of holding continuous numerical values, but rather is an iterative binary logical network with finite topological connections, akin to a cellular automaton.
+
+\textbf{1. Local Rotations and the 90-Degree Phase Rule}: At the most fundamental step of information exchange, the transmission and evolution of information may be governed by an underlying Boolean algebra. This algebra naturally possesses built-in discrete logical transformations corresponding to ``spatial geometric rotations.'' For instance, within the minimal information step size, information does not undergo continuous angular translation, but instead achieves a 90-degree ($\pi/2$) phase rotation through basic ``displacements'' and ``logical flips.'' This discrete 90-degree rotation logic forms the macroscopic algebraic foundation for the imaginary unit $i$, the quaternion generators, and the aforementioned spinor bivectors $M_a$.
+
+\textbf{2. Information Conservation and Stable Spin}: Such local transformations based on binary Boolean operations guarantee that, in the absence of floating-point rounding errors, the flow of information can achieve a completely discrete, ``locally lossless spin'' between nodes. This provides the microscopic algebraic security ensuring that invariants in the physical world can propagate over vast distances without experiencing dispersive dissipation. Furthermore, the massive amount of information encoding a single soliton ensures that extremely high numerical precision emerges in its propagation and interactions.
+
+\subsection{The Inherent Saturation Property of the Binary Grid (The Essence of Grid Saturation)}
+
+In continuous field theories or semi-classical models, we phenomenologically describe ``grid saturation'' or vacuum polarization effects by introducing the logarithmic function $g(\rho) \propto \ln(1+\rho)$. However, on the underlying discrete binary grid, \textbf{saturation is not a physical mechanism that must be artificially introduced, but rather an intrinsic, natural core property of the binary system itself.}
+
+\textbf{Capacity Limitations of a Single Grid Node}: Each microscopic information node (grid node) can support only a finite number of binary information states (or bit capacity) within a single temporal step (e.g., a single node has only a finite number of discrete states).
+
+\textbf{Information Propagation Saturation}: When the bit states (information density) of a certain grid region approach saturation, the probability of subsequently arriving information streams successfully propagating through this region decreases, which is equivalent to Shannon channel capacity.
+
+\textbf{Spatial Quantization}: The finite, discrete information capacity of the grid represents a mechanism of ``spatial quantization.'' It naturally carries a physical ultraviolet cutoff and a scale reference, thereby eradicating the unavoidable ``point-source singularities'' found in continuous field theories at their source.
+
+\subsection{Spontaneous Delay, Obstruction, and Bypassing Transport Mechanisms Under Congestion}
+
+When the local information flux becomes excessively large, causing a substantial number of binary grid nodes to spontaneously enter a saturated state, the simple underlying logical rules force profound changes in the propagation behavior of subsequent information flows. This spontaneously gives rise to the macroscopic non-linear physical effects observed:
+
+\textbf{1. Information Processing Delay (Time Delay / Variable Resistance Damping)}: When target nodes are in a saturated or sub-saturated state, the rate of information updating is forced to slow down. Macroscopically, this manifests as a \textbf{local reduction in the speed of light} (an increase in the refractive index), corresponding to the ``potential-modulated speed of light'' mechanism detailed in previous theoretical discussions.
+
+\textbf{2. Obstruction and Forced Bypassing (Deflection \& Bypassing)}: Because saturated grid nodes can no longer accommodate forward-propagating information flows, subsequent flows are constrained by Boolean rules to ``overflow'' or ``detour'' toward neighboring unsaturated nodes with lower resistance. This forced search for alternative propagation paths macroscopically manifests as \textbf{the bending of light rays and the self-focusing of wave packets}, as well as the self-trapping phenomenon where a photon is forced to bend into a closed, circular standing wave (the physical entity of the electron) under its self-generated extreme pressure.
+
+\subsection{Limitations and Open Questions}
+
+Currently, we still lack a detailed picture of the specific mathematical form of these underlying logical rules (such as the exact Boolean state transition matrices, the precise topological connection rules of the grid nodes, etc.). Designing a minimal set of microscopic rules—containing only logical 0 and 1 operations—that can emerge with high precision as Lorentz covariance and flat space-time at large scales, while spontaneously evolving logarithmic non-linear potentials and Dirac spinor structures matching physical reality under saturation, remains a highly challenging open question at the frontier of physics and computer science, awaiting future research and exploration to uncover.
+
+
+
+
+
+
+
+\section{Numerical Demonstration}
+
+This section provides an implementation of a numerical demonstration model. The code serves as a conceptual tool to visualize isotropic wave propagation and explore the basic non-linear grid response mechanisms discussed in the preceding sections.
+
+\subsection{Overview of the Simulation Model}
+
+The provided code implements discrete wave updates on a finite lattice. The demonstration mainly models:
+\begin{itemize}
+    \item \textbf{Isotropic Wave Propagation:} Approximating continuous wave behavior at macroscopic scales under the specified Courant condition.
+    \item \textbf{Non-linear Dynamics:} Visualizing the local modulation of wave propagation characteristics under varying energy densities.
+\end{itemize}
+
+It is important to emphasize that while this script demonstrates the underlying propagation and non-linear modulation principles, the physical emergence of stable, self-trapping solitons (as described in our analytical model of the electron) cannot be easily resolved on this simplified scale. The stable locking of such structures requires significantly larger grid scales, longer periods, and highly refined calibrations of both the initial wave-packet envelopes and the physical coupling parameters.
+
+\subsection{Execution Guide}
+
+Install the necessary dependencies via \texttt{pip} in your terminal and run the code directly from your terminal.
+
+\begin{verbatim}
+pip install taichi numpy
+python rot.py
+\end{verbatim}
+
+\subsection{Source Code}
+\url{https://github.com/The-Computational-Realism-Project/Computational-Realism/blob/master/code/rot.py}
+
+
+\end{document}
